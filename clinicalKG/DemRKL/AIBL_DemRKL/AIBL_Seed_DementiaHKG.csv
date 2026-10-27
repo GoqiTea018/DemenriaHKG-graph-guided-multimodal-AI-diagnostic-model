@@ -1,0 +1,22 @@
+AIBL_Feature,PrimeKG_Node,Category
+Core_Prior_Knowledge,Alzheimer disease,Core_Disease
+Core_Prior_Knowledge,Dementia,Core_Disease
+Core_Prior_Knowledge,Cognitive impairment,Core_Disease
+Core_Prior_Knowledge,APOE,Core_Gene
+Core_Prior_Knowledge,MAPT,Core_Gene
+Core_Prior_Knowledge,APP,Core_Gene
+Core_Prior_Knowledge,PSEN1,Core_Gene
+Core_Prior_Knowledge,PSEN2,Core_Gene
+Core_Prior_Knowledge,TREM2,Core_Gene
+Core_Prior_Knowledge,GFAP,Core_Protein
+Core_Prior_Knowledge,NEFL,Core_Protein
+mmse,Cognitive impairment,Clinical_Mapping
+cdr,Dementia,Clinical_Mapping
+lm_imm,Memory impairment,Clinical_Mapping
+lm_del,Memory impairment,Clinical_Mapping
+apoe,APOE,Clinical_Mapping
+BLACKLIST_TYPE,drug,Rule
+BLACKLIST_TYPE,exposure,Rule
+BLACKLIST_REL,indication,Rule
+BLACKLIST_REL,contraindication,Rule
+BLACKLIST_REL,off-label use,Rule

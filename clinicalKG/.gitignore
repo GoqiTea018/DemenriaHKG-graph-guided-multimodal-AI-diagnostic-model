@@ -1,0 +1,15 @@
+# Generated shared Full PrimeKG assets and per-patient/model outputs.
+shared/FullPrimeKG/*
+!shared/FullPrimeKG/.gitkeep
+results/
+results_full_primekg/
+tests/.runs/
+**/*-Entities.json
+**/*-Entity2ID.json
+**/*-Relation2ID.json
+**/*-LossHistory.json
+**/*-LossCurve.png
+**/*-TrainingState.json
+*.tmp
+# Curated field-to-entity seed dictionaries are needed for portable graph construction.
+!**/*_Seed_DementiaHKG.csv

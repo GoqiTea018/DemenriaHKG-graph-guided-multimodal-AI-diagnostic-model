@@ -1,0 +1,278 @@
+[
+  {
+    "source": "experiments/__init__.py",
+    "source_sha256": "31fe2583b45f9faf975f21e30bc6f3efeb49bd40ad292968780c24f78c0fc78f",
+    "destination": "experiments/__init__.py",
+    "changes": "unchanged copy"
+  },
+  {
+    "source": "experiments/config.py",
+    "source_sha256": "ba0d6c397de5c89a248fd41a149de9cd423d6e66f85572a7fd34a5197ff811e3",
+    "destination": "experiments/config.py",
+    "changes": "copy; relative main-folder and Full PrimeKG/CustomKG/DemRKG asset paths"
+  },
+  {
+    "source": "experiments/experiment_split.py",
+    "source_sha256": "7400ab9955550f4893e19784bb75c3ad31746b0fa1bb35c8b26ca83011da89ed",
+    "destination": "experiments/experiment_split.py",
+    "changes": "copy; relative main-folder and new asset paths"
+  },
+  {
+    "source": "experiments/kg_ablation.py",
+    "source_sha256": "86f8d0ea4e20f73463599035346fd566200bccfa08c46b4897449f89eae2f5ea",
+    "destination": "experiments/kg_ablation.py",
+    "changes": "copy; persist per-seed epoch histories and selected model weights; print training progress"
+  },
+  {
+    "source": "experiments/kg_ablation_stats.py",
+    "source_sha256": "a116c67f0de2b211802c8acd2f004ae022fb25faaad9e5bf2c41060ffa05e45a",
+    "destination": "experiments/kg_ablation_stats.py",
+    "changes": "unchanged copy"
+  },
+  {
+    "source": "ADNI/PrimeKG/Step3-Build-ADNI-PrimeKG.ipynb",
+    "source_sha256": "125ddbd1698c2fb8f477bd3f4abda3844a0bb70697b444d5e9f38832b67cb71a",
+    "destination": "PrimeKGL/ADNI_PrimeKGL/Step3-Build-ADNI-PrimeKG.ipynb",
+    "changes": "paths/bootstrap; cleared outputs; Full PrimeKG with shared interruptible DistMult"
+  },
+  {
+    "source": "ADNI/ADNI三模态+PrimeKG.ipynb",
+    "source_sha256": "efa19aba9216a8c937c2d6540ec9174ff0656d02fa66b2a8f83711c764d63236",
+    "destination": "PrimeKGL/ADNI_PrimeKGL/ADNI三模态+PrimeKG.ipynb",
+    "changes": "paths/bootstrap; cleared outputs"
+  },
+  {
+    "source": "ADNI/model1.py",
+    "source_sha256": "43be77bea16d9a065b4ad0056668c2f07858cf218a68c563e0ab1ff335a76a32",
+    "destination": "PrimeKGL/ADNI_PrimeKGL/model1.py",
+    "changes": "copied"
+  },
+  {
+    "source": "ADNI/DementiaHKG/ADNI_Seed_DementiaHKG.csv",
+    "source_sha256": "cef074d3ab5561c76c580bccc9462437cf19967c7bd4bdb11d66b7dabf043229",
+    "destination": "PrimeKGL/ADNI_PrimeKGL/ADNI_Seed_DementiaHKG.csv",
+    "changes": "copied"
+  },
+  {
+    "source": "ADNI/DementiaHKG/Step3-Build-ADNI-DementiaHKG.ipynb",
+    "source_sha256": "fac4ae1e0a6f914f96f97a489abb7be7fb714f88293e82beda87ec41636ae7ce",
+    "destination": "DemRKL/ADNI_DemRKL/ADNI_DemRKL_build.ipynb",
+    "changes": "paths/bootstrap; cleared outputs"
+  },
+  {
+    "source": "ADNI/ADNI三模态+DementiaHKG.ipynb",
+    "source_sha256": "85bea77493042f83fc48b3844a05c98f4cc5c907385f145940a8971b7105f0f9",
+    "destination": "DemRKL/ADNI_DemRKL/ADNI_DemRKL.ipynb",
+    "changes": "paths/bootstrap; cleared outputs"
+  },
+  {
+    "source": "ADNI/model1.py",
+    "source_sha256": "43be77bea16d9a065b4ad0056668c2f07858cf218a68c563e0ab1ff335a76a32",
+    "destination": "DemRKL/ADNI_DemRKL/model1.py",
+    "changes": "copied"
+  },
+  {
+    "source": "ADNI/DementiaHKG/ADNI_Seed_DementiaHKG.csv",
+    "source_sha256": "cef074d3ab5561c76c580bccc9462437cf19967c7bd4bdb11d66b7dabf043229",
+    "destination": "DemRKL/ADNI_DemRKL/ADNI_Seed_DementiaHKG.csv",
+    "changes": "copied"
+  },
+  {
+    "source": "ADNI/DementiaHKG/Step1-Search-ADNI-DiseaseNames.ipynb",
+    "source_sha256": "c279cff1d2603ada294b3c30a6e9dc78be4aa049a867fb521f4a1f6cc3172b63",
+    "destination": "DemRKL/ADNI_DemRKL/ADNI_DemRKL_disease_search.ipynb",
+    "changes": "paths/bootstrap; cleared outputs"
+  },
+  {
+    "source": "ADNI/DementiaHKG/Step2-Search-ADNI-SeedNodes.ipynb",
+    "source_sha256": "eb4c9f727c6375a4f56d5880a80fcf7e1a568784ae3bb3b424a876b177f33cee",
+    "destination": "DemRKL/ADNI_DemRKL/ADNI_DemRKL_seed_mapping.ipynb",
+    "changes": "paths/bootstrap; cleared outputs"
+  },
+  {
+    "source": "AIBL/PrimeKG/Step3-Build-AIBL-PrimeKG.ipynb",
+    "source_sha256": "5b1d4666d1f22213907a59b27e4bb05dc07866818fe88cea79e1b3489cc2be8e",
+    "destination": "PrimeKGL/AIBL_PrimeKGL/Step3-Build-AIBL-PrimeKG.ipynb",
+    "changes": "paths/bootstrap; cleared outputs; Full PrimeKG with shared interruptible DistMult"
+  },
+  {
+    "source": "AIBL/AIBL三模态+PrimeKG.ipynb",
+    "source_sha256": "8e169b2696e2684099b07eefafe63e9c9751e8a45670e2df94563111482b7042",
+    "destination": "PrimeKGL/AIBL_PrimeKGL/AIBL三模态+PrimeKG.ipynb",
+    "changes": "paths/bootstrap; cleared outputs"
+  },
+  {
+    "source": "AIBL/model1.py",
+    "source_sha256": "d3f950aaf8ecc2c2531c632e107e8d2d09a4663355b05495e8233bde9b506921",
+    "destination": "PrimeKGL/AIBL_PrimeKGL/model1.py",
+    "changes": "copy; 2026-10-27 correct boolean KG padding-mask polarity and add finite empty-sequence fallback; source_sha256 retains original provenance"
+  },
+  {
+    "source": "AIBL/DementiaHKG/AIBL_Seed_DementiaHKG.csv",
+    "source_sha256": "3e841c9d9fba2ad0ad8f55d7f3f0102d03b0fa1713e317cbb10eb92c5a9a8646",
+    "destination": "PrimeKGL/AIBL_PrimeKGL/AIBL_Seed_DementiaHKG.csv",
+    "changes": "copied"
+  },
+  {
+    "source": "AIBL/DementiaHKG/Step3-Build-AIBL-DementiaHKG.ipynb",
+    "source_sha256": "3f4a6222c278f3e8f1e527831b7239745e9c365b1e1c5949a1f974dc5ae05359",
+    "destination": "DemRKL/AIBL_DemRKL/AIBL_DemRKL_build.ipynb",
+    "changes": "paths/bootstrap; cleared outputs"
+  },
+  {
+    "source": "AIBL/AIBL三模态+DementiaHKG.ipynb",
+    "source_sha256": "99c35af4aee5754c2706103e1fb1e5db4de201b9e9e8280f2146eebc1bad9294",
+    "destination": "DemRKL/AIBL_DemRKL/AIBL_DemRKL.ipynb",
+    "changes": "paths/bootstrap; cleared outputs"
+  },
+  {
+    "source": "AIBL/model1.py",
+    "source_sha256": "d3f950aaf8ecc2c2531c632e107e8d2d09a4663355b05495e8233bde9b506921",
+    "destination": "DemRKL/AIBL_DemRKL/model1.py",
+    "changes": "copy; 2026-10-27 correct boolean KG padding-mask polarity and add finite empty-sequence fallback; source_sha256 retains original provenance"
+  },
+  {
+    "source": "AIBL/DementiaHKG/AIBL_Seed_DementiaHKG.csv",
+    "source_sha256": "3e841c9d9fba2ad0ad8f55d7f3f0102d03b0fa1713e317cbb10eb92c5a9a8646",
+    "destination": "DemRKL/AIBL_DemRKL/AIBL_Seed_DementiaHKG.csv",
+    "changes": "copied"
+  },
+  {
+    "source": "AIBL/DementiaHKG/Step1-Search-AIBL-DiseaseNames.ipynb",
+    "source_sha256": "9e89eb1ad0ff3160a7f1d7863e69cdcf179f7b6cd93aaf837b247c9f6c0ba076",
+    "destination": "DemRKL/AIBL_DemRKL/AIBL_DemRKL_disease_search.ipynb",
+    "changes": "paths/bootstrap; cleared outputs"
+  },
+  {
+    "source": "AIBL/DementiaHKG/Step2-Search-AIBL-SeedNodes.ipynb",
+    "source_sha256": "7db5b5fd42ceb2047cf0f7bb52672e88957280569183e53a44e3317d9afb5c12",
+    "destination": "DemRKL/AIBL_DemRKL/AIBL_DemRKL_seed_mapping.ipynb",
+    "changes": "paths/bootstrap; cleared outputs"
+  },
+  {
+    "source": "NACC/PrimeKG/Step3-Build-NACC-PrimeKG.ipynb",
+    "source_sha256": "121e490ad4d584bc15ea527e09a9e646b6bae02779c1059665ad68fe6bea91bf",
+    "destination": "PrimeKGL/NACC_PrimeKGL/Step3-Build-NACC-PrimeKG.ipynb",
+    "changes": "paths/bootstrap; cleared outputs; Full PrimeKG with shared interruptible DistMult"
+  },
+  {
+    "source": "NACC/NACC三模态+DementiaHKG.ipynb",
+    "source_sha256": "856181bc090cb9dfb6b65f63045d33ba94ac3b571f6517329f75997fb7d9e239",
+    "destination": "PrimeKGL/NACC_PrimeKGL/NACC三模态+PrimeKG.ipynb",
+    "changes": "paths/bootstrap; cleared outputs; NACC PrimeKG reuses original shared architecture template"
+  },
+  {
+    "source": "NACC/model1.py",
+    "source_sha256": "a69a00e7d216b64908401ea2593b60f788105c5f0e78fbac90543123a9538032",
+    "destination": "PrimeKGL/NACC_PrimeKGL/model1.py",
+    "changes": "copied"
+  },
+  {
+    "source": "NACC/DementiaHKG/NACC_Seed_DementiaHKG.csv",
+    "source_sha256": "74225384c6defaaa3ae8ef3e899ac3f13458ac0273c8a59ed0b2e7b2f070d5fa",
+    "destination": "PrimeKGL/NACC_PrimeKGL/NACC_Seed_DementiaHKG.csv",
+    "changes": "copied"
+  },
+  {
+    "source": "NACC/DementiaHKG/Step3-Build-NACC-DementiaHKG.ipynb",
+    "source_sha256": "b1c96e83bf1435dfac1eedbf4687488ffc25219317a310b648c1e5291b6ec314",
+    "destination": "DemRKL/NACC_DemRKL/NACC_DemRKL_build.ipynb",
+    "changes": "paths/bootstrap; cleared outputs"
+  },
+  {
+    "source": "NACC/NACC三模态+DementiaHKG.ipynb",
+    "source_sha256": "856181bc090cb9dfb6b65f63045d33ba94ac3b571f6517329f75997fb7d9e239",
+    "destination": "DemRKL/NACC_DemRKL/NACC_DemRKL.ipynb",
+    "changes": "paths/bootstrap; cleared outputs"
+  },
+  {
+    "source": "NACC/model1.py",
+    "source_sha256": "a69a00e7d216b64908401ea2593b60f788105c5f0e78fbac90543123a9538032",
+    "destination": "DemRKL/NACC_DemRKL/model1.py",
+    "changes": "copied"
+  },
+  {
+    "source": "NACC/DementiaHKG/NACC_Seed_DementiaHKG.csv",
+    "source_sha256": "74225384c6defaaa3ae8ef3e899ac3f13458ac0273c8a59ed0b2e7b2f070d5fa",
+    "destination": "DemRKL/NACC_DemRKL/NACC_Seed_DementiaHKG.csv",
+    "changes": "copied"
+  },
+  {
+    "source": "NACC/DementiaHKG/Step1-Search-NACC-DiseaseNames.ipynb",
+    "source_sha256": "662e527617c5b6a4a16d0eada0619a6bd0fb49fc314478b828d709964716803c",
+    "destination": "DemRKL/NACC_DemRKL/NACC_DemRKL_disease_search.ipynb",
+    "changes": "paths/bootstrap; cleared outputs"
+  },
+  {
+    "source": "NACC/DementiaHKG/Step2-Search-NACC-SeedNodes.ipynb",
+    "source_sha256": "c98d0f923d9e6a5fd937171a8cd746ae180184f9d9575a94fcf358d104120422",
+    "destination": "DemRKL/NACC_DemRKL/NACC_DemRKL_seed_mapping.ipynb",
+    "changes": "paths/bootstrap; cleared outputs"
+  },
+  {
+    "source": "NACC/DementiaHKG/Step2.5-Search-NACC-NotFoundSeedNodes.ipynb",
+    "source_sha256": "343359bd2a0b393652cfa5f540470772e4c4a95a144b76170a6176ceb369aa73",
+    "destination": "DemRKL/NACC_DemRKL/NACC_DemRKL_unmatched_seed_search.ipynb",
+    "changes": "paths/bootstrap; cleared outputs"
+  },
+  {
+    "source": "PPMI/PrimeKG/Step3-Build-PPMI-PrimeKG.ipynb",
+    "source_sha256": "b346cba2dde96e27e75a08c3a90d8792fa82ec1d097ddc7ef332ed3128ff0bc4",
+    "destination": "PrimeKGL/PPMI_PrimeKGL/Step3-Build-PPMI-PrimeKG.ipynb",
+    "changes": "paths/bootstrap; cleared outputs; Full PrimeKG with shared interruptible DistMult"
+  },
+  {
+    "source": "PPMI/PPMI三模态+PrimeKG.ipynb",
+    "source_sha256": "9e0489f16d382284cbb1e4c6b0b4ddfc64b552ebb58487d6f465aa0c1fed5b1c",
+    "destination": "PrimeKGL/PPMI_PrimeKGL/PPMI三模态+PrimeKG.ipynb",
+    "changes": "paths/bootstrap; cleared outputs"
+  },
+  {
+    "source": "PPMI/model1.py",
+    "source_sha256": "a552a2e64c0956d873b28728b7ed77c118600138afd959413b22d805d1690bff",
+    "destination": "PrimeKGL/PPMI_PrimeKGL/model1.py",
+    "changes": "copy; 2026-10-27 correct boolean KG padding-mask polarity and add finite empty-sequence fallback; source_sha256 retains original provenance"
+  },
+  {
+    "source": "PPMI/DementiaHKG/PPMI_Seed_DementiaHKG.csv",
+    "source_sha256": "def2c46a82dffc79d1e27d7d2db22ebd174ae16ef238495092ca1ec9a23c9610",
+    "destination": "PrimeKGL/PPMI_PrimeKGL/PPMI_Seed_DementiaHKG.csv",
+    "changes": "copied"
+  },
+  {
+    "source": "PPMI/DementiaHKG/Step3-Build-PPMI-DementiaHKG.ipynb",
+    "source_sha256": "d806872639b098df548712d40e07277edf626d55cda62853e8ea2452a5a03667",
+    "destination": "DemRKL/PPMI_DemRKL/PPMI_DemRKL_build.ipynb",
+    "changes": "paths/bootstrap; cleared outputs"
+  },
+  {
+    "source": "PPMI/PPMI三模态+DementiaHKG.ipynb",
+    "source_sha256": "dc37c7ed2be96629023a9a7ebd9b91557f5993086b8a94222476ca83fd254450",
+    "destination": "DemRKL/PPMI_DemRKL/PPMI_DemRKL.ipynb",
+    "changes": "paths/bootstrap; cleared outputs"
+  },
+  {
+    "source": "PPMI/model1.py",
+    "source_sha256": "a552a2e64c0956d873b28728b7ed77c118600138afd959413b22d805d1690bff",
+    "destination": "DemRKL/PPMI_DemRKL/model1.py",
+    "changes": "copy; 2026-10-27 correct boolean KG padding-mask polarity and add finite empty-sequence fallback; source_sha256 retains original provenance"
+  },
+  {
+    "source": "PPMI/DementiaHKG/PPMI_Seed_DementiaHKG.csv",
+    "source_sha256": "def2c46a82dffc79d1e27d7d2db22ebd174ae16ef238495092ca1ec9a23c9610",
+    "destination": "DemRKL/PPMI_DemRKL/PPMI_Seed_DementiaHKG.csv",
+    "changes": "copied"
+  },
+  {
+    "source": "PPMI/DementiaHKG/Step1-Search-PPMI-DiseaseNames.ipynb",
+    "source_sha256": "630227334d2f54300e349e70d69e09c6c1f6ef39cc8f9f377c007ef38e40f04a",
+    "destination": "DemRKL/PPMI_DemRKL/PPMI_DemRKL_disease_search.ipynb",
+    "changes": "paths/bootstrap; cleared outputs"
+  },
+  {
+    "source": "PPMI/DementiaHKG/Step2-Search-PPMI-SeedNodes.ipynb",
+    "source_sha256": "03930036e699b6b1cb966500a74cb9c13a21b5d052a2cf5aa280ae19113aa434",
+    "destination": "DemRKL/PPMI_DemRKL/PPMI_DemRKL_seed_mapping.ipynb",
+    "changes": "paths/bootstrap; cleared outputs"
+  }
+]

@@ -1,0 +1,12 @@
+# Python >= 3.10. Select a suitable torch/torchvision CUDA build for your server.
+torch
+torchvision
+numpy
+pandas
+scikit-learn
+matplotlib
+nibabel
+tqdm
+# Optional notebook model summaries/profiling:
+torchinfo
+thop

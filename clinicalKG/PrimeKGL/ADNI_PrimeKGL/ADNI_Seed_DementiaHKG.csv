@@ -1,0 +1,53 @@
+ADNI_Feature,PrimeKG_Node,Category
+Core_Prior_Knowledge,Alzheimer disease,Core_Disease
+Core_Prior_Knowledge,Dementia,Core_Disease
+Core_Prior_Knowledge,Cognitive impairment,Core_Disease
+Core_Prior_Knowledge,APOE,Core_Gene
+Core_Prior_Knowledge,MAPT,Core_Gene
+Core_Prior_Knowledge,APP,Core_Gene
+Core_Prior_Knowledge,PSEN1,Core_Gene
+Core_Prior_Knowledge,PSEN2,Core_Gene
+Core_Prior_Knowledge,TREM2,Core_Gene
+npiq_DEL,Delusions,Clinical_Mapping
+npiq_HALL,Hallucinations,Clinical_Mapping
+npiq_AGIT,Agitation,Clinical_Mapping
+npiq_DEPD,Depressivity,Clinical_Mapping
+npiq_ANX,Anxiety,Clinical_Mapping
+npiq_ELAT,Euphoria,Clinical_Mapping
+npiq_APA,Apathy,Clinical_Mapping
+npiq_DISN,Disinhibition,Clinical_Mapping
+npiq_IRR,Irritability,Clinical_Mapping
+npiq_MOT,Restlessness,Clinical_Mapping
+npiq_NITE,Sleep disturbance,Clinical_Mapping
+npiq_APP,Poor appetite,Clinical_Mapping
+mmse,Cognitive impairment,Clinical_Mapping
+moca,Cognitive impairment,Clinical_Mapping
+cdr,Cognitive impairment,Clinical_Mapping
+cdrSum,Cognitive impairment,Clinical_Mapping
+lm_imm,Memory impairment,Clinical_Mapping
+lm_del,Memory impairment,Clinical_Mapping
+boston,Aphasia,Clinical_Mapping
+animal,Aphasia,Clinical_Mapping
+vege,Aphasia,Clinical_Mapping
+trailA,Impaired executive functioning,Clinical_Mapping
+trailB,Impaired executive functioning,Clinical_Mapping
+digitB,Short attention span,Clinical_Mapping
+digitBL,Short attention span,Clinical_Mapping
+digitF,Short attention span,Clinical_Mapping
+digitFL,Short attention span,Clinical_Mapping
+faq_BILLS,Impaired executive functioning,Clinical_Mapping
+faq_TAXES,Impaired executive functioning,Clinical_Mapping
+faq_SHOPPING,Memory impairment,Clinical_Mapping
+faq_REMDATES,Memory impairment,Clinical_Mapping
+gds,Depressivity,Clinical_Mapping
+his_CVHATT,myocardial infarction,Clinical_Mapping
+his_CBSTROKE,cerebral infarction,Clinical_Mapping
+his_HYPERTEN,hypertension,Clinical_Mapping
+his_PSYCDIS,mental disorder,Clinical_Mapping
+his_Alcohol,Alcoholism,Clinical_Mapping
+his_DEPOTHR,Depressivity,Clinical_Mapping
+BLACKLIST_TYPE,drug,Rule
+BLACKLIST_TYPE,exposure,Rule
+BLACKLIST_REL,indication,Rule
+BLACKLIST_REL,contraindication,Rule
+BLACKLIST_REL,off-label use,Rule

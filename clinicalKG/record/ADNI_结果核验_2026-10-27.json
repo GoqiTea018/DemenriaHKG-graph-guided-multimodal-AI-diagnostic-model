@@ -1,0 +1,480 @@
+{
+  "dataset": "ADNI",
+  "date": "2026-10-27",
+  "source_root": "C:\\Users\\HP\\Design\\DemenriaHKG graph-guided multimodal AI diagnostic model\\clinicalKG\\results_full_primekg\\ADNI",
+  "five_metrics": [
+    {
+      "dataset": "ADNI",
+      "graph": "CustomKG",
+      "method": "CustomKG",
+      "runs": 5,
+      "accuracy_mean": 0.7321428571428572,
+      "accuracy_sd": 0.0269505510063613,
+      "precision_mean": 0.623099955519405,
+      "precision_sd": 0.1368780814780554,
+      "recall_mean": 0.6600734394124848,
+      "recall_sd": 0.082537585301414,
+      "f1_mean": 0.6304832722185285,
+      "f1_sd": 0.104096468734754,
+      "auc_mean": 0.8578653590575127,
+      "auc_sd": 0.0311981047918562
+    },
+    {
+      "dataset": "ADNI",
+      "graph": "PrimeKG",
+      "method": "PrimeKG (Full original graph)",
+      "runs": 5,
+      "accuracy_mean": 0.8321428571428571,
+      "accuracy_sd": 0.0185385851219016,
+      "precision_mean": 0.819299215733664,
+      "precision_sd": 0.0222343321900582,
+      "recall_mean": 0.7987216102271183,
+      "recall_sd": 0.0184085768197083,
+      "f1_mean": 0.8077151841449044,
+      "f1_sd": 0.0187312593144029,
+      "auc_mean": 0.925656655521344,
+      "auc_sd": 0.0049202315894466
+    },
+    {
+      "dataset": "ADNI",
+      "graph": "DementiaHKG",
+      "method": "DemRKG",
+      "runs": 5,
+      "accuracy_mean": 0.8345238095238094,
+      "accuracy_sd": 0.0159719141249984,
+      "precision_mean": 0.8195386095267446,
+      "precision_sd": 0.0177410735017823,
+      "recall_mean": 0.8036964504283965,
+      "recall_sd": 0.0205530521732832,
+      "f1_mean": 0.8103238411848371,
+      "f1_sd": 0.0182521356541639,
+      "auc_mean": 0.9269233775649748,
+      "auc_sd": 0.002667945390415
+    }
+  ],
+  "statistics": [
+    {
+      "dataset": "ADNI",
+      "proposed": "DemRKG",
+      "baseline": "CustomKG",
+      "metric": "f1",
+      "unit": "patient",
+      "auc_mode": "ovr",
+      "resamples": 10000,
+      "difference": 0.1798405689663086,
+      "ci_low": 0.1324503314899625,
+      "ci_high": 0.2248964578856046,
+      "p_value": 9.999000099990002e-05,
+      "units": 168,
+      "holm_p": 0.0001999800019998
+    },
+    {
+      "dataset": "ADNI",
+      "proposed": "DemRKG",
+      "baseline": "PrimeKG (Full original graph)",
+      "metric": "f1",
+      "unit": "patient",
+      "auc_mode": "ovr",
+      "resamples": 10000,
+      "difference": 0.0026086570399326,
+      "ci_low": -0.0119888246101056,
+      "ci_high": 0.0168847995864335,
+      "p_value": 0.7191280871912809,
+      "units": 168,
+      "holm_p": 0.7191280871912809
+    },
+    {
+      "dataset": "ADNI",
+      "proposed": "DemRKG",
+      "baseline": "CustomKG",
+      "metric": "accuracy",
+      "unit": "patient",
+      "auc_mode": "ovr",
+      "resamples": 10000,
+      "difference": 0.1023809523809523,
+      "ci_low": 0.0547619047619047,
+      "ci_high": 0.1488095238095238,
+      "p_value": 9.999000099990002e-05,
+      "units": 168,
+      "holm_p": 0.0001999800019998
+    },
+    {
+      "dataset": "ADNI",
+      "proposed": "DemRKG",
+      "baseline": "PrimeKG (Full original graph)",
+      "metric": "accuracy",
+      "unit": "patient",
+      "auc_mode": "ovr",
+      "resamples": 10000,
+      "difference": 0.0023809523809523,
+      "ci_low": -0.0107142857142857,
+      "ci_high": 0.0154761904761904,
+      "p_value": 0.8627137286271372,
+      "units": 168,
+      "holm_p": 0.8627137286271372
+    },
+    {
+      "dataset": "ADNI",
+      "proposed": "DemRKG",
+      "baseline": "CustomKG",
+      "metric": "auc",
+      "unit": "patient",
+      "auc_mode": "ovr",
+      "resamples": 10000,
+      "difference": 0.069058018507462,
+      "ci_low": 0.043134391517789,
+      "ci_high": 0.095189834605602,
+      "p_value": 0.0001999800019998,
+      "units": 168,
+      "holm_p": 0.0003999600039996
+    },
+    {
+      "dataset": "ADNI",
+      "proposed": "DemRKG",
+      "baseline": "PrimeKG (Full original graph)",
+      "metric": "auc",
+      "unit": "patient",
+      "auc_mode": "ovr",
+      "resamples": 10000,
+      "difference": 0.0012667220436308,
+      "ci_low": -0.001976677972027,
+      "ci_high": 0.0048844340186178,
+      "p_value": 0.5865413458654135,
+      "units": 168,
+      "holm_p": 0.5865413458654135
+    }
+  ],
+  "per_graph": {
+    "CustomKG": {
+      "max_recomputed_metric_error": 0.0,
+      "saved_asset_hashes_match": {
+        "ENTITY_EMB_NPY": true,
+        "ENTITY2ID_FILE": true
+      },
+      "test_records": 168,
+      "test_patients": 168,
+      "class_counts": {
+        "0": 43,
+        "1": 95,
+        "2": 30
+      },
+      "per_class_recall_mean": [
+        0.9023255813953488,
+        0.7978947368421052,
+        0.27999999999999997
+      ],
+      "per_class_recall_sd": [
+        0.053031415120890144,
+        0.06918600726381043,
+        0.2844097201026872
+      ],
+      "mean_confusion_matrix": [
+        [
+          38.8,
+          4.2,
+          0.0
+        ],
+        [
+          14.4,
+          75.8,
+          4.8
+        ],
+        [
+          0.2,
+          21.4,
+          8.4
+        ]
+      ],
+      "training_diagnostics": [
+        {
+          "seed": 11,
+          "epochs": 200,
+          "best_epoch": 199,
+          "val_loss_first": 1.074622881412506,
+          "val_loss_best": 0.6918349027633667,
+          "val_loss_final": 0.7011849462985993,
+          "val_loss_180": 0.7331793487071991,
+          "train_f1_at_best": 0.5195696929185235,
+          "val_f1_at_best": 0.5430954587581094,
+          "ad_recall": 0.0
+        },
+        {
+          "seed": 23,
+          "epochs": 200,
+          "best_epoch": 200,
+          "val_loss_first": 1.1156383275985715,
+          "val_loss_best": 0.668976104259491,
+          "val_loss_final": 0.668976104259491,
+          "val_loss_180": 0.7248623788356781,
+          "train_f1_at_best": 0.6652283993156368,
+          "val_f1_at_best": 0.7252818035426731,
+          "ad_recall": 0.6
+        },
+        {
+          "seed": 37,
+          "epochs": 200,
+          "best_epoch": 200,
+          "val_loss_first": 1.058338475227356,
+          "val_loss_best": 0.5911018073558807,
+          "val_loss_final": 0.5911018073558807,
+          "val_loss_180": 0.6192875921726226,
+          "train_f1_at_best": 0.6518093275880196,
+          "val_f1_at_best": 0.6951169590643275,
+          "ad_recall": 0.5333333333333333
+        },
+        {
+          "seed": 51,
+          "epochs": 200,
+          "best_epoch": 197,
+          "val_loss_first": 1.05592600107193,
+          "val_loss_best": 0.6768566131591797,
+          "val_loss_final": 0.6777503728866577,
+          "val_loss_180": 0.7115817427635193,
+          "train_f1_at_best": 0.5179885681407989,
+          "val_f1_at_best": 0.5305323859540727,
+          "ad_recall": 0.0
+        },
+        {
+          "seed": 67,
+          "epochs": 200,
+          "best_epoch": 200,
+          "val_loss_first": 1.1760461330413818,
+          "val_loss_best": 0.6750267028808594,
+          "val_loss_final": 0.6750267028808594,
+          "val_loss_180": 0.7375040411949157,
+          "train_f1_at_best": 0.6389218083936328,
+          "val_f1_at_best": 0.6599414786947527,
+          "ad_recall": 0.26666666666666666
+        }
+      ],
+      "split_sha256": "16fa7293307054b1db14262070a67026b3c969431d85cd4ce2431d324567c900"
+    },
+    "PrimeKG": {
+      "max_recomputed_metric_error": 1.1102230246251565e-16,
+      "saved_asset_hashes_match": {
+        "ENTITY_EMB_NPY": true,
+        "ENTITY2ID_FILE": true,
+        "PATIENT_QUERY_DICT": true
+      },
+      "test_records": 168,
+      "test_patients": 168,
+      "class_counts": {
+        "0": 43,
+        "1": 95,
+        "2": 30
+      },
+      "per_class_recall_mean": [
+        0.8558139534883722,
+        0.8736842105263157,
+        0.6666666666666666
+      ],
+      "per_class_recall_sd": [
+        0.02547546779093796,
+        0.023537557657892547,
+        0.04714045207910316
+      ],
+      "mean_confusion_matrix": [
+        [
+          36.8,
+          6.2,
+          0.0
+        ],
+        [
+          4.6,
+          83.0,
+          7.4
+        ],
+        [
+          0.0,
+          10.0,
+          20.0
+        ]
+      ],
+      "training_diagnostics": [
+        {
+          "seed": 11,
+          "epochs": 200,
+          "best_epoch": 200,
+          "val_loss_first": 1.0447025299072266,
+          "val_loss_best": 0.4015045046806335,
+          "val_loss_final": 0.4015045046806335,
+          "val_loss_180": 0.4116215340793133,
+          "train_f1_at_best": 0.7812237275253614,
+          "val_f1_at_best": 0.7940037888147599,
+          "ad_recall": 0.6
+        },
+        {
+          "seed": 23,
+          "epochs": 200,
+          "best_epoch": 200,
+          "val_loss_first": 1.0474827885627749,
+          "val_loss_best": 0.395140091329813,
+          "val_loss_final": 0.395140091329813,
+          "val_loss_180": 0.4111377470195293,
+          "train_f1_at_best": 0.828697801746129,
+          "val_f1_at_best": 0.7785672436916545,
+          "ad_recall": 0.7333333333333333
+        },
+        {
+          "seed": 37,
+          "epochs": 200,
+          "best_epoch": 196,
+          "val_loss_first": 1.0768753051757811,
+          "val_loss_best": 0.4163144811987876,
+          "val_loss_final": 0.4178951311856508,
+          "val_loss_180": 0.4254089593887329,
+          "train_f1_at_best": 0.796065123765168,
+          "val_f1_at_best": 0.8116960826157181,
+          "ad_recall": 0.6666666666666666
+        },
+        {
+          "seed": 51,
+          "epochs": 200,
+          "best_epoch": 195,
+          "val_loss_first": 1.0512128710746764,
+          "val_loss_best": 0.4014338582754135,
+          "val_loss_final": 0.4064721010625362,
+          "val_loss_180": 0.4173743993043899,
+          "train_f1_at_best": 0.8130975184097391,
+          "val_f1_at_best": 0.8020297428739904,
+          "ad_recall": 0.6666666666666666
+        },
+        {
+          "seed": 67,
+          "epochs": 200,
+          "best_epoch": 195,
+          "val_loss_first": 1.086376917362213,
+          "val_loss_best": 0.3941123984754086,
+          "val_loss_final": 0.3966475747525692,
+          "val_loss_180": 0.4022489428520203,
+          "train_f1_at_best": 0.745783739530197,
+          "val_f1_at_best": 0.760327916849656,
+          "ad_recall": 0.6666666666666666
+        }
+      ],
+      "split_sha256": "16fa7293307054b1db14262070a67026b3c969431d85cd4ce2431d324567c900"
+    },
+    "DementiaHKG": {
+      "max_recomputed_metric_error": 1.1102230246251565e-16,
+      "saved_asset_hashes_match": {
+        "ENTITY_EMB_NPY": true,
+        "ENTITY2ID_FILE": true,
+        "PATIENT_QUERY_DICT": true
+      },
+      "test_records": 168,
+      "test_patients": 168,
+      "class_counts": {
+        "0": 43,
+        "1": 95,
+        "2": 30
+      },
+      "per_class_recall_mean": [
+        0.8837209302325582,
+        0.8673684210526316,
+        0.6599999999999999
+      ],
+      "per_class_recall_sd": [
+        0.03288868749704869,
+        0.014122534594735524,
+        0.027888667551135848
+      ],
+      "mean_confusion_matrix": [
+        [
+          38.0,
+          5.0,
+          0.0
+        ],
+        [
+          5.8,
+          82.4,
+          6.8
+        ],
+        [
+          0.0,
+          10.2,
+          19.8
+        ]
+      ],
+      "training_diagnostics": [
+        {
+          "seed": 11,
+          "epochs": 200,
+          "best_epoch": 198,
+          "val_loss_first": 1.055935537815094,
+          "val_loss_best": 0.4102342225611209,
+          "val_loss_final": 0.411148839443922,
+          "val_loss_180": 0.4251274228096008,
+          "train_f1_at_best": 0.7841933392667242,
+          "val_f1_at_best": 0.7605426610003269,
+          "ad_recall": 0.6666666666666666
+        },
+        {
+          "seed": 23,
+          "epochs": 200,
+          "best_epoch": 189,
+          "val_loss_first": 1.018937397003174,
+          "val_loss_best": 0.3935128390789032,
+          "val_loss_final": 0.3936471961438655,
+          "val_loss_180": 0.4112925194203853,
+          "train_f1_at_best": 0.7930113258857524,
+          "val_f1_at_best": 0.7788533807251747,
+          "ad_recall": 0.7
+        },
+        {
+          "seed": 37,
+          "epochs": 200,
+          "best_epoch": 191,
+          "val_loss_first": 1.0674678325653075,
+          "val_loss_best": 0.4135932188481092,
+          "val_loss_final": 0.4136722203344106,
+          "val_loss_180": 0.422867463901639,
+          "train_f1_at_best": 0.7830452844912666,
+          "val_f1_at_best": 0.8334734734734734,
+          "ad_recall": 0.6666666666666666
+        },
+        {
+          "seed": 51,
+          "epochs": 200,
+          "best_epoch": 195,
+          "val_loss_first": 1.0568884134292602,
+          "val_loss_best": 0.3877804517745972,
+          "val_loss_final": 0.3903874062001705,
+          "val_loss_180": 0.4071818016469478,
+          "train_f1_at_best": 0.825966982039653,
+          "val_f1_at_best": 0.8097944491806383,
+          "ad_recall": 0.6333333333333333
+        },
+        {
+          "seed": 67,
+          "epochs": 200,
+          "best_epoch": 194,
+          "val_loss_first": 1.0795549273490903,
+          "val_loss_best": 0.4031592011451721,
+          "val_loss_final": 0.4042118914425373,
+          "val_loss_180": 0.4096169553697109,
+          "train_f1_at_best": 0.7715454725051419,
+          "val_f1_at_best": 0.7676314970432617,
+          "ad_recall": 0.6333333333333333
+        }
+      ],
+      "split_sha256": "16fa7293307054b1db14262070a67026b3c969431d85cd4ce2431d324567c900"
+    }
+  },
+  "graphs": {
+    "FullPrimeKG": {
+      "edge_records": 8100498,
+      "entities": 129262,
+      "relations": 30,
+      "embedding_bytes": 66182272
+    },
+    "DemRKG": {
+      "edge_records": 23630,
+      "entities": 4099,
+      "relations": 17,
+      "embedding_bytes": 2098816
+    },
+    "edge_records_reduction_pct": 99.70828953972953,
+    "entities_reduction_pct": 96.82892110597082,
+    "embedding_bytes_reduction_pct": 96.82873383373722
+  }
+}

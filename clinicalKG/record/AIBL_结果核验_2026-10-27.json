@@ -1,0 +1,584 @@
+{
+  "dataset": "AIBL",
+  "date": "2026-10-27",
+  "source_root": "C:\\Users\\HP\\Design\\DemenriaHKG graph-guided multimodal AI diagnostic model\\clinicalKG\\results_full_primekg\\AIBL",
+  "five_metrics": [
+    {
+      "dataset": "AIBL",
+      "graph": "CustomKG",
+      "method": "CustomKG",
+      "runs": 5,
+      "accuracy_mean": 0.7769230769230768,
+      "accuracy_sd": 0.02084565710449882,
+      "precision_mean": 0.6153823816629753,
+      "precision_sd": 0.06915373890988485,
+      "recall_mean": 0.6195642701525055,
+      "recall_sd": 0.05501846137461617,
+      "f1_mean": 0.5974494824324402,
+      "f1_sd": 0.050068739826905156,
+      "auc_mean": 0.794840232389252,
+      "auc_sd": 0.036296801147050854
+    },
+    {
+      "dataset": "AIBL",
+      "graph": "PrimeKG",
+      "method": "Full PrimeKG",
+      "runs": 5,
+      "accuracy_mean": 0.8596153846153847,
+      "accuracy_sd": 0.012900392177883415,
+      "precision_mean": 0.8044922799035993,
+      "precision_sd": 0.02845755814133271,
+      "recall_mean": 0.774400871459695,
+      "recall_sd": 0.018934243380860936,
+      "f1_mean": 0.7848364883708652,
+      "f1_sd": 0.02057255595373087,
+      "auc_mean": 0.8664814814814814,
+      "auc_sd": 0.007440547551689174
+    },
+    {
+      "dataset": "AIBL",
+      "graph": "DementiaHKG",
+      "method": "DemRKG",
+      "runs": 5,
+      "accuracy_mean": 0.8596153846153847,
+      "accuracy_sd": 0.012900392177883415,
+      "precision_mean": 0.8044922799035993,
+      "precision_sd": 0.02845755814133271,
+      "recall_mean": 0.774400871459695,
+      "recall_sd": 0.018934243380860936,
+      "f1_mean": 0.7848364883708652,
+      "f1_sd": 0.02057255595373087,
+      "auc_mean": 0.8664814814814814,
+      "auc_sd": 0.007440547551689174
+    }
+  ],
+  "statistics": [
+    {
+      "dataset": "AIBL",
+      "proposed": "DemRKG",
+      "baseline": "CustomKG",
+      "metric": "precision",
+      "unit": "patient",
+      "auc_mode": "ovo",
+      "resamples": 10000,
+      "difference": 0.1891098982406239,
+      "ci_low": 0.1016863286772308,
+      "ci_high": 0.270898522411438,
+      "p_value": 0.0004999500049995,
+      "units": 104,
+      "holm_p": 0.000999900009999,
+      "observed_difference_abs_error": 5.551115123125783e-17
+    },
+    {
+      "dataset": "AIBL",
+      "proposed": "DemRKG",
+      "baseline": "PrimeKG (Full original graph)",
+      "metric": "precision",
+      "unit": "patient",
+      "auc_mode": "ovo",
+      "resamples": 10000,
+      "difference": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "p_value": 1.0,
+      "units": 104,
+      "holm_p": 1.0,
+      "observed_difference_abs_error": 0.0
+    },
+    {
+      "dataset": "AIBL",
+      "proposed": "DemRKG",
+      "baseline": "CustomKG",
+      "metric": "recall",
+      "unit": "patient",
+      "auc_mode": "ovo",
+      "resamples": 10000,
+      "difference": 0.1548366013071896,
+      "ci_low": 0.076771660937102,
+      "ci_high": 0.2307320768662231,
+      "p_value": 0.0006999300069993,
+      "units": 104,
+      "holm_p": 0.0013998600139986,
+      "observed_difference_abs_error": 2.7755575615628914e-17
+    },
+    {
+      "dataset": "AIBL",
+      "proposed": "DemRKG",
+      "baseline": "PrimeKG (Full original graph)",
+      "metric": "recall",
+      "unit": "patient",
+      "auc_mode": "ovo",
+      "resamples": 10000,
+      "difference": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "p_value": 1.0,
+      "units": 104,
+      "holm_p": 1.0,
+      "observed_difference_abs_error": 0.0
+    },
+    {
+      "dataset": "AIBL",
+      "proposed": "DemRKG",
+      "baseline": "CustomKG",
+      "metric": "f1",
+      "unit": "patient",
+      "auc_mode": "ovo",
+      "resamples": 10000,
+      "difference": 0.1873870059384249,
+      "ci_low": 0.1016784006181293,
+      "ci_high": 0.2652181500547091,
+      "p_value": 0.0003999600039996,
+      "units": 104,
+      "holm_p": 0.0007999200079992,
+      "observed_difference_abs_error": 5.551115123125783e-17
+    },
+    {
+      "dataset": "AIBL",
+      "proposed": "DemRKG",
+      "baseline": "PrimeKG (Full original graph)",
+      "metric": "f1",
+      "unit": "patient",
+      "auc_mode": "ovo",
+      "resamples": 10000,
+      "difference": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "p_value": 1.0,
+      "units": 104,
+      "holm_p": 1.0,
+      "observed_difference_abs_error": 0.0
+    },
+    {
+      "dataset": "AIBL",
+      "proposed": "DemRKG",
+      "baseline": "CustomKG",
+      "metric": "accuracy",
+      "unit": "patient",
+      "auc_mode": "ovo",
+      "resamples": 10000,
+      "difference": 0.0826923076923077,
+      "ci_low": 0.0403846153846153,
+      "ci_high": 0.1288461538461538,
+      "p_value": 0.0003999600039996,
+      "units": 104,
+      "holm_p": 0.0007999200079992,
+      "observed_difference_abs_error": 1.3877787807814457e-16
+    },
+    {
+      "dataset": "AIBL",
+      "proposed": "DemRKG",
+      "baseline": "PrimeKG (Full original graph)",
+      "metric": "accuracy",
+      "unit": "patient",
+      "auc_mode": "ovo",
+      "resamples": 10000,
+      "difference": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "p_value": 1.0,
+      "units": 104,
+      "holm_p": 1.0,
+      "observed_difference_abs_error": 0.0
+    },
+    {
+      "dataset": "AIBL",
+      "proposed": "DemRKG",
+      "baseline": "CustomKG",
+      "metric": "auc",
+      "unit": "patient",
+      "auc_mode": "ovo",
+      "resamples": 10000,
+      "difference": 0.0716412490922294,
+      "ci_low": 0.0348404518436929,
+      "ci_high": 0.1067724314784829,
+      "p_value": 0.0125987401259874,
+      "units": 104,
+      "holm_p": 0.0251974802519748,
+      "observed_difference_abs_error": 4.163336342344337e-17
+    },
+    {
+      "dataset": "AIBL",
+      "proposed": "DemRKG",
+      "baseline": "PrimeKG (Full original graph)",
+      "metric": "auc",
+      "unit": "patient",
+      "auc_mode": "ovo",
+      "resamples": 10000,
+      "difference": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "p_value": 1.0,
+      "units": 104,
+      "holm_p": 1.0,
+      "observed_difference_abs_error": 0.0
+    }
+  ],
+  "analysis_definition": {
+    "primekg_definition": "Full original PrimeKG: all input edge records and all entity/relation types; no seed-neighborhood extraction, blacklist filtering, or top-k pruning. One shared DistMult embedding and entity index for all cohorts.",
+    "dataset": "AIBL",
+    "metrics": [
+      "precision",
+      "recall",
+      "f1",
+      "accuracy",
+      "auc"
+    ],
+    "unit": "patient",
+    "seeds": [
+      11,
+      23,
+      37,
+      51,
+      67
+    ],
+    "resamples": 10000,
+    "auc_mode": "ovo",
+    "difference": "mean across seeds of metric(DemRKG) - metric(baseline)",
+    "ci": "paired patient-cluster bootstrap, percentile 95% CI",
+    "p_value": "two-sided paired patient-cluster prediction swap permutation test",
+    "holm_family": "baseline comparisons within each dataset and metric"
+  },
+  "metric_max_abs_error": 5.551115123125783e-17,
+  "per_graph": {
+    "CustomKG": {
+      "seeds": [
+        {
+          "seed": 11,
+          "best_epoch": 195,
+          "epochs": 200,
+          "history_best_epoch": 195,
+          "first_val_loss": 1.1231878598531086,
+          "best_val_loss": 0.6821262637774149,
+          "last_val_loss": 0.7249827980995178
+        },
+        {
+          "seed": 23,
+          "best_epoch": 200,
+          "epochs": 200,
+          "history_best_epoch": 200,
+          "first_val_loss": 1.0750157435735066,
+          "best_val_loss": 0.6276848216851553,
+          "last_val_loss": 0.6276848216851553
+        },
+        {
+          "seed": 37,
+          "best_epoch": 200,
+          "epochs": 200,
+          "history_best_epoch": 200,
+          "first_val_loss": 0.9834396044413248,
+          "best_val_loss": 0.6546313365300497,
+          "last_val_loss": 0.6546313365300497
+        },
+        {
+          "seed": 51,
+          "best_epoch": 198,
+          "epochs": 200,
+          "history_best_epoch": 198,
+          "first_val_loss": 1.310548265775045,
+          "best_val_loss": 0.6775683363278707,
+          "last_val_loss": 0.6865162054697672
+        },
+        {
+          "seed": 67,
+          "best_epoch": 199,
+          "epochs": 200,
+          "history_best_epoch": 199,
+          "first_val_loss": 1.0744465589523315,
+          "best_val_loss": 0.6562919517358144,
+          "last_val_loss": 0.6564255356788635
+        }
+      ],
+      "asset_hash_matches": {
+        "ENTITY_EMB_NPY": true,
+        "ENTITY2ID_FILE": true
+      },
+      "split_sha256": "0e9917cd483a0449148907f581faa52659a8d08b65606b5ac1ec9db0a82f1c75",
+      "embedding_shape": [
+        560,
+        32
+      ],
+      "embedding_file_bytes": 71808,
+      "class_recall_mean": [
+        0.9222222222222222,
+        0.1764705882352941,
+        0.76
+      ],
+      "class_recall_sd": [
+        0.03486083443891982,
+        0.07204381596421112,
+        0.17384539747207065
+      ],
+      "mean_confusion_matrix": [
+        [
+          66.4,
+          3.0,
+          2.6
+        ],
+        [
+          8.8,
+          3.0,
+          5.2
+        ],
+        [
+          0.6,
+          3.0,
+          11.4
+        ]
+      ]
+    },
+    "PrimeKG": {
+      "seeds": [
+        {
+          "seed": 11,
+          "best_epoch": 195,
+          "epochs": 200,
+          "history_best_epoch": 195,
+          "first_val_loss": 1.0513821244239807,
+          "best_val_loss": 0.4142009317874908,
+          "last_val_loss": 0.4319512546062469
+        },
+        {
+          "seed": 23,
+          "best_epoch": 197,
+          "epochs": 200,
+          "history_best_epoch": 197,
+          "first_val_loss": 1.0548887848854065,
+          "best_val_loss": 0.4680679937203725,
+          "last_val_loss": 0.4782699644565582
+        },
+        {
+          "seed": 37,
+          "best_epoch": 194,
+          "epochs": 200,
+          "history_best_epoch": 194,
+          "first_val_loss": 1.157241900761922,
+          "best_val_loss": 0.4437755048274994,
+          "last_val_loss": 0.4583098193009694
+        },
+        {
+          "seed": 51,
+          "best_epoch": 194,
+          "epochs": 200,
+          "history_best_epoch": 194,
+          "first_val_loss": 1.0374778111775715,
+          "best_val_loss": 0.4275602698326111,
+          "last_val_loss": 0.429986834526062
+        },
+        {
+          "seed": 67,
+          "best_epoch": 199,
+          "epochs": 200,
+          "history_best_epoch": 199,
+          "first_val_loss": 1.1556610663731892,
+          "best_val_loss": 0.4614863892396291,
+          "last_val_loss": 0.4775501290957133
+        }
+      ],
+      "asset_hash_matches": {
+        "ENTITY_EMB_NPY": true,
+        "ENTITY2ID_FILE": true,
+        "PATIENT_QUERY_DICT": true
+      },
+      "split_sha256": "0e9917cd483a0449148907f581faa52659a8d08b65606b5ac1ec9db0a82f1c75",
+      "embedding_shape": [
+        129262,
+        128
+      ],
+      "embedding_file_bytes": 66182272,
+      "class_recall_mean": [
+        0.9388888888888889,
+        0.5176470588235293,
+        0.8666666666666668
+      ],
+      "class_recall_sd": [
+        0.0158357697930436,
+        0.06443794794178427,
+        0.08164965809277264
+      ],
+      "mean_confusion_matrix": [
+        [
+          67.6,
+          3.4,
+          1.0
+        ],
+        [
+          7.4,
+          8.8,
+          0.8
+        ],
+        [
+          0.0,
+          2.0,
+          13.0
+        ]
+      ],
+      "valid_kg_count_distribution": {
+        "11": 315,
+        "12": 201
+      }
+    },
+    "DementiaHKG": {
+      "seeds": [
+        {
+          "seed": 11,
+          "best_epoch": 195,
+          "epochs": 200,
+          "history_best_epoch": 195,
+          "first_val_loss": 1.0513821244239807,
+          "best_val_loss": 0.4142009317874908,
+          "last_val_loss": 0.4319512546062469
+        },
+        {
+          "seed": 23,
+          "best_epoch": 197,
+          "epochs": 200,
+          "history_best_epoch": 197,
+          "first_val_loss": 1.0548887848854065,
+          "best_val_loss": 0.4680679937203725,
+          "last_val_loss": 0.4782699644565582
+        },
+        {
+          "seed": 37,
+          "best_epoch": 194,
+          "epochs": 200,
+          "history_best_epoch": 194,
+          "first_val_loss": 1.157241900761922,
+          "best_val_loss": 0.4437755048274994,
+          "last_val_loss": 0.4583098193009694
+        },
+        {
+          "seed": 51,
+          "best_epoch": 194,
+          "epochs": 200,
+          "history_best_epoch": 194,
+          "first_val_loss": 1.0374778111775715,
+          "best_val_loss": 0.4275602698326111,
+          "last_val_loss": 0.429986834526062
+        },
+        {
+          "seed": 67,
+          "best_epoch": 199,
+          "epochs": 200,
+          "history_best_epoch": 199,
+          "first_val_loss": 1.1556610663731892,
+          "best_val_loss": 0.4614863892396291,
+          "last_val_loss": 0.4775501290957133
+        }
+      ],
+      "asset_hash_matches": {
+        "ENTITY_EMB_NPY": true,
+        "ENTITY2ID_FILE": true,
+        "PATIENT_QUERY_DICT": true
+      },
+      "split_sha256": "0e9917cd483a0449148907f581faa52659a8d08b65606b5ac1ec9db0a82f1c75",
+      "embedding_shape": [
+        3894,
+        128
+      ],
+      "embedding_file_bytes": 1993856,
+      "class_recall_mean": [
+        0.9388888888888889,
+        0.5176470588235293,
+        0.8666666666666668
+      ],
+      "class_recall_sd": [
+        0.0158357697930436,
+        0.06443794794178427,
+        0.08164965809277264
+      ],
+      "mean_confusion_matrix": [
+        [
+          67.6,
+          3.4,
+          1.0
+        ],
+        [
+          7.4,
+          8.8,
+          0.8
+        ],
+        [
+          0.0,
+          2.0,
+          13.0
+        ]
+      ],
+      "valid_kg_count_distribution": {
+        "11": 315,
+        "12": 201
+      }
+    }
+  },
+  "external_graph_pairs": [
+    {
+      "seed": 11,
+      "probabilities_exactly_equal": true,
+      "maximum_probability_difference": 0.0,
+      "history_files_exactly_equal": true,
+      "model_tensors_exactly_equal": true
+    },
+    {
+      "seed": 23,
+      "probabilities_exactly_equal": true,
+      "maximum_probability_difference": 0.0,
+      "history_files_exactly_equal": true,
+      "model_tensors_exactly_equal": true
+    },
+    {
+      "seed": 37,
+      "probabilities_exactly_equal": true,
+      "maximum_probability_difference": 0.0,
+      "history_files_exactly_equal": true,
+      "model_tensors_exactly_equal": true
+    },
+    {
+      "seed": 51,
+      "probabilities_exactly_equal": true,
+      "maximum_probability_difference": 0.0,
+      "history_files_exactly_equal": true,
+      "model_tensors_exactly_equal": true
+    },
+    {
+      "seed": 67,
+      "probabilities_exactly_equal": true,
+      "maximum_probability_difference": 0.0,
+      "history_files_exactly_equal": true,
+      "model_tensors_exactly_equal": true
+    }
+  ],
+  "test_records": 104,
+  "test_patients": 104,
+  "test_class_counts": {
+    "0": 72,
+    "1": 17,
+    "2": 15
+  },
+  "split_sha_equal": true,
+  "all_test_records_aligned": true,
+  "all_patient_padding_masks_equal": true,
+  "attention_check": {
+    "inputs": "eight real AIBL KG sequences; fixed random multimodal features; evaluation only",
+    "maximum_output_difference": 0.0,
+    "total_attention_to_valid_kg_positions": 0.0,
+    "total_attention_to_padding_positions": 8.0,
+    "mask_expression": "bool_kg_mask = (kg_mask == 0).bool()",
+    "cause": "input False=valid/True=padding is inverted before MultiheadAttention; valid KG positions are ignored"
+  },
+  "graph_scale": {
+    "full": {
+      "records": 8100498,
+      "entities": 129262,
+      "relations": 30
+    },
+    "dem": {
+      "records": 22621,
+      "entities": 3894,
+      "relations": 18
+    },
+    "edge_reduction_percent": 99.72074556403815,
+    "entity_reduction_percent": 96.98751373180053,
+    "embedding_reduction_percent": 96.98732615284045
+  },
+  "result_status": "pre_mask_correction; corrected training to be run by user"
+}

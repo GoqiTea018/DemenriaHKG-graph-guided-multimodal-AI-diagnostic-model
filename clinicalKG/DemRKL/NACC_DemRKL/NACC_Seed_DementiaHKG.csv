@@ -1,0 +1,76 @@
+NACC_Feature,PrimeKG_Node,Category
+Core_Prior_Knowledge,Alzheimer disease,Core_Disease
+Core_Prior_Knowledge,Dementia,Core_Disease
+Core_Prior_Knowledge,Cognitive impairment,Core_Disease
+Core_Prior_Knowledge,APOE,Core_Gene
+Core_Prior_Knowledge,MAPT,Core_Gene
+Core_Prior_Knowledge,APP,Core_Gene
+Core_Prior_Knowledge,PSEN1,Core_Gene
+Core_Prior_Knowledge,PSEN2,Core_Gene
+Core_Prior_Knowledge,TREM2,Core_Gene
+npiq_DEL,Delusions,Clinical_Mapping
+npiq_HALL,Hallucinations,Clinical_Mapping
+npiq_AGIT,Agitation,Clinical_Mapping
+npiq_DEPD,Depressivity,Clinical_Mapping
+npiq_ANX,Anxiety,Clinical_Mapping
+npiq_ELAT,Euphoria,Clinical_Mapping
+npiq_APA,Apathy,Clinical_Mapping
+npiq_DISN,Disinhibition,Clinical_Mapping
+npiq_IRR,Irritability,Clinical_Mapping
+npiq_MOT,Restlessness,Clinical_Mapping
+npiq_NITE,Sleep disturbance,Clinical_Mapping
+npiq_APP,Poor appetite,Clinical_Mapping
+lm_imm,Memory impairment,Clinical_Mapping
+lm_del,Memory impairment,Clinical_Mapping
+craft_imm,Memory impairment,Clinical_Mapping
+craft_del,Memory impairment,Clinical_Mapping
+boston,Aphasia,Clinical_Mapping
+mint,Aphasia,Clinical_Mapping
+animal,Aphasia,Clinical_Mapping
+Fwords,Aphasia,Clinical_Mapping
+trailA,Impaired executive functioning,Clinical_Mapping
+trailB,Impaired executive functioning,Clinical_Mapping
+digitB,Short attention span,Clinical_Mapping
+digitBL,Short attention span,Clinical_Mapping
+digitF,Short attention span,Clinical_Mapping
+digitFL,Short attention span,Clinical_Mapping
+numberB,Short attention span,Clinical_Mapping
+numberBL,Short attention span,Clinical_Mapping
+numberF,Short attention span,Clinical_Mapping
+numberFL,Short attention span,Clinical_Mapping
+faq_BILLS,Impaired executive functioning,Clinical_Mapping
+faq_TAXES,Impaired executive functioning,Clinical_Mapping
+faq_SHOPPING,Memory impairment,Clinical_Mapping
+faq_REMDATES,Memory impairment,Clinical_Mapping
+faq_GAMES,Impaired executive functioning,Clinical_Mapping
+faq_STOVE,Memory impairment,Clinical_Mapping
+faq_MEALPREP,Impaired executive functioning,Clinical_Mapping
+faq_EVENTS,Short attention span,Clinical_Mapping
+faq_PAYATTN,Short attention span,Clinical_Mapping
+faq_TRAVEL,Impaired executive functioning,Clinical_Mapping
+gds,Depressivity,Clinical_Mapping
+his_CVHATT,myocardial infarction,Clinical_Mapping
+his_CVAFIB,atrial fibrillation (disease),Clinical_Mapping
+his_CVCHF,heart failure,Clinical_Mapping
+his_CBSTROKE,cerebral infarction,Clinical_Mapping
+his_CBTIA,transient ischemic attack (disease),Clinical_Mapping
+his_SEIZURES,Seizure,Clinical_Mapping
+his_HYPERTEN,hypertension,Clinical_Mapping
+his_HYPERCHO,Hypercholesterolemia,Clinical_Mapping
+his_DIABETES,type 2 diabetes mellitus,Clinical_Mapping
+his_THYROID,hypothyroidism,Clinical_Mapping
+his_B12DEF,vitamin B12 deficiency,Clinical_Mapping
+his_PSYCDIS,mental disorder,Clinical_Mapping
+his_OCD,obsessive-compulsive disorder,Clinical_Mapping
+his_ANXIETY,Anxiety,Clinical_Mapping
+his_SCHIZ,schizophrenia,Clinical_Mapping
+his_BIPOLAR,bipolar disorder,Clinical_Mapping
+his_PTSD,post-traumatic stress disorder,Clinical_Mapping
+his_ALCOHOL,Alcoholism,Clinical_Mapping
+his_DEP2YRS,Depressivity,Clinical_Mapping
+his_DEPOTHR,Depressivity,Clinical_Mapping
+BLACKLIST_TYPE,drug,Rule
+BLACKLIST_TYPE,exposure,Rule
+BLACKLIST_REL,indication,Rule
+BLACKLIST_REL,contraindication,Rule
+BLACKLIST_REL,off-label use,Rule

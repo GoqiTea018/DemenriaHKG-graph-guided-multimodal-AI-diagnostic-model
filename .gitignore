@@ -18,6 +18,8 @@ env/
 *.npy
 runs/
 logs/
+experiments/results/
+experiments/.test-runs/
 
 # 医学影像与大型数据集 (防止超出 GitHub 100MB 单文件限制)
 *.nii
@@ -36,3 +38,7 @@ datasets/
 .DS_Store
 Thumbs.db
 .vscode/
+
+# Local test caches and reproducible figure output
+.pytest_cache/
+semantic_subgraph/output/

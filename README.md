@@ -1,177 +1,74 @@
-# Knowledge-Augmented Multimodal Synergistic Interaction
+# KAMT: Knowledge-Augmented Multimodal Synergistic Interaction
 
-这是论文“Knowledge-Augmented Multimodal Synergistic Interaction”对应的源码仓库，重点面向神经退行性疾病诊断任务，融合了影像数据、患者临床记录与知识图谱信息，覆盖了四个常用队列：ADNI、NACC、PPMI 和 AIBL。
+KAMT 将临床记录（EHR）、生物标志物（BM）、MRI 与知识图谱结合，用于 ADNI、AIBL、NACC、PPMI 四个队列的诊断实验。本仓库包含知识图谱构建、DistMult 嵌入学习、多模态分类、五次独立训练与配对统计，以及 DemRKG 语义子图绘制代码。
 
-## 1. 项目简介
+## 目录与入口
 
-本项目的核心目标是：
+| 目录 | 内容与使用说明 |
+|---|---|
+| [clinicalKG/](clinicalKG/README.md) | 当前 Full PrimeKG、DemRKG、CustomKG 比较流程，包含独立脚本、模型副本、notebook、测试与依赖列表 |
+| [experiments/](experiments/README.md) | 原队列图谱实验的统一检查、训练和统计入口，以及共享患者划分工具 |
+| [semantic_subgraph/](semantic_subgraph/README.md) | 从各队列 DemRKG CSV 生成带实体名称及关系标签的论文图 |
+| ADNI/、AIBL/、NACC/、PPMI/ | 各队列原始建图与分类 notebook、model1.py、CustomKG/DementiaHKG/PrimeKG 目录 |
+| SOTA/ | 对比模型相关代码 |
 
-- 结合多模态信息进行疾病分类与诊断建模；
-- 将医学知识图谱引入多模态学习过程，增强模型的可解释性与泛化能力；
-- 对比不同知识增强策略，包括：
-  - 基于私域知识图谱 CustomKG 的方法；
-  - 基于精炼疾病相关子图 DementiaHKG（论文中也可称为 DemRKG）的方法；
-  - 基于医学知识库 PrimeKG 的方法；
-  - 以及基于双模态、三模态与知识引导 Transformer/Perceiver 的模型结构。
+代码中的 `DementiaHKG` 对应论文中的 DemRKG。`clinicalKG/PrimeKGL` 使用完整原始 PrimeKG；`clinicalKG/DemRKL` 保留疾病相关子图构建流程。原 `experiments/` 读取各队列已有 PrimeKG 资产，两种实验入口分别组织结果。
 
-## 2. 仓库结构概览
+## 环境与数据
 
-仓库根目录下主要包含四个数据集目录：
+使用 Python 3.10 或以上版本，先安装适合服务器 CUDA 的 PyTorch/torchvision，再安装：
 
-- [ADNI](ADNI/)
-- [AIBL](AIBL/)
-- [NACC](NACC/)
-- [PPMI](PPMI/)
+```bash
+pip install -r clinicalKG/requirements.txt
+# 绘制语义子图时额外安装
+pip install networkx
+```
 
-每个数据集目录都包含以下几类内容：
+在仓库根目录准备完整原始 `kg.csv`；各队列的临床 CSV 和 MRI 放入相应数据集目录。具体文件名与图谱资产见两个实验目录的 README。患者数据、原始图谱、模型权重、嵌入和逐患者预测保存在本地，由 `.gitignore` 排除。仓库保留建图所需的字段—实体种子字典。
 
-1. 患者记录与标签文件（数据集名称.csv）
-   - 例如 ADNI 中的 ADNI.csv、ADNI诊断.csv、AD.csv、mci.csv、normal.csv；
-   - AIBL 中的 AIBL.csv、AD.csv、MCI.csv、NC.csv；
-   - NACC 中的 NACC_ad.csv、NACC_mci.csv、NACC_normal.csv；
-   - PPMI 中的 control.csv、PD1.csv、prodromal.csv、swedd.csv 等。
+## 推荐流程：Full PrimeKG 比较
 
-2. 影像数据
-   - 主要为 NIfTI 格式影像文件；
-   - 数据集目录下有 MRI 或相关影像子目录；
-   - 有影像的压缩包备份
+1. 打开 [clinicalKG/Full_PrimeKG.ipynb](clinicalKG/Full_PrimeKG.ipynb)，或从仓库根目录执行一次完整图谱预训练：
 
-3. 下游分类实验脚本与 Notebook
-   - 每个数据集目录下都包含多种实验 Notebook，例如：
-     - 双模态实验（EHR+MRI，MM-Transformer）；
-     - 三模态实验（EHR+MRI+BM，MM-Transformer）；
-     - 常规三模态+K引导（EHR+MRI+BM+KG（TransE），知识拼接型MM-Transformer）
-     - 基于 CustomKG 的实验；
-     - 基于 DementiaHKG 的实验；
-     - 基于 PrimeKG 的实验；
-     - 以及包含 KAMP/KAMT 结构的实验。
+   ```bash
+   python clinicalKG/full_primekg.py --raw-kg kg.csv --epochs 50 --device cuda
+   # 中断后继续
+   python clinicalKG/full_primekg.py --raw-kg kg.csv --epochs 50 --device cuda --resume
+   ```
 
-4. 模型定义文件
-   - 每个数据集目录下都包含 [model1.py](ADNI/model1.py) 这类模型定义脚本；
-   - 其中定义了图像编码器、临床特征编码器、Transformer/Perceiver 风格的多模态融合模块，以及知识图谱增强模块。
+   四个队列共用 `clinicalKG/shared/FullPrimeKG/` 中的 DistMult 实体嵌入和索引。
 
-## 3. 数据集说明
+2. 按 [clinicalKG 说明](clinicalKG/README.md) 为所选队列生成患者实体映射，准备 CustomKG 与 DemRKG 资产。
+3. 打开 [clinicalKG/Run_Experiments.ipynb](clinicalKG/Run_Experiments.ipynb)，设置 `DATASET_CHOICE`：`1=ADNI`、`2=NACC`、`3=AIBL`、`4=PPMI`。运行配置及输入检查，再分别执行 CustomKG、Full PrimeKG、DemRKG 的训练单元格，最后运行统计及曲线单元格。
 
-### 3.1 ADNI
+主比较结果保存到 `clinicalKG/results_full_primekg/数据集/`。单独的 `*_train.py` 入口默认写入 `clinicalKG/results/`；原队列实验入口写入 `experiments/results/`。重新运行主 notebook 的训练单元格会覆盖对应配置的已有结果。
 
-ADNI 数据集目录包含：
+2026-10-27 的 clinicalKG 更新包含 AIBL/PPMI 的实体填充掩码修正、全填充序列回退与 PPMI MRI 文件名检查修正。AIBL 三种配置应使用更新后的模型重新训练；已有核验记录见 [clinicalKG/record/](clinicalKG/record/)。
 
-- 结构化患者记录文件，例如 [ADNI/ADNI.csv](ADNI/ADNI.csv) 和 [ADNI/ADNI诊断.csv](ADNI/ADNI诊断.csv)
-- 影像数据目录 [ADNI/MRI](ADNI/MRI)
-- 下游分类实验 Notebook，如 [ADNI/ADNI三模态+CustomKG.ipynb](ADNI/ADNI三模态+CustomKG.ipynb)、[ADNI/ADNI三模态+DementiaHKG.ipynb](ADNI/ADNI三模态+DementiaHKG.ipynb)、[ADNI/ADNI三模态+PrimeKG.ipynb](ADNI/ADNI三模态+PrimeKG.ipynb)
-- 模型定义文件 [ADNI/model1.py](ADNI/model1.py)
-- 知识图谱相关目录 [ADNI/CustomKG](ADNI/CustomKG)、[ADNI/DementiaHKG](ADNI/DementiaHKG)、[ADNI/PrimeKG](ADNI/PrimeKG)
-- 训练 CustomKG 的脚本 [ADNI/ADNI-train-CustomKG.py](ADNI/ADNI-train-CustomKG.py)
+## 原队列实验入口
 
-### 3.2 AIBL
+从仓库根目录执行，按需选择一个队列：
 
-AIBL 数据集目录包含：
+```bash
+python -m experiments.run --dataset ADNI --stage check
+python -m experiments.run --dataset ADNI --stage all
+python -m experiments.run --dataset ADNI --stage stats
+```
 
-- 患者记录文件，如 [AIBL/AIBL.csv](AIBL/AIBL.csv)、[AIBL/AD.csv](AIBL/AD.csv)、[AIBL/MCI.csv](AIBL/MCI.csv)、[AIBL/NC.csv](AIBL/NC.csv)
-- 影像数据子目录 [AIBL/AD](AIBL/AD)、[AIBL/MCI](AIBL/MCI)、[AIBL/NC](AIBL/NC)
-- 实验 Notebook，如 [AIBL/AIBL三模态+CustomKG.ipynb](AIBL/AIBL三模态+CustomKG.ipynb)、[AIBL/AIBL三模态+DementiaHKG.ipynb](AIBL/AIBL三模态+DementiaHKG.ipynb)、[AIBL/AIBL三模态+PrimeKG.ipynb](AIBL/AIBL三模态+PrimeKG.ipynb)
-- 模型定义文件 [AIBL/model1.py](AIBL/model1.py)
-- 知识图谱目录 [AIBL/CustomKG](AIBL/CustomKG)、[AIBL/DementiaHKG](AIBL/DementiaHKG)、[AIBL/PrimeKG](AIBL/PrimeKG)
+`check` 检查输入，`train` 训练，`stats` 读取已保存预测进行统计，`all` 依次训练和统计。完整参数与资产说明见 [experiments/README.md](experiments/README.md)。
 
-### 3.3 NACC
+## 实验划分与统计
 
-NACC 数据集目录包含：
+分类 notebook 采用患者级分层固定划分，约为 train/validation/test = 64%/16%/20%，同一患者的多次记录归入同一集合。五次独立训练使用种子 `11、23、37、51、67`，共用固定划分，并按验证损失选择 checkpoint。结果报告均值与样本标准差；统计工具提供患者级配对差值、95% CI、置换 p 值和 Holm 校正。
 
-- 患者记录文件，如 [NACC/NACC_ad.csv](NACC/NACC_ad.csv)、[NACC/NACC_mci.csv](NACC/NACC_mci.csv)、[NACC/NACC_normal.csv](NACC/NACC_normal.csv)
-- 影像数据目录 [NACC/NACC_nii_ad](NACC/NACC_nii_ad)、[NACC/NACC_mci](NACC/NACC_mci)
-- 实验 Notebook，如 [NACC/NACC三模态.ipynb](NACC/NACC三模态.ipynb)、[NACC/NACC三模态+CustomKG.ipynb](NACC/NACC三模态+CustomKG.ipynb)、[NACC/NACC三模态+DementiaHKG.ipynb](NACC/NACC三模态+DementiaHKG.ipynb)
-- 模型定义文件 [NACC/model1.py](NACC/model1.py)
-- 知识图谱目录 [NACC/CustomKG](NACC/CustomKG)、[NACC/DementiaHKG](NACC/DementiaHKG)、[NACC/PrimeKG](NACC/PrimeKG)
+PPMI 沿用前 120 条 PD 记录的输入设置；AIBL 无 KG 基线采用完整队列。依赖训练集常模的患者激活应与当前划分配套生成。原队列 notebook 的 CustomKG 使用 32 维嵌入，另外两种图谱使用 128 维，比较时需结合模型容量设置解释结果。
 
-### 3.4 PPMI
+## 验证与绘图
 
-PPMI 数据集目录包含：
+```bash
+python -m unittest discover -s clinicalKG/tests -v
+python -m pytest experiments/tests -q -p no:cacheprovider
+python semantic_subgraph/plot_semantic_subgraph.py --dataset NACC
+```
 
-- 患者记录文件，如 [PPMI/PPMI诊断.csv](PPMI/PPMI诊断.csv)、[PPMI/control.csv](PPMI/control.csv)、[PPMI/PD1.csv](PPMI/PD1.csv)、[PPMI/prodromal.csv](PPMI/prodromal.csv)
-- 影像数据目录 [PPMI/Control](PPMI/Control)、[PPMI/PD](PPMI/PD)、[PPMI/Prodromal](PPMI/Prodromal)、[PPMI/SWEDD](PPMI/SWEDD)
-- 实验 Notebook，如 [PPMI/PPMI三模态.ipynb](PPMI/PPMI三模态.ipynb)、[PPMI/PPMI三模态+CustomKG.ipynb](PPMI/PPMI三模态+CustomKG.ipynb)、[PPMI/PPMI三模态+DementiaHKG.ipynb](PPMI/PPMI三模态+DementiaHKG.ipynb)、[PPMI/PPMI三模态+PrimeKG.ipynb](PPMI/PPMI三模态+PrimeKG.ipynb)
-- 模型定义文件 [PPMI/model1.py](PPMI/model1.py)
-- 知识图谱目录 [PPMI/CustomKG](PPMI/CustomKG)、[PPMI/DementiaHKG](PPMI/DementiaHKG)、[PPMI/PrimeKG](PPMI/PrimeKG)
-
-## 4. 知识图谱模块说明
-
-本项目的知识增强部分主要由三类知识来源构成：
-
-### 4.1 CustomKG
-
-CustomKG 是基于数据集或领域知识构建的私域知识图谱，主要用于：
-
-- 组织患者、疾病、临床特征与医学实体之间的关系；
-- 为多模态模型提供结构化先验知识；
-- 支持知识引导下的特征融合与分类。
-
-### 4.2 DementiaHKG / DemRKG
-
-DementiaHKG 是从医学知识库中精炼得到的与痴呆相关的子图，通常用于：
-
-- 聚焦与痴呆、认知障碍、神经退行性疾病相关的关键实体和关系；
-- 作为疾病相关先验知识增强模型；
-- 在论文中也可被视为 DemRKG 这一更贴近论文表述的名称。
-
-### 4.3 PrimeKG
-
-PrimeKG 是医学知识图谱的基础来源之一，仓库中对应目录下会包含实体/关系映射文件、知识图谱相关中间产物，以及知识图谱原始文件（如 kg.csv）。
-
-## 5. 主要代码组件
-
-### 5.1 模型定义
-
-各数据集目录下的 [model1.py](ADNI/model1.py) 主要包含：
-
-- NIfTI 影像读取与裁剪逻辑；
-- 3D CNN 图像编码器；
-- 多模态融合模块；
-- Transformer / Perceiver 风格的知识引导融合层；
-- 与知识图谱嵌入相连的分类头。
-
-### 5.2 实验 Notebook
-
-Notebook 主要用于：
-
-- 数据预处理；
-- 构造样本对；
-- 加载知识图谱嵌入；
-- 训练/验证/测试分类模型；
-- 输出结果与可视化分析。
-
-### 5.3 知识图谱训练脚本
-
-在 ADNI 中提供了 [ADNI/ADNI-train-CustomKG.py](ADNI/ADNI-train-CustomKG.py)，用于生成和训练与知识图谱相关的中间文件。其他数据集也可基于相同思路扩展。
-
-## 6. 运行建议
-
-由于该项目主要以 Notebook 为主，推荐按以下方式使用：
-
-1. 选择目标数据集目录，如 [ADNI](ADNI/) 或 [PPMI](PPMI/)
-2. 确保对应的患者表格 CSV 文件和影像数据已经准备好
-3. 进入对应目录后运行相应的实验 Notebook
-4. 若需要重建知识图谱或嵌入，使用对应目录下的知识图谱脚本或 Notebook
-
-> 说明：由于本仓库包含较多实验版本和中间产物，实际运行时可能需要根据本地数据路径进行少量调整。数据集链接：
-
-## 7. 依赖环境
-
-建议使用 Python 3.8 及以上版本。常见依赖包括：
-
-- PyTorch
-- nibabel
-- pandas
-- numpy
-- scikit-learn
-- tqdm
-- 以及在知识图谱训练阶段可能需要的图学习/知识图谱相关依赖
-
-## 8. 说明与后续扩展
-
-- 本仓库偏向论文复现与实验研究代码，结构较为灵活，部分文件为实验版本或中间产物；
-- 如果后续需要进一步整理为正式可复现流水线，可以继续补充：
-  - 统一的数据预处理脚本；
-  - 统一的训练入口；
-  - 配置文件；
-  - 结果日志与实验表格导出脚本。
-
+测试覆盖合成图预训练与续训、路径解析、患者划分和配对统计。真实训练由使用者在数据与计算环境就绪后启动；论文结果以对应运行保存的预测和运行记录为依据。
