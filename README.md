@@ -14,14 +14,24 @@ KAMT 将临床记录（EHR）、生物标志物（BM）、MRI 与知识图谱结
 
 代码中的 `DementiaHKG` 对应论文中的 DemRKG。`clinicalKG/PrimeKGL` 使用完整原始 PrimeKG；`clinicalKG/DemRKL` 保留疾病相关子图构建流程。原 `experiments/` 读取各队列已有 PrimeKG 资产，两种实验入口分别组织结果。
 
+## 图谱与框架
+
+[PrimeKGL README](clinicalKG/PrimeKGL/README.md) 与 [DemRKL README](clinicalKG/DemRKL/README.md) 分别提供流程框架、图谱可视化和运行方式。[图谱规模审计](clinicalKG/GRAPH_STATISTICS.md) 提供完整规模、实体类型和关系类型统计。
+
+| 图谱 | 实体（名称索引） | 实体类型 | 边记录 | 去重有向三元组 | 关系类型 |
+|---|---:|---:|---:|---:|---:|
+| FullPrimeKG | 129,262 | 10 | 8,100,498 | 8,099,991 | 30 |
+| ADNI | 4,099 | 8 | 23,630 | 23,630 | 17 |
+| AIBL | 3,894 | 8 | 22,621 | 22,621 | 18 |
+| NACC | 6,547 | 8 | 42,909 | 42,909 | 17 |
+| PPMI | 2,497 | 8 | 13,050 | 13,050 | 17 |
+
 ## 环境与数据
 
 使用 Python 3.10 或以上版本，先安装适合服务器 CUDA 的 PyTorch/torchvision，再安装：
 
 ```bash
 pip install -r clinicalKG/requirements.txt
-# 绘制语义子图时额外安装
-pip install networkx
 ```
 
 在仓库根目录准备完整原始 `kg.csv`；各队列的临床 CSV 和 MRI 放入相应数据集目录。具体文件名与图谱资产见两个实验目录的 README。患者数据、原始图谱、模型权重、嵌入和逐患者预测保存在本地，由 `.gitignore` 排除。仓库保留建图所需的字段—实体种子字典。

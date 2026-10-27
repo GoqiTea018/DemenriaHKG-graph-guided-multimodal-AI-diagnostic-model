@@ -6,6 +6,22 @@
 - **DemRKL**：保留各队列原有的 seed、黑名单、两跳评分、Top-k、DistMult 和多模态训练。
 - **Full PrimeKG 只训练一次**。四个队列读取相同的实体嵌入及实体索引；患者 `Entities.json` 和诊断模型分别生成/训练。
 
+## 图谱、框架与规模统计
+
+- [PrimeKGL：Full PrimeKG 流程、框架和图谱](PrimeKGL/README.md)
+- [DemRKL：DemRKG 构建框架和四队列图谱](DemRKL/README.md)
+- [完整图谱规模、实体类型及关系数量](GRAPH_STATISTICS.md)
+
+| 图谱 | 实体（名称索引） | 实体类型 | 边记录 | 去重有向三元组 | 关系类型 |
+|---|---:|---:|---:|---:|---:|
+| FullPrimeKG | 129,262 | 10 | 8,100,498 | 8,099,991 | 30 |
+| ADNI | 4,099 | 8 | 23,630 | 23,630 | 17 |
+| AIBL | 3,894 | 8 | 22,621 | 22,621 | 18 |
+| NACC | 6,547 | 8 | 42,909 | 42,909 | 17 |
+| PPMI | 2,497 | 8 | 13,050 | 13,050 | 17 |
+
+以上统计来自实际图谱 CSV。两份方法 README 附有框架、PNG/SVG 图谱和可追溯的展示子图 JSON。
+
 ## 1. 目录与文件名
 
 **训练与统计主入口：`Run_Experiments.ipynb`。** 顶部 `DATASET_CHOICE` 取 `1` 为 ADNI、`2` 为 NACC、`3` 为 AIBL、`4` 为 PPMI。分别运行 CustomKG、Full PrimeKG、DemRKG 各五次诊断训练，再计算 Macro-Precision、Macro-Recall、Macro-F1、Accuracy、AUC 的患者级配对差值、95% CI、p 值及 Holm 校正。最后一个单元格展示训练集/验证集曲线。Full PrimeKG 图谱嵌入读取已有文件，识别共享目录或 `PrimeKGL/` 根目录。所有队列均保存到 `results_full_primekg/`，沿用原文件名；重新运行训练 cell 会覆盖对应配置的原结果。`RUN_MODE="stats"` 重算当前结果目录中已保存预测的统计结果。

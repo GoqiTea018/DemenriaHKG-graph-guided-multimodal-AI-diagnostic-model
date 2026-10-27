@@ -5,6 +5,8 @@ numpy
 pandas
 scikit-learn
 matplotlib
+networkx
+scipy
 nibabel
 tqdm
 # Optional notebook model summaries/profiling:

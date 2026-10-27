@@ -1,0 +1,12485 @@
+{
+  "nodes": [
+    {
+      "id": 0,
+      "name": "DVL2",
+      "type": "gene/protein"
+    },
+    {
+      "id": 1,
+      "name": "ATP5F1A",
+      "type": "gene/protein"
+    },
+    {
+      "id": 2,
+      "name": "DAPK1",
+      "type": "gene/protein"
+    },
+    {
+      "id": 3,
+      "name": "GBA",
+      "type": "gene/protein"
+    },
+    {
+      "id": 4,
+      "name": "SNCA",
+      "type": "gene/protein"
+    },
+    {
+      "id": 6,
+      "name": "LRRK2",
+      "type": "gene/protein"
+    },
+    {
+      "id": 9,
+      "name": "MAPT",
+      "type": "gene/protein"
+    },
+    {
+      "id": 10,
+      "name": "YWHAZ",
+      "type": "gene/protein"
+    },
+    {
+      "id": 27,
+      "name": "APP",
+      "type": "gene/protein"
+    },
+    {
+      "id": 52,
+      "name": "HSPA4",
+      "type": "gene/protein"
+    },
+    {
+      "id": 55,
+      "name": "ACTB",
+      "type": "gene/protein"
+    },
+    {
+      "id": 57,
+      "name": "TGIF2LX",
+      "type": "gene/protein"
+    },
+    {
+      "id": 65,
+      "name": "CSNK2A1",
+      "type": "gene/protein"
+    },
+    {
+      "id": 89,
+      "name": "MAPK1",
+      "type": "gene/protein"
+    },
+    {
+      "id": 100,
+      "name": "MRNIP",
+      "type": "gene/protein"
+    },
+    {
+      "id": 127,
+      "name": "OBI1",
+      "type": "gene/protein"
+    },
+    {
+      "id": 130,
+      "name": "RBBP8",
+      "type": "gene/protein"
+    },
+    {
+      "id": 132,
+      "name": "CTNND2",
+      "type": "gene/protein"
+    },
+    {
+      "id": 148,
+      "name": "CDK5",
+      "type": "gene/protein"
+    },
+    {
+      "id": 164,
+      "name": "ATRX",
+      "type": "gene/protein"
+    },
+    {
+      "id": 174,
+      "name": "CLTC",
+      "type": "gene/protein"
+    },
+    {
+      "id": 175,
+      "name": "RAPGEF4",
+      "type": "gene/protein"
+    },
+    {
+      "id": 187,
+      "name": "TTLL1",
+      "type": "gene/protein"
+    },
+    {
+      "id": 188,
+      "name": "RHOA",
+      "type": "gene/protein"
+    },
+    {
+      "id": 189,
+      "name": "PSAP",
+      "type": "gene/protein"
+    },
+    {
+      "id": 230,
+      "name": "YWHAE",
+      "type": "gene/protein"
+    },
+    {
+      "id": 235,
+      "name": "MAN2C1",
+      "type": "gene/protein"
+    },
+    {
+      "id": 255,
+      "name": "BAG5",
+      "type": "gene/protein"
+    },
+    {
+      "id": 273,
+      "name": "DHCR24",
+      "type": "gene/protein"
+    },
+    {
+      "id": 274,
+      "name": "SLC25A4",
+      "type": "gene/protein"
+    },
+    {
+      "id": 289,
+      "name": "ADRB2",
+      "type": "gene/protein"
+    },
+    {
+      "id": 299,
+      "name": "FMR1",
+      "type": "gene/protein"
+    },
+    {
+      "id": 311,
+      "name": "CALM2",
+      "type": "gene/protein"
+    },
+    {
+      "id": 316,
+      "name": "ATP5PF",
+      "type": "gene/protein"
+    },
+    {
+      "id": 332,
+      "name": "HROB",
+      "type": "gene/protein"
+    },
+    {
+      "id": 335,
+      "name": "TTK",
+      "type": "gene/protein"
+    },
+    {
+      "id": 345,
+      "name": "UBC",
+      "type": "gene/protein"
+    },
+    {
+      "id": 353,
+      "name": "DUX3",
+      "type": "gene/protein"
+    },
+    {
+      "id": 361,
+      "name": "PKP2",
+      "type": "gene/protein"
+    },
+    {
+      "id": 373,
+      "name": "CRYAB",
+      "type": "gene/protein"
+    },
+    {
+      "id": 408,
+      "name": "NPY",
+      "type": "gene/protein"
+    },
+    {
+      "id": 417,
+      "name": "MAGI2",
+      "type": "gene/protein"
+    },
+    {
+      "id": 432,
+      "name": "APOD",
+      "type": "gene/protein"
+    },
+    {
+      "id": 433,
+      "name": "GCH1",
+      "type": "gene/protein"
+    },
+    {
+      "id": 437,
+      "name": "DDX6",
+      "type": "gene/protein"
+    },
+    {
+      "id": 438,
+      "name": "L1CAM",
+      "type": "gene/protein"
+    },
+    {
+      "id": 443,
+      "name": "Dementia",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 446,
+      "name": "Kinetic tremor",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 447,
+      "name": "Action tremor",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 448,
+      "name": "Dyskinesia",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 449,
+      "name": "Gait disturbance",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 450,
+      "name": "Tremor",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 452,
+      "name": "Rigidity",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 453,
+      "name": "Unsteady gait",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 454,
+      "name": "Memory impairment",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 455,
+      "name": "Resting tremor",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 456,
+      "name": "Limitation of neck motion",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 462,
+      "name": "autosomal recessive Parkinson disease",
+      "type": "disease"
+    },
+    {
+      "id": 479,
+      "name": "neuronal ceroid lipofuscinosis",
+      "type": "disease"
+    },
+    {
+      "id": 485,
+      "name": "Charcot-Marie-Tooth disease with ptosis and parkinsonism",
+      "type": "disease"
+    },
+    {
+      "id": 486,
+      "name": "epilepsy, familial adult myoclonic",
+      "type": "disease"
+    },
+    {
+      "id": 496,
+      "name": "Grn-related frontotemporal lobar degeneration with Tdp43 inclusions",
+      "type": "disease"
+    },
+    {
+      "id": 500,
+      "name": "Parkinson disease",
+      "type": "disease"
+    },
+    {
+      "id": 505,
+      "name": "basal ganglia calcification, idiopathic",
+      "type": "disease"
+    },
+    {
+      "id": 511,
+      "name": "progressive essential tremor-speech impairment-facial dysmorphism-intellectual disability-abnormal behavior syndrome",
+      "type": "disease"
+    },
+    {
+      "id": 519,
+      "name": "neurodevelopmental disorder with seizures and speech and walking impairment",
+      "type": "disease"
+    },
+    {
+      "id": 526,
+      "name": "fatal infantile hypertonic myofibrillar myopathy",
+      "type": "disease"
+    },
+    {
+      "id": 528,
+      "name": "generalized epilepsy-paroxysmal dyskinesia syndrome",
+      "type": "disease"
+    },
+    {
+      "id": 532,
+      "name": "herpes simplex encephalitis, susceptibility to",
+      "type": "disease"
+    },
+    {
+      "id": 537,
+      "name": "methylmalonic aciduria/acidemia and homocystinuria",
+      "type": "disease"
+    },
+    {
+      "id": 538,
+      "name": "X-linked spinocerebellar ataxia",
+      "type": "disease"
+    },
+    {
+      "id": 541,
+      "name": "ataxia with oculomotor apraxia",
+      "type": "disease"
+    },
+    {
+      "id": 543,
+      "name": "cerebrocortical degeneration of infancy",
+      "type": "disease"
+    },
+    {
+      "id": 545,
+      "name": "intellectual disability, autosomal dominant",
+      "type": "disease"
+    },
+    {
+      "id": 548,
+      "name": "combined oxidative phosphorylation defect",
+      "type": "disease"
+    },
+    {
+      "id": 550,
+      "name": "cerebral amyloid angiopathy",
+      "type": "disease"
+    },
+    {
+      "id": 552,
+      "name": "spastic paraplegia, optic atrophy, and dementia",
+      "type": "disease"
+    },
+    {
+      "id": 564,
+      "name": "Ververi-Brady syndrome",
+      "type": "disease"
+    },
+    {
+      "id": 565,
+      "name": "X-linked intellectual disability",
+      "type": "disease"
+    },
+    {
+      "id": 577,
+      "name": "infantile dystonia-parkinsonism",
+      "type": "disease"
+    },
+    {
+      "id": 582,
+      "name": "GTP cyclohydrolase I deficiency with hyperphenylalaninemia",
+      "type": "disease"
+    },
+    {
+      "id": 583,
+      "name": "dystonia",
+      "type": "disease"
+    },
+    {
+      "id": 599,
+      "name": "NGLY1-deficiency",
+      "type": "disease"
+    },
+    {
+      "id": 600,
+      "name": "pronation-supination of the forearm, impairment of",
+      "type": "disease"
+    },
+    {
+      "id": 608,
+      "name": "childhood onset GLUT1 deficiency syndrome 2",
+      "type": "disease"
+    },
+    {
+      "id": 610,
+      "name": "triosephosphate isomerase deficiency",
+      "type": "disease"
+    },
+    {
+      "id": 615,
+      "name": "spastic paraplegia",
+      "type": "disease"
+    },
+    {
+      "id": 616,
+      "name": "normal pressure hydrocephalus",
+      "type": "disease"
+    },
+    {
+      "id": 617,
+      "name": "motor neuron disease with dementia and ophthalmoplegia",
+      "type": "disease"
+    },
+    {
+      "id": 618,
+      "name": "fragile X-associated tremor/ataxia syndrome",
+      "type": "disease"
+    },
+    {
+      "id": 620,
+      "name": "Mullegama-Klein-Martinez syndrome",
+      "type": "disease"
+    },
+    {
+      "id": 621,
+      "name": "ABri amyloidosis",
+      "type": "disease"
+    },
+    {
+      "id": 625,
+      "name": "Leber optic atrophy and dystonia",
+      "type": "disease"
+    },
+    {
+      "id": 632,
+      "name": "Gerstmann-Straussler-Scheinker syndrome",
+      "type": "disease"
+    },
+    {
+      "id": 640,
+      "name": "intellectual developmental disorder with short stature and variable skeletal anomalies",
+      "type": "disease"
+    },
+    {
+      "id": 642,
+      "name": "Chiari malformation",
+      "type": "disease"
+    },
+    {
+      "id": 646,
+      "name": "X-linked parkinsonism-spasticity syndrome",
+      "type": "disease"
+    },
+    {
+      "id": 647,
+      "name": "microcephaly, short stature, and impaired glucose metabolism",
+      "type": "disease"
+    },
+    {
+      "id": 648,
+      "name": "leukoencephalopathy with vanishing white matter",
+      "type": "disease"
+    },
+    {
+      "id": 655,
+      "name": "cerebrotendinous xanthomatosis",
+      "type": "disease"
+    },
+    {
+      "id": 663,
+      "name": "maternally-inherited diabetes and deafness",
+      "type": "disease"
+    },
+    {
+      "id": 664,
+      "name": "nephronophthisis-like nephropathy 1",
+      "type": "disease"
+    },
+    {
+      "id": 667,
+      "name": "striatonigral degeneration",
+      "type": "disease"
+    },
+    {
+      "id": 670,
+      "name": "BH4-deficient hyperphenylalaninemia A",
+      "type": "disease"
+    },
+    {
+      "id": 682,
+      "name": "Roussy-Levy syndrome",
+      "type": "disease"
+    },
+    {
+      "id": 698,
+      "name": "Waldenstrom macroglobulinemia",
+      "type": "disease"
+    },
+    {
+      "id": 701,
+      "name": "non-syndromic intellectual disability",
+      "type": "disease"
+    },
+    {
+      "id": 718,
+      "name": "urocanic aciduria (disease)",
+      "type": "disease"
+    },
+    {
+      "id": 719,
+      "name": "posterior cortical atrophy",
+      "type": "disease"
+    },
+    {
+      "id": 727,
+      "name": "tetanus",
+      "type": "disease"
+    },
+    {
+      "id": 743,
+      "name": "meningococcal infection",
+      "type": "disease"
+    },
+    {
+      "id": 746,
+      "name": "distal 10q deletion syndrome",
+      "type": "disease"
+    },
+    {
+      "id": 755,
+      "name": "adult-onset multiple mitochondrial DNA deletion syndrome due to DGUOK deficiency",
+      "type": "disease"
+    },
+    {
+      "id": 756,
+      "name": "superficial siderosis",
+      "type": "disease"
+    },
+    {
+      "id": 762,
+      "name": "desmosterolosis",
+      "type": "disease"
+    },
+    {
+      "id": 767,
+      "name": "familial acute necrotizing encephalopathy",
+      "type": "disease"
+    },
+    {
+      "id": 775,
+      "name": "adenylosuccinate synthetase-like 1-related distal myopathy",
+      "type": "disease"
+    },
+    {
+      "id": 776,
+      "name": "Sydenham chorea",
+      "type": "disease"
+    },
+    {
+      "id": 781,
+      "name": "acquired aneurysmal subarachnoid hemorrhage",
+      "type": "disease"
+    },
+    {
+      "id": 785,
+      "name": "HSD10 mitochondrial disease",
+      "type": "disease"
+    },
+    {
+      "id": 786,
+      "name": "adult polyglucosan body disease",
+      "type": "disease"
+    },
+    {
+      "id": 793,
+      "name": "familial chylomicronemia syndrome",
+      "type": "disease"
+    },
+    {
+      "id": 795,
+      "name": "gangliocytoma",
+      "type": "disease"
+    },
+    {
+      "id": 798,
+      "name": "papillary tumor of the pineal region",
+      "type": "disease"
+    },
+    {
+      "id": 799,
+      "name": "pineoblastoma",
+      "type": "disease"
+    },
+    {
+      "id": 802,
+      "name": "sensory ataxic neuropathy-dysarthria-ophthalmoparesis syndrome",
+      "type": "disease"
+    },
+    {
+      "id": 809,
+      "name": "herpes simplex encephalitis",
+      "type": "disease"
+    },
+    {
+      "id": 812,
+      "name": "ABeta amyloidosis",
+      "type": "disease"
+    },
+    {
+      "id": 813,
+      "name": "ABetaL34V amyloidosis",
+      "type": "disease"
+    },
+    {
+      "id": 817,
+      "name": "neurofibromatosis",
+      "type": "disease"
+    },
+    {
+      "id": 824,
+      "name": "metachromatic leukodystrophy",
+      "type": "disease"
+    },
+    {
+      "id": 825,
+      "name": "mucopolysaccharidosis",
+      "type": "disease"
+    },
+    {
+      "id": 830,
+      "name": "Marinesco-Sjogren syndrome",
+      "type": "disease"
+    },
+    {
+      "id": 831,
+      "name": "Leigh syndrome",
+      "type": "disease"
+    },
+    {
+      "id": 835,
+      "name": "Wolfram syndrome",
+      "type": "disease"
+    },
+    {
+      "id": 838,
+      "name": "dystonia-aphonia syndrome",
+      "type": "disease"
+    },
+    {
+      "id": 842,
+      "name": "maternally-inherited Leigh syndrome",
+      "type": "disease"
+    },
+    {
+      "id": 847,
+      "name": "X-linked intellectual disability-hypotonia-movement disorder syndrome",
+      "type": "disease"
+    },
+    {
+      "id": 849,
+      "name": "progressive supranuclear palsy-corticobasal syndrome",
+      "type": "disease"
+    },
+    {
+      "id": 861,
+      "name": "hypotonia-speech impairment-severe cognitive delay syndrome",
+      "type": "disease"
+    },
+    {
+      "id": 867,
+      "name": "BDNF",
+      "type": "gene/protein"
+    },
+    {
+      "id": 869,
+      "name": "COL19A1",
+      "type": "gene/protein"
+    },
+    {
+      "id": 918,
+      "name": "PPARGC1A",
+      "type": "gene/protein"
+    },
+    {
+      "id": 922,
+      "name": "TMEM230",
+      "type": "gene/protein"
+    },
+    {
+      "id": 938,
+      "name": "DNAJC13",
+      "type": "gene/protein"
+    },
+    {
+      "id": 946,
+      "name": "GRIN2A",
+      "type": "gene/protein"
+    },
+    {
+      "id": 949,
+      "name": "TRNT",
+      "type": "gene/protein"
+    },
+    {
+      "id": 952,
+      "name": "speech disorder",
+      "type": "disease"
+    },
+    {
+      "id": 966,
+      "name": "HERC5",
+      "type": "gene/protein"
+    },
+    {
+      "id": 1072,
+      "name": "RPS6KA3",
+      "type": "gene/protein"
+    },
+    {
+      "id": 1080,
+      "name": "ARMC3",
+      "type": "gene/protein"
+    },
+    {
+      "id": 1089,
+      "name": "ACTL10",
+      "type": "gene/protein"
+    },
+    {
+      "id": 1109,
+      "name": "UBE2D2",
+      "type": "gene/protein"
+    },
+    {
+      "id": 1110,
+      "name": "Seizure",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1113,
+      "name": "Bradykinesia",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1118,
+      "name": "Orofacial dyskinesia",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1119,
+      "name": "Cogwheel rigidity",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1122,
+      "name": "Progressive forgetfulness",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1127,
+      "name": "Vocal tremor",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1128,
+      "name": "Decerebrate rigidity",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1129,
+      "name": "Pill-rolling tremor",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1130,
+      "name": "Isometric tremor",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1131,
+      "name": "Titubation",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1132,
+      "name": "Nuchal rigidity",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1135,
+      "name": "Long term memory impairment",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1138,
+      "name": "Incomplete penetrance",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1140,
+      "name": "Hyposmia",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1143,
+      "name": "Autosomal dominant inheritance",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1144,
+      "name": "Leg dystonia",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1146,
+      "name": "Anxiety",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1147,
+      "name": "Autosomal recessive inheritance",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1148,
+      "name": "Psychotic episodes",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1149,
+      "name": "Brisk reflexes",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1150,
+      "name": "Blepharospasm",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1151,
+      "name": "Akinesia",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1152,
+      "name": "Progressive",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1154,
+      "name": "Abnormal autonomic nervous system physiology",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1157,
+      "name": "Micrographia",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1159,
+      "name": "Sporadic",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1165,
+      "name": "Short stepped shuffling gait",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1167,
+      "name": "Infantile onset",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1169,
+      "name": "Staring gaze",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1172,
+      "name": "Limited pronation/supination of forearm",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1174,
+      "name": "Paranoia",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1176,
+      "name": "Rapidly progressive",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1181,
+      "name": "Limb dystonia",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1182,
+      "name": "Neurofibrillary tangles",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1183,
+      "name": "Abnormal pyramidal sign",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1186,
+      "name": "Color vision defect",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1187,
+      "name": "Impaired social interactions",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1188,
+      "name": "Short attention span",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1191,
+      "name": "Muscle spasm",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1194,
+      "name": "Female sexual dysfunction",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1196,
+      "name": "Diplopia",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1200,
+      "name": "tardive dyskinesia (disease)",
+      "type": "disease"
+    },
+    {
+      "id": 1201,
+      "name": "iron metabolism disease",
+      "type": "disease"
+    },
+    {
+      "id": 1214,
+      "name": "papillary adenocarcinoma",
+      "type": "disease"
+    },
+    {
+      "id": 1216,
+      "name": "endometriosis (disease)",
+      "type": "disease"
+    },
+    {
+      "id": 1226,
+      "name": "Gaucher disease perinatal lethal",
+      "type": "disease"
+    },
+    {
+      "id": 1227,
+      "name": "Gaucher disease-ophthalmoplegia-cardiovascular calcification syndrome",
+      "type": "disease"
+    },
+    {
+      "id": 1230,
+      "name": "echolalia (disease)",
+      "type": "disease"
+    },
+    {
+      "id": 1232,
+      "name": "signaling receptor binding",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1233,
+      "name": "protein binding",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1234,
+      "name": "zinc ion binding",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1235,
+      "name": "ATP binding",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1236,
+      "name": "identical protein binding",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1237,
+      "name": "small GTPase binding",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1238,
+      "name": "protein homodimerization activity",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1239,
+      "name": "GTPase activity",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1240,
+      "name": "kinase activity",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1241,
+      "name": "magnesium ion binding",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1242,
+      "name": "protein kinase activity",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1243,
+      "name": "copper ion binding",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1244,
+      "name": "calcium ion binding",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1245,
+      "name": "GTPase activator activity",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1246,
+      "name": "protein N-terminus binding",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1247,
+      "name": "ferrous iron binding",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1248,
+      "name": "tau protein binding",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1249,
+      "name": "kinesin binding",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1250,
+      "name": "actin binding",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1251,
+      "name": "ion channel binding",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1252,
+      "name": "protein domain specific binding",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1253,
+      "name": "protein serine/threonine kinase activity",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1254,
+      "name": "GTP binding",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1255,
+      "name": "clathrin binding",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1256,
+      "name": "phospholipid binding",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1257,
+      "name": "transcription cis-regulatory region binding",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1258,
+      "name": "protein serine kinase activity",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1259,
+      "name": "protein threonine kinase activity",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1260,
+      "name": "tubulin binding",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1261,
+      "name": "oxidoreductase activity",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1262,
+      "name": "histone binding",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1263,
+      "name": "microtubule binding",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1264,
+      "name": "dynein complex binding",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1265,
+      "name": "cysteine-type endopeptidase inhibitor activity involved in apoptotic process",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1266,
+      "name": "phospholipase binding",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1267,
+      "name": "phosphoprotein binding",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1268,
+      "name": "cuprous ion binding",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1269,
+      "name": "Hsp70 protein binding",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1270,
+      "name": "beta-tubulin binding",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1271,
+      "name": "alpha-tubulin binding",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1272,
+      "name": "co-receptor binding",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1273,
+      "name": "signaling receptor complex adaptor activity",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1274,
+      "name": "protein kinase inhibitor activity",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1275,
+      "name": "protein serine/threonine phosphatase activity",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1276,
+      "name": "MAP kinase kinase activity",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1277,
+      "name": "syntaxin-1 binding",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1278,
+      "name": "SNARE binding",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1279,
+      "name": "scavenger receptor binding",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1280,
+      "name": "glucosylceramidase activity",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1281,
+      "name": "steryl-beta-glucosidase activity",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1282,
+      "name": "glucosyltransferase activity",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1283,
+      "name": "protein kinase A binding",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1284,
+      "name": "GTP-dependent protein kinase activity",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1285,
+      "name": "beta-catenin destruction complex binding",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1286,
+      "name": "peroxidase inhibitor activity",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1287,
+      "name": "extracellular space",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1288,
+      "name": "extracellular exosome",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1289,
+      "name": "extracellular region",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1290,
+      "name": "cytosol",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1291,
+      "name": "nucleus",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1292,
+      "name": "endoplasmic reticulum membrane",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1293,
+      "name": "plasma membrane",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1294,
+      "name": "cytoplasm",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1295,
+      "name": "perinuclear region of cytoplasm",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1296,
+      "name": "mitochondrion",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1298,
+      "name": "mitochondrial matrix",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1299,
+      "name": "neuron projection",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1301,
+      "name": "membrane raft",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1302,
+      "name": "Golgi apparatus",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1303,
+      "name": "intracellular membrane-bounded organelle",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1304,
+      "name": "lysosome",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1305,
+      "name": "cytoplasmic vesicle",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1306,
+      "name": "lysosomal membrane",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1307,
+      "name": "mitochondrial inner membrane",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1308,
+      "name": "ribosome",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1309,
+      "name": "endoplasmic reticulum",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1310,
+      "name": "dendrite",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1311,
+      "name": "protein-containing complex",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1312,
+      "name": "postsynapse",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1313,
+      "name": "neuronal cell body",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1314,
+      "name": "actin cytoskeleton",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1315,
+      "name": "Golgi membrane",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1316,
+      "name": "axon",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1317,
+      "name": "glutamatergic synapse",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1318,
+      "name": "mitochondrial outer membrane",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1319,
+      "name": "mitochondrial membrane",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1320,
+      "name": "Golgi-associated vesicle",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1321,
+      "name": "lysosomal lumen",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1322,
+      "name": "ribonucleoprotein complex",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1323,
+      "name": "dendrite cytoplasm",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1324,
+      "name": "trans-Golgi network",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1325,
+      "name": "terminal bouton",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1326,
+      "name": "perikaryon",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1327,
+      "name": "rough endoplasmic reticulum",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1328,
+      "name": "cell cortex",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1329,
+      "name": "axon terminus",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1330,
+      "name": "inclusion body",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1333,
+      "name": "growth cone",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1334,
+      "name": "synaptic vesicle membrane",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1335,
+      "name": "microvillus",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1336,
+      "name": "Wnt signalosome",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1337,
+      "name": "platelet alpha granule membrane",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1340,
+      "name": "presynaptic cytosol",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1341,
+      "name": "multivesicular body, internal vesicle",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1342,
+      "name": "autolysosome",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1343,
+      "name": "supramolecular fiber",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1344,
+      "name": "amphisome",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1345,
+      "name": "cytoplasmic side of mitochondrial outer membrane",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1346,
+      "name": "caveola neck",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1350,
+      "name": "aging",
+      "type": "biological_process"
+    },
+    {
+      "id": 1352,
+      "name": "lysosome organization",
+      "type": "biological_process"
+    },
+    {
+      "id": 1355,
+      "name": "sphingosine biosynthetic process",
+      "type": "biological_process"
+    },
+    {
+      "id": 1365,
+      "name": "cellular response to dopamine",
+      "type": "biological_process"
+    },
+    {
+      "id": 1366,
+      "name": "protein autophosphorylation",
+      "type": "biological_process"
+    },
+    {
+      "id": 1377,
+      "name": "response to iron(II) ion",
+      "type": "biological_process"
+    },
+    {
+      "id": 1396,
+      "name": "positive regulation of inositol phosphate biosynthetic process",
+      "type": "biological_process"
+    },
+    {
+      "id": 1399,
+      "name": "phosphorylation",
+      "type": "biological_process"
+    },
+    {
+      "id": 1401,
+      "name": "excitatory postsynaptic potential",
+      "type": "biological_process"
+    },
+    {
+      "id": 1406,
+      "name": "negative regulation of protein kinase activity",
+      "type": "biological_process"
+    },
+    {
+      "id": 1420,
+      "name": "calcium-mediated signaling",
+      "type": "biological_process"
+    },
+    {
+      "id": 1426,
+      "name": "cellular response to organic cyclic compound",
+      "type": "biological_process"
+    },
+    {
+      "id": 1428,
+      "name": "cellular response to starvation",
+      "type": "biological_process"
+    },
+    {
+      "id": 1433,
+      "name": "ceramide biosynthetic process",
+      "type": "biological_process"
+    },
+    {
+      "id": 1436,
+      "name": "positive regulation of protein ubiquitination",
+      "type": "biological_process"
+    },
+    {
+      "id": 1439,
+      "name": "neuromuscular junction development",
+      "type": "biological_process"
+    },
+    {
+      "id": 1441,
+      "name": "positive regulation of receptor recycling",
+      "type": "biological_process"
+    },
+    {
+      "id": 1446,
+      "name": "neuron apoptotic process",
+      "type": "biological_process"
+    },
+    {
+      "id": 1448,
+      "name": "negative regulation of platelet-derived growth factor receptor signaling pathway",
+      "type": "biological_process"
+    },
+    {
+      "id": 1451,
+      "name": "cellular response to manganese ion",
+      "type": "biological_process"
+    },
+    {
+      "id": 1459,
+      "name": "cellular response to epinephrine stimulus",
+      "type": "biological_process"
+    },
+    {
+      "id": 1466,
+      "name": "brain morphogenesis",
+      "type": "biological_process"
+    },
+    {
+      "id": 1467,
+      "name": "response to magnesium ion",
+      "type": "biological_process"
+    },
+    {
+      "id": 1477,
+      "name": "negative regulation of histone acetylation",
+      "type": "biological_process"
+    },
+    {
+      "id": 1482,
+      "name": "neuron death",
+      "type": "biological_process"
+    },
+    {
+      "id": 1484,
+      "name": "antigen processing and presentation",
+      "type": "biological_process"
+    },
+    {
+      "id": 1485,
+      "name": "protein tetramerization",
+      "type": "biological_process"
+    },
+    {
+      "id": 1486,
+      "name": "regulation of macrophage activation",
+      "type": "biological_process"
+    },
+    {
+      "id": 1490,
+      "name": "synaptic vesicle exocytosis",
+      "type": "biological_process"
+    },
+    {
+      "id": 1491,
+      "name": "regulation of synaptic vesicle recycling",
+      "type": "biological_process"
+    },
+    {
+      "id": 1497,
+      "name": "neuromuscular process",
+      "type": "biological_process"
+    },
+    {
+      "id": 1500,
+      "name": "positive regulation of synaptic vesicle endocytosis",
+      "type": "biological_process"
+    },
+    {
+      "id": 1502,
+      "name": "lymphocyte migration",
+      "type": "biological_process"
+    },
+    {
+      "id": 1503,
+      "name": "supramolecular fiber organization",
+      "type": "biological_process"
+    },
+    {
+      "id": 1510,
+      "name": "mitochondrion localization",
+      "type": "biological_process"
+    },
+    {
+      "id": 1514,
+      "name": "regulation of protein kinase A signaling",
+      "type": "biological_process"
+    },
+    {
+      "id": 1516,
+      "name": "regulation of ER to Golgi vesicle-mediated transport",
+      "type": "biological_process"
+    },
+    {
+      "id": 1521,
+      "name": "termination of signal transduction",
+      "type": "biological_process"
+    },
+    {
+      "id": 1522,
+      "name": "regulation of water loss via skin",
+      "type": "biological_process"
+    },
+    {
+      "id": 1525,
+      "name": "positive regulation of protein lipidation",
+      "type": "biological_process"
+    },
+    {
+      "id": 1526,
+      "name": "beta-glucoside catabolic process",
+      "type": "biological_process"
+    },
+    {
+      "id": 1527,
+      "name": "regulation of lysosomal protein catabolic process",
+      "type": "biological_process"
+    },
+    {
+      "id": 1528,
+      "name": "microglia differentiation",
+      "type": "biological_process"
+    },
+    {
+      "id": 1529,
+      "name": "glucosylceramide catabolic process",
+      "type": "biological_process"
+    },
+    {
+      "id": 1532,
+      "name": "negative regulation of serotonin uptake",
+      "type": "biological_process"
+    },
+    {
+      "id": 1534,
+      "name": "negative regulation of hydrogen peroxide-induced cell death",
+      "type": "biological_process"
+    },
+    {
+      "id": 1536,
+      "name": "regulation of CAMKK-AMPK signaling cascade",
+      "type": "biological_process"
+    },
+    {
+      "id": 1537,
+      "name": "protein localization to mitochondrion",
+      "type": "biological_process"
+    },
+    {
+      "id": 1538,
+      "name": "negative regulation of thrombin-activated receptor signaling pathway",
+      "type": "biological_process"
+    },
+    {
+      "id": 1539,
+      "name": "negative regulation of protein targeting to mitochondrion",
+      "type": "biological_process"
+    },
+    {
+      "id": 1541,
+      "name": "negative regulation of autophagosome assembly",
+      "type": "biological_process"
+    },
+    {
+      "id": 1544,
+      "name": "dopamine uptake involved in synaptic transmission",
+      "type": "biological_process"
+    },
+    {
+      "id": 1545,
+      "name": "negative regulation of chaperone-mediated autophagy",
+      "type": "biological_process"
+    },
+    {
+      "id": 1552,
+      "name": "neutral lipid metabolic process",
+      "type": "biological_process"
+    },
+    {
+      "id": 1553,
+      "name": "negative regulation of monooxygenase activity",
+      "type": "biological_process"
+    },
+    {
+      "id": 1555,
+      "name": "negative regulation of mitochondrial electron transport, NADH to ubiquinone",
+      "type": "biological_process"
+    },
+    {
+      "id": 1556,
+      "name": "positive regulation of SNARE complex assembly",
+      "type": "biological_process"
+    },
+    {
+      "id": 1557,
+      "name": "positive regulation of hydrogen peroxide catabolic process",
+      "type": "biological_process"
+    },
+    {
+      "id": 1559,
+      "name": "regulation of phospholipase activity",
+      "type": "biological_process"
+    },
+    {
+      "id": 1561,
+      "name": "positive regulation of glutathione peroxidase activity",
+      "type": "biological_process"
+    },
+    {
+      "id": 1563,
+      "name": "regulation of acyl-CoA biosynthetic process",
+      "type": "biological_process"
+    },
+    {
+      "id": 1568,
+      "name": "negative regulation of late endosome to lysosome transport",
+      "type": "biological_process"
+    },
+    {
+      "id": 1570,
+      "name": "Wnt signalosome assembly",
+      "type": "biological_process"
+    },
+    {
+      "id": 1572,
+      "name": "regulation of kidney size",
+      "type": "biological_process"
+    },
+    {
+      "id": 1574,
+      "name": "PTK6 promotes HIF1A stabilization",
+      "type": "pathway"
+    },
+    {
+      "id": 1575,
+      "name": "Glycosphingolipid metabolism",
+      "type": "pathway"
+    },
+    {
+      "id": 1576,
+      "name": "Association of TriC/CCT with target proteins during biosynthesis",
+      "type": "pathway"
+    },
+    {
+      "id": 1577,
+      "name": "Amyloid fiber formation",
+      "type": "pathway"
+    },
+    {
+      "id": 1578,
+      "name": "uterine cervix",
+      "type": "anatomy"
+    },
+    {
+      "id": 1579,
+      "name": "islet of Langerhans",
+      "type": "anatomy"
+    },
+    {
+      "id": 1581,
+      "name": "zone of skin",
+      "type": "anatomy"
+    },
+    {
+      "id": 1582,
+      "name": "lymph node",
+      "type": "anatomy"
+    },
+    {
+      "id": 1583,
+      "name": "tendon",
+      "type": "anatomy"
+    },
+    {
+      "id": 1587,
+      "name": "metanephros",
+      "type": "anatomy"
+    },
+    {
+      "id": 1595,
+      "name": "anatomical system",
+      "type": "anatomy"
+    },
+    {
+      "id": 1596,
+      "name": "multi-cellular organism",
+      "type": "anatomy"
+    },
+    {
+      "id": 1601,
+      "name": "aorta",
+      "type": "anatomy"
+    },
+    {
+      "id": 1602,
+      "name": "heart",
+      "type": "anatomy"
+    },
+    {
+      "id": 1604,
+      "name": "cerebral cortex",
+      "type": "anatomy"
+    },
+    {
+      "id": 1606,
+      "name": "uterus",
+      "type": "anatomy"
+    },
+    {
+      "id": 1608,
+      "name": "mammalian vulva",
+      "type": "anatomy"
+    },
+    {
+      "id": 1609,
+      "name": "adipose tissue",
+      "type": "anatomy"
+    },
+    {
+      "id": 1613,
+      "name": "skeletal muscle tissue",
+      "type": "anatomy"
+    },
+    {
+      "id": 1616,
+      "name": "colon",
+      "type": "anatomy"
+    },
+    {
+      "id": 1619,
+      "name": "nephron tubule",
+      "type": "anatomy"
+    },
+    {
+      "id": 1620,
+      "name": "adrenal cortex",
+      "type": "anatomy"
+    },
+    {
+      "id": 1622,
+      "name": "pancreas",
+      "type": "anatomy"
+    },
+    {
+      "id": 1625,
+      "name": "tibial nerve",
+      "type": "anatomy"
+    },
+    {
+      "id": 1627,
+      "name": "vastus lateralis",
+      "type": "anatomy"
+    },
+    {
+      "id": 1630,
+      "name": "biceps brachii",
+      "type": "anatomy"
+    },
+    {
+      "id": 1634,
+      "name": "palpebral conjunctiva",
+      "type": "anatomy"
+    },
+    {
+      "id": 1637,
+      "name": "frontal cortex",
+      "type": "anatomy"
+    },
+    {
+      "id": 1638,
+      "name": "temporal lobe",
+      "type": "anatomy"
+    },
+    {
+      "id": 1642,
+      "name": "globus pallidus",
+      "type": "anatomy"
+    },
+    {
+      "id": 1647,
+      "name": "telencephalon",
+      "type": "anatomy"
+    },
+    {
+      "id": 1648,
+      "name": "medulla oblongata",
+      "type": "anatomy"
+    },
+    {
+      "id": 1649,
+      "name": "dorsal plus ventral thalamus",
+      "type": "anatomy"
+    },
+    {
+      "id": 1652,
+      "name": "neocortex",
+      "type": "anatomy"
+    },
+    {
+      "id": 1653,
+      "name": "Ammon's horn",
+      "type": "anatomy"
+    },
+    {
+      "id": 1654,
+      "name": "epithelium of esophagus",
+      "type": "anatomy"
+    },
+    {
+      "id": 1656,
+      "name": "occipital lobe",
+      "type": "anatomy"
+    },
+    {
+      "id": 1657,
+      "name": "epithelium of bronchus",
+      "type": "anatomy"
+    },
+    {
+      "id": 1658,
+      "name": "cerebellum",
+      "type": "anatomy"
+    },
+    {
+      "id": 1659,
+      "name": "substantia nigra",
+      "type": "anatomy"
+    },
+    {
+      "id": 1660,
+      "name": "thyroid gland",
+      "type": "anatomy"
+    },
+    {
+      "id": 1661,
+      "name": "lung",
+      "type": "anatomy"
+    },
+    {
+      "id": 1662,
+      "name": "cardiac atrium",
+      "type": "anatomy"
+    },
+    {
+      "id": 1663,
+      "name": "cardiac ventricle",
+      "type": "anatomy"
+    },
+    {
+      "id": 1666,
+      "name": "liver",
+      "type": "anatomy"
+    },
+    {
+      "id": 1668,
+      "name": "kidney",
+      "type": "anatomy"
+    },
+    {
+      "id": 1673,
+      "name": "subcutaneous adipose tissue",
+      "type": "anatomy"
+    },
+    {
+      "id": 1676,
+      "name": "corpus callosum",
+      "type": "anatomy"
+    },
+    {
+      "id": 1678,
+      "name": "peritoneum",
+      "type": "anatomy"
+    },
+    {
+      "id": 1680,
+      "name": "adrenal gland",
+      "type": "anatomy"
+    },
+    {
+      "id": 1681,
+      "name": "thymus",
+      "type": "anatomy"
+    },
+    {
+      "id": 1682,
+      "name": "bone marrow",
+      "type": "anatomy"
+    },
+    {
+      "id": 1685,
+      "name": "muscle tissue",
+      "type": "anatomy"
+    },
+    {
+      "id": 1686,
+      "name": "primary visual cortex",
+      "type": "anatomy"
+    },
+    {
+      "id": 1687,
+      "name": "decidua",
+      "type": "anatomy"
+    },
+    {
+      "id": 1688,
+      "name": "esophagus mucosa",
+      "type": "anatomy"
+    },
+    {
+      "id": 1691,
+      "name": "entorhinal cortex",
+      "type": "anatomy"
+    },
+    {
+      "id": 1692,
+      "name": "cingulate cortex",
+      "type": "anatomy"
+    },
+    {
+      "id": 1694,
+      "name": "epithelium of mammary gland",
+      "type": "anatomy"
+    },
+    {
+      "id": 1697,
+      "name": "cerebellar vermis",
+      "type": "anatomy"
+    },
+    {
+      "id": 1701,
+      "name": "thoracic mammary gland",
+      "type": "anatomy"
+    },
+    {
+      "id": 1702,
+      "name": "nasal cavity epithelium",
+      "type": "anatomy"
+    },
+    {
+      "id": 1706,
+      "name": "adipose tissue of abdominal region",
+      "type": "anatomy"
+    },
+    {
+      "id": 1708,
+      "name": "anterior cingulate cortex",
+      "type": "anatomy"
+    },
+    {
+      "id": 1711,
+      "name": "frontal lobe",
+      "type": "anatomy"
+    },
+    {
+      "id": 1715,
+      "name": "Intellectual disability",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1716,
+      "name": "ITM2B",
+      "type": "gene/protein"
+    },
+    {
+      "id": 1720,
+      "name": "Ataxia",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1723,
+      "name": "Babinski sign",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1739,
+      "name": "Behavioral abnormality",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1750,
+      "name": "FUZ",
+      "type": "gene/protein"
+    },
+    {
+      "id": 1776,
+      "name": "Gait ataxia",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1787,
+      "name": "GRN",
+      "type": "gene/protein"
+    },
+    {
+      "id": 1788,
+      "name": "TRIM33",
+      "type": "gene/protein"
+    },
+    {
+      "id": 1817,
+      "name": "Muscle weakness",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1820,
+      "name": "nucleoplasm",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1843,
+      "name": "STXBP1",
+      "type": "gene/protein"
+    },
+    {
+      "id": 1844,
+      "name": "TOB1",
+      "type": "gene/protein"
+    },
+    {
+      "id": 1861,
+      "name": "FIG4",
+      "type": "gene/protein"
+    },
+    {
+      "id": 1876,
+      "name": "CACNA2D2",
+      "type": "gene/protein"
+    },
+    {
+      "id": 1889,
+      "name": "MYD88",
+      "type": "gene/protein"
+    },
+    {
+      "id": 1896,
+      "name": "protein-containing complex assembly",
+      "type": "biological_process"
+    },
+    {
+      "id": 1919,
+      "name": "GRB2",
+      "type": "gene/protein"
+    },
+    {
+      "id": 1921,
+      "name": "HSPH1",
+      "type": "gene/protein"
+    },
+    {
+      "id": 1924,
+      "name": "autophagosome",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1929,
+      "name": "Fever",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 1961,
+      "name": "protein-containing complex binding",
+      "type": "molecular_function"
+    },
+    {
+      "id": 1971,
+      "name": "membrane microdomain",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1972,
+      "name": "plasma membrane region",
+      "type": "cellular_component"
+    },
+    {
+      "id": 1977,
+      "name": "ATP2B4",
+      "type": "gene/protein"
+    },
+    {
+      "id": 1984,
+      "name": "STK24",
+      "type": "gene/protein"
+    },
+    {
+      "id": 1995,
+      "name": "SLC2A1",
+      "type": "gene/protein"
+    },
+    {
+      "id": 2022,
+      "name": "cytoplasmic side of membrane",
+      "type": "cellular_component"
+    },
+    {
+      "id": 2031,
+      "name": "dopamine uptake",
+      "type": "biological_process"
+    },
+    {
+      "id": 2034,
+      "name": "Neurological speech impairment",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 2074,
+      "name": "hydrolase activity, hydrolyzing O-glycosyl compounds",
+      "type": "molecular_function"
+    },
+    {
+      "id": 2075,
+      "name": "glucosylceramide metabolic process",
+      "type": "biological_process"
+    },
+    {
+      "id": 2088,
+      "name": "TLR3",
+      "type": "gene/protein"
+    },
+    {
+      "id": 2107,
+      "name": "Feeding difficulties",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 2121,
+      "name": "SPAG9",
+      "type": "gene/protein"
+    },
+    {
+      "id": 2144,
+      "name": "SLC11A1",
+      "type": "gene/protein"
+    },
+    {
+      "id": 2145,
+      "name": "HCFC1",
+      "type": "gene/protein"
+    },
+    {
+      "id": 2167,
+      "name": "Ophthalmoplegia",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 2185,
+      "name": "regulation of chaperone-mediated autophagy",
+      "type": "biological_process"
+    },
+    {
+      "id": 2191,
+      "name": "BCL2L1",
+      "type": "gene/protein"
+    },
+    {
+      "id": 2197,
+      "name": "CTBP1",
+      "type": "gene/protein"
+    },
+    {
+      "id": 2204,
+      "name": "negative regulation of vacuolar transport",
+      "type": "biological_process"
+    },
+    {
+      "id": 2207,
+      "name": "DNAJC15",
+      "type": "gene/protein"
+    },
+    {
+      "id": 2222,
+      "name": "BAG4",
+      "type": "gene/protein"
+    },
+    {
+      "id": 2225,
+      "name": "negative regulation of G protein-coupled receptor signaling pathway",
+      "type": "biological_process"
+    },
+    {
+      "id": 2248,
+      "name": "RPS6KB1",
+      "type": "gene/protein"
+    },
+    {
+      "id": 2249,
+      "name": "cellular lipid metabolic process",
+      "type": "biological_process"
+    },
+    {
+      "id": 2250,
+      "name": "neutral lipid catabolic process",
+      "type": "biological_process"
+    },
+    {
+      "id": 2262,
+      "name": "Increased CSF protein",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 2268,
+      "name": "enzyme inhibitor activity",
+      "type": "molecular_function"
+    },
+    {
+      "id": 2275,
+      "name": "PHACTR2",
+      "type": "gene/protein"
+    },
+    {
+      "id": 2279,
+      "name": "positive regulation of protein-containing complex assembly",
+      "type": "biological_process"
+    },
+    {
+      "id": 2280,
+      "name": "positive regulation of vesicle fusion",
+      "type": "biological_process"
+    },
+    {
+      "id": 2294,
+      "name": "NNT",
+      "type": "gene/protein"
+    },
+    {
+      "id": 2321,
+      "name": "EPS15",
+      "type": "gene/protein"
+    },
+    {
+      "id": 2324,
+      "name": "AP2M1",
+      "type": "gene/protein"
+    },
+    {
+      "id": 2328,
+      "name": "SRSF2",
+      "type": "gene/protein"
+    },
+    {
+      "id": 2346,
+      "name": "regulation of calcium-mediated signaling",
+      "type": "biological_process"
+    },
+    {
+      "id": 2349,
+      "name": "GAS1",
+      "type": "gene/protein"
+    },
+    {
+      "id": 2354,
+      "name": "regulation of purine nucleotide biosynthetic process",
+      "type": "biological_process"
+    },
+    {
+      "id": 2368,
+      "name": "regulation of metanephros size",
+      "type": "biological_process"
+    },
+    {
+      "id": 2390,
+      "name": "negative regulation of phospholipase activity",
+      "type": "biological_process"
+    },
+    {
+      "id": 2405,
+      "name": "multicellular organismal water homeostasis",
+      "type": "biological_process"
+    },
+    {
+      "id": 2414,
+      "name": "MAP1LC3A",
+      "type": "gene/protein"
+    },
+    {
+      "id": 2436,
+      "name": "Optic atrophy",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 2440,
+      "name": "beta-glucosidase activity",
+      "type": "molecular_function"
+    },
+    {
+      "id": 2454,
+      "name": "negative regulation of signal transduction",
+      "type": "biological_process"
+    },
+    {
+      "id": 2461,
+      "name": "DNA-binding transcription factor activity, RNA polymerase II-specific",
+      "type": "molecular_function"
+    },
+    {
+      "id": 2465,
+      "name": "Delayed speech and language development",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 2467,
+      "name": "chromatin",
+      "type": "cellular_component"
+    },
+    {
+      "id": 2472,
+      "name": "zeaxanthin bis(beta-D-glucoside) catabolic process",
+      "type": "biological_process"
+    },
+    {
+      "id": 2473,
+      "name": "Developmental stagnation",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 2474,
+      "name": "Failure to thrive",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 2475,
+      "name": "Elevated serum creatine kinase",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 2476,
+      "name": "Distal muscle weakness",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 2479,
+      "name": "negative regulation of nitric-oxide synthase activity",
+      "type": "biological_process"
+    },
+    {
+      "id": 2484,
+      "name": "Cerebral visual impairment",
+      "type": "effect/phenotype"
+    },
+    {
+      "id": 2493,
+      "name": "fibronectin fibril",
+      "type": "cellular_component"
+    },
+    {
+      "id": 2495,
+      "name": "Akathisia",
+      "type": "effect/phenotype"
+    }
+  ],
+  "relations": {
+    "0": "protein_protein",
+    "1": "phenotype_protein",
+    "2": "phenotype_phenotype",
+    "3": "disease_phenotype_negative",
+    "4": "disease_phenotype_positive",
+    "5": "disease_protein",
+    "6": "disease_disease",
+    "7": "molfunc_protein",
+    "8": "cellcomp_protein",
+    "9": "bioprocess_protein",
+    "10": "pathway_protein",
+    "11": "anatomy_protein_present",
+    "12": "anatomy_protein_absent",
+    "13": "molfunc_molfunc",
+    "14": "bioprocess_bioprocess",
+    "15": "cellcomp_cellcomp",
+    "16": "anatomy_anatomy"
+  },
+  "triples": [
+    [
+      0,
+      0,
+      6
+    ],
+    [
+      0,
+      0,
+      345
+    ],
+    [
+      0,
+      7,
+      1233
+    ],
+    [
+      0,
+      11,
+      1596
+    ],
+    [
+      1,
+      0,
+      6
+    ],
+    [
+      1,
+      0,
+      10
+    ],
+    [
+      1,
+      0,
+      345
+    ],
+    [
+      1,
+      7,
+      1233
+    ],
+    [
+      2,
+      0,
+      6
+    ],
+    [
+      2,
+      0,
+      345
+    ],
+    [
+      2,
+      7,
+      1233
+    ],
+    [
+      2,
+      11,
+      1596
+    ],
+    [
+      3,
+      0,
+      4
+    ],
+    [
+      3,
+      0,
+      52
+    ],
+    [
+      3,
+      0,
+      189
+    ],
+    [
+      3,
+      0,
+      273
+    ],
+    [
+      3,
+      0,
+      299
+    ],
+    [
+      3,
+      0,
+      316
+    ],
+    [
+      3,
+      0,
+      345
+    ],
+    [
+      3,
+      5,
+      462
+    ],
+    [
+      3,
+      5,
+      500
+    ],
+    [
+      3,
+      5,
+      646
+    ],
+    [
+      3,
+      0,
+      1072
+    ],
+    [
+      3,
+      1,
+      1110
+    ],
+    [
+      3,
+      5,
+      1226
+    ],
+    [
+      3,
+      5,
+      1227
+    ],
+    [
+      3,
+      7,
+      1232
+    ],
+    [
+      3,
+      7,
+      1233
+    ],
+    [
+      3,
+      7,
+      1279
+    ],
+    [
+      3,
+      7,
+      1280
+    ],
+    [
+      3,
+      7,
+      1281
+    ],
+    [
+      3,
+      7,
+      1282
+    ],
+    [
+      3,
+      8,
+      1288
+    ],
+    [
+      3,
+      8,
+      1302
+    ],
+    [
+      3,
+      8,
+      1304
+    ],
+    [
+      3,
+      8,
+      1306
+    ],
+    [
+      3,
+      8,
+      1309
+    ],
+    [
+      3,
+      8,
+      1321
+    ],
+    [
+      3,
+      8,
+      1324
+    ],
+    [
+      3,
+      9,
+      1352
+    ],
+    [
+      3,
+      9,
+      1355
+    ],
+    [
+      3,
+      9,
+      1428
+    ],
+    [
+      3,
+      9,
+      1433
+    ],
+    [
+      3,
+      9,
+      1446
+    ],
+    [
+      3,
+      9,
+      1466
+    ],
+    [
+      3,
+      9,
+      1484
+    ],
+    [
+      3,
+      9,
+      1497
+    ],
+    [
+      3,
+      9,
+      1502
+    ],
+    [
+      3,
+      9,
+      1521
+    ],
+    [
+      3,
+      9,
+      1522
+    ],
+    [
+      3,
+      9,
+      1525
+    ],
+    [
+      3,
+      9,
+      1526
+    ],
+    [
+      3,
+      9,
+      1527
+    ],
+    [
+      3,
+      9,
+      1528
+    ],
+    [
+      3,
+      9,
+      1529
+    ],
+    [
+      3,
+      10,
+      1575
+    ],
+    [
+      3,
+      10,
+      1576
+    ],
+    [
+      3,
+      11,
+      1581
+    ],
+    [
+      3,
+      11,
+      1582
+    ],
+    [
+      3,
+      11,
+      1596
+    ],
+    [
+      3,
+      11,
+      1602
+    ],
+    [
+      3,
+      11,
+      1604
+    ],
+    [
+      3,
+      11,
+      1609
+    ],
+    [
+      3,
+      11,
+      1613
+    ],
+    [
+      3,
+      11,
+      1616
+    ],
+    [
+      3,
+      11,
+      1622
+    ],
+    [
+      3,
+      11,
+      1625
+    ],
+    [
+      3,
+      11,
+      1637
+    ],
+    [
+      3,
+      11,
+      1638
+    ],
+    [
+      3,
+      11,
+      1658
+    ],
+    [
+      3,
+      11,
+      1660
+    ],
+    [
+      3,
+      11,
+      1661
+    ],
+    [
+      3,
+      11,
+      1666
+    ],
+    [
+      3,
+      11,
+      1668
+    ],
+    [
+      3,
+      11,
+      1680
+    ],
+    [
+      3,
+      11,
+      1685
+    ],
+    [
+      3,
+      11,
+      1701
+    ],
+    [
+      4,
+      0,
+      3
+    ],
+    [
+      4,
+      0,
+      6
+    ],
+    [
+      4,
+      0,
+      9
+    ],
+    [
+      4,
+      0,
+      27
+    ],
+    [
+      4,
+      0,
+      52
+    ],
+    [
+      4,
+      0,
+      55
+    ],
+    [
+      4,
+      0,
+      65
+    ],
+    [
+      4,
+      0,
+      89
+    ],
+    [
+      4,
+      0,
+      132
+    ],
+    [
+      4,
+      0,
+      148
+    ],
+    [
+      4,
+      0,
+      174
+    ],
+    [
+      4,
+      0,
+      189
+    ],
+    [
+      4,
+      0,
+      235
+    ],
+    [
+      4,
+      0,
+      255
+    ],
+    [
+      4,
+      0,
+      273
+    ],
+    [
+      4,
+      0,
+      289
+    ],
+    [
+      4,
+      0,
+      299
+    ],
+    [
+      4,
+      0,
+      311
+    ],
+    [
+      4,
+      0,
+      345
+    ],
+    [
+      4,
+      0,
+      361
+    ],
+    [
+      4,
+      0,
+      373
+    ],
+    [
+      4,
+      5,
+      462
+    ],
+    [
+      4,
+      5,
+      500
+    ],
+    [
+      4,
+      5,
+      646
+    ],
+    [
+      4,
+      0,
+      966
+    ],
+    [
+      4,
+      0,
+      1080
+    ],
+    [
+      4,
+      0,
+      1089
+    ],
+    [
+      4,
+      0,
+      1109
+    ],
+    [
+      4,
+      5,
+      1201
+    ],
+    [
+      4,
+      7,
+      1233
+    ],
+    [
+      4,
+      7,
+      1234
+    ],
+    [
+      4,
+      7,
+      1236
+    ],
+    [
+      4,
+      7,
+      1241
+    ],
+    [
+      4,
+      7,
+      1243
+    ],
+    [
+      4,
+      7,
+      1244
+    ],
+    [
+      4,
+      7,
+      1246
+    ],
+    [
+      4,
+      7,
+      1247
+    ],
+    [
+      4,
+      7,
+      1248
+    ],
+    [
+      4,
+      7,
+      1249
+    ],
+    [
+      4,
+      7,
+      1250
+    ],
+    [
+      4,
+      7,
+      1252
+    ],
+    [
+      4,
+      7,
+      1256
+    ],
+    [
+      4,
+      7,
+      1257
+    ],
+    [
+      4,
+      7,
+      1261
+    ],
+    [
+      4,
+      7,
+      1262
+    ],
+    [
+      4,
+      7,
+      1263
+    ],
+    [
+      4,
+      7,
+      1264
+    ],
+    [
+      4,
+      7,
+      1265
+    ],
+    [
+      4,
+      7,
+      1266
+    ],
+    [
+      4,
+      7,
+      1267
+    ],
+    [
+      4,
+      7,
+      1268
+    ],
+    [
+      4,
+      7,
+      1269
+    ],
+    [
+      4,
+      7,
+      1270
+    ],
+    [
+      4,
+      7,
+      1271
+    ],
+    [
+      4,
+      7,
+      1274
+    ],
+    [
+      4,
+      7,
+      1278
+    ],
+    [
+      4,
+      8,
+      1287
+    ],
+    [
+      4,
+      8,
+      1289
+    ],
+    [
+      4,
+      8,
+      1290
+    ],
+    [
+      4,
+      8,
+      1291
+    ],
+    [
+      4,
+      8,
+      1293
+    ],
+    [
+      4,
+      8,
+      1294
+    ],
+    [
+      4,
+      8,
+      1295
+    ],
+    [
+      4,
+      8,
+      1296
+    ],
+    [
+      4,
+      8,
+      1298
+    ],
+    [
+      4,
+      8,
+      1302
+    ],
+    [
+      4,
+      8,
+      1304
+    ],
+    [
+      4,
+      8,
+      1307
+    ],
+    [
+      4,
+      8,
+      1308
+    ],
+    [
+      4,
+      8,
+      1311
+    ],
+    [
+      4,
+      8,
+      1312
+    ],
+    [
+      4,
+      8,
+      1313
+    ],
+    [
+      4,
+      8,
+      1314
+    ],
+    [
+      4,
+      8,
+      1316
+    ],
+    [
+      4,
+      8,
+      1318
+    ],
+    [
+      4,
+      8,
+      1325
+    ],
+    [
+      4,
+      8,
+      1327
+    ],
+    [
+      4,
+      8,
+      1328
+    ],
+    [
+      4,
+      8,
+      1329
+    ],
+    [
+      4,
+      8,
+      1330
+    ],
+    [
+      4,
+      8,
+      1333
+    ],
+    [
+      4,
+      8,
+      1334
+    ],
+    [
+      4,
+      8,
+      1337
+    ],
+    [
+      4,
+      8,
+      1343
+    ],
+    [
+      4,
+      9,
+      1350
+    ],
+    [
+      4,
+      9,
+      1377
+    ],
+    [
+      4,
+      9,
+      1396
+    ],
+    [
+      4,
+      9,
+      1401
+    ],
+    [
+      4,
+      9,
+      1406
+    ],
+    [
+      4,
+      9,
+      1441
+    ],
+    [
+      4,
+      9,
+      1448
+    ],
+    [
+      4,
+      9,
+      1459
+    ],
+    [
+      4,
+      9,
+      1467
+    ],
+    [
+      4,
+      9,
+      1477
+    ],
+    [
+      4,
+      9,
+      1485
+    ],
+    [
+      4,
+      9,
+      1486
+    ],
+    [
+      4,
+      9,
+      1490
+    ],
+    [
+      4,
+      9,
+      1491
+    ],
+    [
+      4,
+      9,
+      1503
+    ],
+    [
+      4,
+      9,
+      1532
+    ],
+    [
+      4,
+      9,
+      1538
+    ],
+    [
+      4,
+      9,
+      1544
+    ],
+    [
+      4,
+      9,
+      1545
+    ],
+    [
+      4,
+      9,
+      1552
+    ],
+    [
+      4,
+      9,
+      1553
+    ],
+    [
+      4,
+      9,
+      1555
+    ],
+    [
+      4,
+      9,
+      1556
+    ],
+    [
+      4,
+      9,
+      1557
+    ],
+    [
+      4,
+      9,
+      1559
+    ],
+    [
+      4,
+      9,
+      1561
+    ],
+    [
+      4,
+      9,
+      1563
+    ],
+    [
+      4,
+      10,
+      1577
+    ],
+    [
+      4,
+      11,
+      1578
+    ],
+    [
+      4,
+      11,
+      1579
+    ],
+    [
+      4,
+      11,
+      1581
+    ],
+    [
+      4,
+      11,
+      1582
+    ],
+    [
+      4,
+      11,
+      1583
+    ],
+    [
+      4,
+      11,
+      1587
+    ],
+    [
+      4,
+      11,
+      1595
+    ],
+    [
+      4,
+      11,
+      1596
+    ],
+    [
+      4,
+      11,
+      1601
+    ],
+    [
+      4,
+      11,
+      1602
+    ],
+    [
+      4,
+      11,
+      1604
+    ],
+    [
+      4,
+      11,
+      1606
+    ],
+    [
+      4,
+      11,
+      1608
+    ],
+    [
+      4,
+      11,
+      1609
+    ],
+    [
+      4,
+      11,
+      1613
+    ],
+    [
+      4,
+      11,
+      1616
+    ],
+    [
+      4,
+      11,
+      1619
+    ],
+    [
+      4,
+      11,
+      1620
+    ],
+    [
+      4,
+      11,
+      1622
+    ],
+    [
+      4,
+      11,
+      1625
+    ],
+    [
+      4,
+      11,
+      1627
+    ],
+    [
+      4,
+      11,
+      1630
+    ],
+    [
+      4,
+      11,
+      1634
+    ],
+    [
+      4,
+      11,
+      1637
+    ],
+    [
+      4,
+      11,
+      1638
+    ],
+    [
+      4,
+      11,
+      1642
+    ],
+    [
+      4,
+      11,
+      1647
+    ],
+    [
+      4,
+      11,
+      1648
+    ],
+    [
+      4,
+      11,
+      1649
+    ],
+    [
+      4,
+      11,
+      1652
+    ],
+    [
+      4,
+      11,
+      1653
+    ],
+    [
+      4,
+      11,
+      1654
+    ],
+    [
+      4,
+      11,
+      1656
+    ],
+    [
+      4,
+      11,
+      1657
+    ],
+    [
+      4,
+      11,
+      1658
+    ],
+    [
+      4,
+      11,
+      1659
+    ],
+    [
+      4,
+      11,
+      1660
+    ],
+    [
+      4,
+      11,
+      1661
+    ],
+    [
+      4,
+      11,
+      1662
+    ],
+    [
+      4,
+      11,
+      1663
+    ],
+    [
+      4,
+      11,
+      1666
+    ],
+    [
+      4,
+      11,
+      1668
+    ],
+    [
+      4,
+      11,
+      1673
+    ],
+    [
+      4,
+      11,
+      1676
+    ],
+    [
+      4,
+      11,
+      1678
+    ],
+    [
+      4,
+      11,
+      1680
+    ],
+    [
+      4,
+      11,
+      1681
+    ],
+    [
+      4,
+      11,
+      1682
+    ],
+    [
+      4,
+      11,
+      1685
+    ],
+    [
+      4,
+      11,
+      1686
+    ],
+    [
+      4,
+      11,
+      1687
+    ],
+    [
+      4,
+      11,
+      1688
+    ],
+    [
+      4,
+      11,
+      1691
+    ],
+    [
+      4,
+      11,
+      1692
+    ],
+    [
+      4,
+      11,
+      1694
+    ],
+    [
+      4,
+      11,
+      1697
+    ],
+    [
+      4,
+      11,
+      1701
+    ],
+    [
+      4,
+      11,
+      1702
+    ],
+    [
+      4,
+      11,
+      1706
+    ],
+    [
+      4,
+      11,
+      1708
+    ],
+    [
+      4,
+      11,
+      1711
+    ],
+    [
+      6,
+      0,
+      0
+    ],
+    [
+      6,
+      0,
+      1
+    ],
+    [
+      6,
+      0,
+      2
+    ],
+    [
+      6,
+      0,
+      4
+    ],
+    [
+      6,
+      0,
+      9
+    ],
+    [
+      6,
+      0,
+      10
+    ],
+    [
+      6,
+      0,
+      27
+    ],
+    [
+      6,
+      0,
+      52
+    ],
+    [
+      6,
+      0,
+      55
+    ],
+    [
+      6,
+      0,
+      57
+    ],
+    [
+      6,
+      0,
+      100
+    ],
+    [
+      6,
+      0,
+      127
+    ],
+    [
+      6,
+      0,
+      130
+    ],
+    [
+      6,
+      0,
+      148
+    ],
+    [
+      6,
+      0,
+      164
+    ],
+    [
+      6,
+      0,
+      174
+    ],
+    [
+      6,
+      0,
+      175
+    ],
+    [
+      6,
+      0,
+      187
+    ],
+    [
+      6,
+      0,
+      188
+    ],
+    [
+      6,
+      0,
+      230
+    ],
+    [
+      6,
+      0,
+      255
+    ],
+    [
+      6,
+      0,
+      274
+    ],
+    [
+      6,
+      0,
+      332
+    ],
+    [
+      6,
+      0,
+      335
+    ],
+    [
+      6,
+      0,
+      345
+    ],
+    [
+      6,
+      0,
+      353
+    ],
+    [
+      6,
+      5,
+      462
+    ],
+    [
+      6,
+      5,
+      500
+    ],
+    [
+      6,
+      5,
+      646
+    ],
+    [
+      6,
+      5,
+      1214
+    ],
+    [
+      6,
+      5,
+      1216
+    ],
+    [
+      6,
+      7,
+      1233
+    ],
+    [
+      6,
+      7,
+      1235
+    ],
+    [
+      6,
+      7,
+      1236
+    ],
+    [
+      6,
+      7,
+      1237
+    ],
+    [
+      6,
+      7,
+      1238
+    ],
+    [
+      6,
+      7,
+      1239
+    ],
+    [
+      6,
+      7,
+      1240
+    ],
+    [
+      6,
+      7,
+      1241
+    ],
+    [
+      6,
+      7,
+      1242
+    ],
+    [
+      6,
+      7,
+      1245
+    ],
+    [
+      6,
+      7,
+      1250
+    ],
+    [
+      6,
+      7,
+      1251
+    ],
+    [
+      6,
+      7,
+      1253
+    ],
+    [
+      6,
+      7,
+      1254
+    ],
+    [
+      6,
+      7,
+      1255
+    ],
+    [
+      6,
+      7,
+      1258
+    ],
+    [
+      6,
+      7,
+      1259
+    ],
+    [
+      6,
+      7,
+      1260
+    ],
+    [
+      6,
+      7,
+      1263
+    ],
+    [
+      6,
+      7,
+      1272
+    ],
+    [
+      6,
+      7,
+      1273
+    ],
+    [
+      6,
+      7,
+      1275
+    ],
+    [
+      6,
+      7,
+      1276
+    ],
+    [
+      6,
+      7,
+      1277
+    ],
+    [
+      6,
+      7,
+      1278
+    ],
+    [
+      6,
+      7,
+      1283
+    ],
+    [
+      6,
+      7,
+      1284
+    ],
+    [
+      6,
+      7,
+      1285
+    ],
+    [
+      6,
+      7,
+      1286
+    ],
+    [
+      6,
+      8,
+      1287
+    ],
+    [
+      6,
+      8,
+      1288
+    ],
+    [
+      6,
+      8,
+      1290
+    ],
+    [
+      6,
+      8,
+      1292
+    ],
+    [
+      6,
+      8,
+      1293
+    ],
+    [
+      6,
+      8,
+      1294
+    ],
+    [
+      6,
+      8,
+      1296
+    ],
+    [
+      6,
+      8,
+      1298
+    ],
+    [
+      6,
+      8,
+      1299
+    ],
+    [
+      6,
+      8,
+      1301
+    ],
+    [
+      6,
+      8,
+      1302
+    ],
+    [
+      6,
+      8,
+      1303
+    ],
+    [
+      6,
+      8,
+      1304
+    ],
+    [
+      6,
+      8,
+      1305
+    ],
+    [
+      6,
+      8,
+      1307
+    ],
+    [
+      6,
+      8,
+      1309
+    ],
+    [
+      6,
+      8,
+      1310
+    ],
+    [
+      6,
+      8,
+      1312
+    ],
+    [
+      6,
+      8,
+      1313
+    ],
+    [
+      6,
+      8,
+      1315
+    ],
+    [
+      6,
+      8,
+      1316
+    ],
+    [
+      6,
+      8,
+      1317
+    ],
+    [
+      6,
+      8,
+      1318
+    ],
+    [
+      6,
+      8,
+      1319
+    ],
+    [
+      6,
+      8,
+      1320
+    ],
+    [
+      6,
+      8,
+      1322
+    ],
+    [
+      6,
+      8,
+      1323
+    ],
+    [
+      6,
+      8,
+      1324
+    ],
+    [
+      6,
+      8,
+      1325
+    ],
+    [
+      6,
+      8,
+      1326
+    ],
+    [
+      6,
+      8,
+      1330
+    ],
+    [
+      6,
+      8,
+      1333
+    ],
+    [
+      6,
+      8,
+      1334
+    ],
+    [
+      6,
+      8,
+      1335
+    ],
+    [
+      6,
+      8,
+      1336
+    ],
+    [
+      6,
+      8,
+      1340
+    ],
+    [
+      6,
+      8,
+      1341
+    ],
+    [
+      6,
+      8,
+      1342
+    ],
+    [
+      6,
+      8,
+      1344
+    ],
+    [
+      6,
+      8,
+      1345
+    ],
+    [
+      6,
+      8,
+      1346
+    ],
+    [
+      6,
+      9,
+      1352
+    ],
+    [
+      6,
+      9,
+      1365
+    ],
+    [
+      6,
+      9,
+      1366
+    ],
+    [
+      6,
+      9,
+      1399
+    ],
+    [
+      6,
+      9,
+      1401
+    ],
+    [
+      6,
+      9,
+      1420
+    ],
+    [
+      6,
+      9,
+      1426
+    ],
+    [
+      6,
+      9,
+      1428
+    ],
+    [
+      6,
+      9,
+      1436
+    ],
+    [
+      6,
+      9,
+      1439
+    ],
+    [
+      6,
+      9,
+      1451
+    ],
+    [
+      6,
+      9,
+      1482
+    ],
+    [
+      6,
+      9,
+      1500
+    ],
+    [
+      6,
+      9,
+      1510
+    ],
+    [
+      6,
+      9,
+      1514
+    ],
+    [
+      6,
+      9,
+      1516
+    ],
+    [
+      6,
+      9,
+      1534
+    ],
+    [
+      6,
+      9,
+      1536
+    ],
+    [
+      6,
+      9,
+      1537
+    ],
+    [
+      6,
+      9,
+      1539
+    ],
+    [
+      6,
+      9,
+      1541
+    ],
+    [
+      6,
+      9,
+      1568
+    ],
+    [
+      6,
+      9,
+      1570
+    ],
+    [
+      6,
+      9,
+      1572
+    ],
+    [
+      6,
+      10,
+      1574
+    ],
+    [
+      6,
+      11,
+      1578
+    ],
+    [
+      6,
+      11,
+      1581
+    ],
+    [
+      6,
+      11,
+      1582
+    ],
+    [
+      6,
+      11,
+      1583
+    ],
+    [
+      6,
+      11,
+      1587
+    ],
+    [
+      6,
+      11,
+      1595
+    ],
+    [
+      6,
+      11,
+      1596
+    ],
+    [
+      6,
+      11,
+      1601
+    ],
+    [
+      6,
+      11,
+      1602
+    ],
+    [
+      6,
+      11,
+      1604
+    ],
+    [
+      6,
+      11,
+      1606
+    ],
+    [
+      6,
+      11,
+      1608
+    ],
+    [
+      6,
+      11,
+      1609
+    ],
+    [
+      6,
+      11,
+      1613
+    ],
+    [
+      6,
+      11,
+      1616
+    ],
+    [
+      6,
+      11,
+      1622
+    ],
+    [
+      6,
+      11,
+      1625
+    ],
+    [
+      6,
+      11,
+      1627
+    ],
+    [
+      6,
+      11,
+      1630
+    ],
+    [
+      6,
+      11,
+      1637
+    ],
+    [
+      6,
+      11,
+      1638
+    ],
+    [
+      6,
+      11,
+      1652
+    ],
+    [
+      6,
+      11,
+      1653
+    ],
+    [
+      6,
+      11,
+      1656
+    ],
+    [
+      6,
+      11,
+      1658
+    ],
+    [
+      6,
+      11,
+      1659
+    ],
+    [
+      6,
+      11,
+      1660
+    ],
+    [
+      6,
+      11,
+      1661
+    ],
+    [
+      6,
+      11,
+      1662
+    ],
+    [
+      6,
+      11,
+      1663
+    ],
+    [
+      6,
+      11,
+      1666
+    ],
+    [
+      6,
+      11,
+      1668
+    ],
+    [
+      6,
+      11,
+      1673
+    ],
+    [
+      6,
+      11,
+      1680
+    ],
+    [
+      6,
+      11,
+      1682
+    ],
+    [
+      6,
+      11,
+      1685
+    ],
+    [
+      6,
+      11,
+      1686
+    ],
+    [
+      6,
+      11,
+      1688
+    ],
+    [
+      6,
+      11,
+      1691
+    ],
+    [
+      6,
+      12,
+      1697
+    ],
+    [
+      6,
+      11,
+      1701
+    ],
+    [
+      6,
+      11,
+      1706
+    ],
+    [
+      6,
+      11,
+      1708
+    ],
+    [
+      9,
+      0,
+      4
+    ],
+    [
+      9,
+      0,
+      6
+    ],
+    [
+      9,
+      0,
+      345
+    ],
+    [
+      9,
+      1,
+      454
+    ],
+    [
+      9,
+      5,
+      500
+    ],
+    [
+      9,
+      7,
+      1233
+    ],
+    [
+      9,
+      11,
+      1596
+    ],
+    [
+      10,
+      0,
+      6
+    ],
+    [
+      10,
+      0,
+      345
+    ],
+    [
+      10,
+      7,
+      1233
+    ],
+    [
+      10,
+      11,
+      1596
+    ],
+    [
+      27,
+      0,
+      4
+    ],
+    [
+      27,
+      0,
+      6
+    ],
+    [
+      27,
+      0,
+      345
+    ],
+    [
+      27,
+      1,
+      454
+    ],
+    [
+      27,
+      7,
+      1233
+    ],
+    [
+      27,
+      11,
+      1596
+    ],
+    [
+      52,
+      0,
+      3
+    ],
+    [
+      52,
+      0,
+      4
+    ],
+    [
+      52,
+      0,
+      6
+    ],
+    [
+      52,
+      0,
+      345
+    ],
+    [
+      52,
+      7,
+      1233
+    ],
+    [
+      52,
+      11,
+      1596
+    ],
+    [
+      55,
+      0,
+      4
+    ],
+    [
+      55,
+      0,
+      6
+    ],
+    [
+      55,
+      0,
+      345
+    ],
+    [
+      55,
+      7,
+      1233
+    ],
+    [
+      55,
+      11,
+      1596
+    ],
+    [
+      57,
+      0,
+      6
+    ],
+    [
+      57,
+      8,
+      1291
+    ],
+    [
+      57,
+      8,
+      2467
+    ],
+    [
+      65,
+      0,
+      4
+    ],
+    [
+      65,
+      0,
+      345
+    ],
+    [
+      65,
+      7,
+      1233
+    ],
+    [
+      65,
+      11,
+      1596
+    ],
+    [
+      89,
+      0,
+      4
+    ],
+    [
+      89,
+      0,
+      345
+    ],
+    [
+      89,
+      7,
+      1233
+    ],
+    [
+      89,
+      11,
+      1596
+    ],
+    [
+      100,
+      0,
+      6
+    ],
+    [
+      100,
+      7,
+      1233
+    ],
+    [
+      100,
+      8,
+      1291
+    ],
+    [
+      100,
+      8,
+      1820
+    ],
+    [
+      127,
+      0,
+      6
+    ],
+    [
+      127,
+      0,
+      345
+    ],
+    [
+      127,
+      7,
+      1233
+    ],
+    [
+      127,
+      0,
+      1843
+    ],
+    [
+      130,
+      0,
+      6
+    ],
+    [
+      130,
+      0,
+      345
+    ],
+    [
+      130,
+      7,
+      1233
+    ],
+    [
+      130,
+      11,
+      1596
+    ],
+    [
+      132,
+      0,
+      4
+    ],
+    [
+      132,
+      0,
+      345
+    ],
+    [
+      132,
+      7,
+      1233
+    ],
+    [
+      132,
+      11,
+      1596
+    ],
+    [
+      148,
+      0,
+      4
+    ],
+    [
+      148,
+      0,
+      6
+    ],
+    [
+      148,
+      0,
+      345
+    ],
+    [
+      148,
+      7,
+      1233
+    ],
+    [
+      148,
+      11,
+      1596
+    ],
+    [
+      164,
+      0,
+      6
+    ],
+    [
+      164,
+      7,
+      1233
+    ],
+    [
+      164,
+      11,
+      1596
+    ],
+    [
+      174,
+      0,
+      4
+    ],
+    [
+      174,
+      0,
+      6
+    ],
+    [
+      174,
+      0,
+      345
+    ],
+    [
+      174,
+      7,
+      1233
+    ],
+    [
+      174,
+      11,
+      1596
+    ],
+    [
+      175,
+      0,
+      6
+    ],
+    [
+      175,
+      7,
+      1233
+    ],
+    [
+      175,
+      11,
+      1596
+    ],
+    [
+      187,
+      0,
+      6
+    ],
+    [
+      187,
+      11,
+      1596
+    ],
+    [
+      188,
+      0,
+      6
+    ],
+    [
+      188,
+      0,
+      345
+    ],
+    [
+      188,
+      7,
+      1233
+    ],
+    [
+      188,
+      11,
+      1596
+    ],
+    [
+      189,
+      0,
+      3
+    ],
+    [
+      189,
+      0,
+      4
+    ],
+    [
+      189,
+      7,
+      1233
+    ],
+    [
+      189,
+      11,
+      1596
+    ],
+    [
+      230,
+      0,
+      6
+    ],
+    [
+      230,
+      0,
+      345
+    ],
+    [
+      230,
+      7,
+      1233
+    ],
+    [
+      230,
+      11,
+      1596
+    ],
+    [
+      235,
+      0,
+      4
+    ],
+    [
+      235,
+      0,
+      345
+    ],
+    [
+      235,
+      11,
+      1596
+    ],
+    [
+      255,
+      0,
+      4
+    ],
+    [
+      255,
+      0,
+      6
+    ],
+    [
+      255,
+      5,
+      500
+    ],
+    [
+      255,
+      7,
+      1233
+    ],
+    [
+      255,
+      11,
+      1596
+    ],
+    [
+      273,
+      0,
+      3
+    ],
+    [
+      273,
+      0,
+      4
+    ],
+    [
+      273,
+      0,
+      345
+    ],
+    [
+      273,
+      7,
+      1233
+    ],
+    [
+      273,
+      11,
+      1596
+    ],
+    [
+      274,
+      0,
+      6
+    ],
+    [
+      274,
+      0,
+      345
+    ],
+    [
+      274,
+      7,
+      1233
+    ],
+    [
+      274,
+      11,
+      1596
+    ],
+    [
+      289,
+      0,
+      4
+    ],
+    [
+      289,
+      0,
+      345
+    ],
+    [
+      289,
+      1,
+      446
+    ],
+    [
+      289,
+      1,
+      447
+    ],
+    [
+      289,
+      1,
+      455
+    ],
+    [
+      289,
+      7,
+      1233
+    ],
+    [
+      289,
+      11,
+      1596
+    ],
+    [
+      299,
+      0,
+      3
+    ],
+    [
+      299,
+      0,
+      4
+    ],
+    [
+      299,
+      0,
+      345
+    ],
+    [
+      299,
+      7,
+      1233
+    ],
+    [
+      299,
+      11,
+      1596
+    ],
+    [
+      311,
+      0,
+      4
+    ],
+    [
+      311,
+      7,
+      1233
+    ],
+    [
+      311,
+      11,
+      1596
+    ],
+    [
+      316,
+      0,
+      3
+    ],
+    [
+      316,
+      0,
+      1072
+    ],
+    [
+      316,
+      7,
+      1233
+    ],
+    [
+      332,
+      0,
+      6
+    ],
+    [
+      332,
+      7,
+      1233
+    ],
+    [
+      332,
+      8,
+      1291
+    ],
+    [
+      332,
+      0,
+      1788
+    ],
+    [
+      335,
+      0,
+      6
+    ],
+    [
+      335,
+      0,
+      345
+    ],
+    [
+      335,
+      7,
+      1233
+    ],
+    [
+      335,
+      11,
+      1596
+    ],
+    [
+      345,
+      0,
+      3
+    ],
+    [
+      345,
+      0,
+      4
+    ],
+    [
+      345,
+      0,
+      6
+    ],
+    [
+      345,
+      7,
+      1233
+    ],
+    [
+      345,
+      11,
+      1596
+    ],
+    [
+      353,
+      0,
+      2
+    ],
+    [
+      353,
+      0,
+      6
+    ],
+    [
+      353,
+      8,
+      1291
+    ],
+    [
+      353,
+      7,
+      2461
+    ],
+    [
+      361,
+      0,
+      4
+    ],
+    [
+      361,
+      7,
+      1233
+    ],
+    [
+      361,
+      11,
+      1596
+    ],
+    [
+      373,
+      0,
+      4
+    ],
+    [
+      373,
+      0,
+      345
+    ],
+    [
+      373,
+      7,
+      1233
+    ],
+    [
+      373,
+      11,
+      1596
+    ],
+    [
+      408,
+      1,
+      452
+    ],
+    [
+      408,
+      1,
+      454
+    ],
+    [
+      408,
+      7,
+      1233
+    ],
+    [
+      408,
+      11,
+      1596
+    ],
+    [
+      417,
+      1,
+      454
+    ],
+    [
+      417,
+      7,
+      1233
+    ],
+    [
+      417,
+      11,
+      1596
+    ],
+    [
+      432,
+      1,
+      1113
+    ],
+    [
+      432,
+      7,
+      1233
+    ],
+    [
+      432,
+      11,
+      1596
+    ],
+    [
+      433,
+      1,
+      452
+    ],
+    [
+      433,
+      1,
+      1113
+    ],
+    [
+      433,
+      7,
+      1233
+    ],
+    [
+      433,
+      11,
+      1596
+    ],
+    [
+      437,
+      0,
+      345
+    ],
+    [
+      437,
+      1,
+      453
+    ],
+    [
+      437,
+      7,
+      1233
+    ],
+    [
+      437,
+      11,
+      1596
+    ],
+    [
+      438,
+      0,
+      345
+    ],
+    [
+      438,
+      1,
+      453
+    ],
+    [
+      438,
+      7,
+      1233
+    ],
+    [
+      438,
+      11,
+      1596
+    ],
+    [
+      443,
+      3,
+      462
+    ],
+    [
+      443,
+      4,
+      479
+    ],
+    [
+      443,
+      4,
+      485
+    ],
+    [
+      443,
+      4,
+      486
+    ],
+    [
+      443,
+      4,
+      500
+    ],
+    [
+      443,
+      4,
+      505
+    ],
+    [
+      443,
+      4,
+      537
+    ],
+    [
+      443,
+      4,
+      538
+    ],
+    [
+      443,
+      4,
+      541
+    ],
+    [
+      443,
+      4,
+      550
+    ],
+    [
+      443,
+      4,
+      552
+    ],
+    [
+      443,
+      4,
+      616
+    ],
+    [
+      443,
+      4,
+      617
+    ],
+    [
+      443,
+      4,
+      618
+    ],
+    [
+      443,
+      4,
+      621
+    ],
+    [
+      443,
+      4,
+      625
+    ],
+    [
+      443,
+      4,
+      632
+    ],
+    [
+      443,
+      4,
+      655
+    ],
+    [
+      443,
+      4,
+      755
+    ],
+    [
+      443,
+      4,
+      756
+    ],
+    [
+      443,
+      4,
+      786
+    ],
+    [
+      443,
+      4,
+      793
+    ],
+    [
+      443,
+      4,
+      795
+    ],
+    [
+      443,
+      4,
+      812
+    ],
+    [
+      443,
+      4,
+      813
+    ],
+    [
+      443,
+      4,
+      824
+    ],
+    [
+      443,
+      4,
+      825
+    ],
+    [
+      443,
+      4,
+      835
+    ],
+    [
+      446,
+      1,
+      289
+    ],
+    [
+      446,
+      2,
+      447
+    ],
+    [
+      446,
+      4,
+      511
+    ],
+    [
+      446,
+      4,
+      647
+    ],
+    [
+      446,
+      4,
+      664
+    ],
+    [
+      447,
+      1,
+      289
+    ],
+    [
+      447,
+      2,
+      446
+    ],
+    [
+      447,
+      2,
+      450
+    ],
+    [
+      447,
+      4,
+      565
+    ],
+    [
+      447,
+      4,
+      583
+    ],
+    [
+      447,
+      4,
+      599
+    ],
+    [
+      447,
+      4,
+      618
+    ],
+    [
+      447,
+      4,
+      682
+    ],
+    [
+      447,
+      4,
+      718
+    ],
+    [
+      447,
+      2,
+      1127
+    ],
+    [
+      447,
+      2,
+      1130
+    ],
+    [
+      447,
+      2,
+      1131
+    ],
+    [
+      448,
+      4,
+      500
+    ],
+    [
+      448,
+      4,
+      505
+    ],
+    [
+      448,
+      4,
+      528
+    ],
+    [
+      448,
+      4,
+      545
+    ],
+    [
+      448,
+      4,
+      548
+    ],
+    [
+      448,
+      4,
+      565
+    ],
+    [
+      448,
+      4,
+      577
+    ],
+    [
+      448,
+      4,
+      583
+    ],
+    [
+      448,
+      4,
+      608
+    ],
+    [
+      448,
+      4,
+      640
+    ],
+    [
+      448,
+      4,
+      701
+    ],
+    [
+      448,
+      4,
+      830
+    ],
+    [
+      448,
+      4,
+      831
+    ],
+    [
+      448,
+      4,
+      842
+    ],
+    [
+      448,
+      4,
+      847
+    ],
+    [
+      448,
+      4,
+      861
+    ],
+    [
+      448,
+      2,
+      1118
+    ],
+    [
+      448,
+      4,
+      1200
+    ],
+    [
+      449,
+      2,
+      453
+    ],
+    [
+      449,
+      4,
+      500
+    ],
+    [
+      449,
+      2,
+      1776
+    ],
+    [
+      450,
+      1,
+      289
+    ],
+    [
+      450,
+      2,
+      447
+    ],
+    [
+      450,
+      2,
+      455
+    ],
+    [
+      450,
+      4,
+      500
+    ],
+    [
+      452,
+      1,
+      408
+    ],
+    [
+      452,
+      1,
+      433
+    ],
+    [
+      452,
+      4,
+      462
+    ],
+    [
+      452,
+      4,
+      479
+    ],
+    [
+      452,
+      4,
+      500
+    ],
+    [
+      452,
+      4,
+      505
+    ],
+    [
+      452,
+      4,
+      526
+    ],
+    [
+      452,
+      4,
+      543
+    ],
+    [
+      452,
+      4,
+      565
+    ],
+    [
+      452,
+      4,
+      577
+    ],
+    [
+      452,
+      4,
+      582
+    ],
+    [
+      452,
+      4,
+      583
+    ],
+    [
+      452,
+      4,
+      618
+    ],
+    [
+      452,
+      4,
+      621
+    ],
+    [
+      452,
+      4,
+      632
+    ],
+    [
+      452,
+      4,
+      670
+    ],
+    [
+      452,
+      4,
+      727
+    ],
+    [
+      452,
+      4,
+      762
+    ],
+    [
+      452,
+      4,
+      767
+    ],
+    [
+      452,
+      4,
+      785
+    ],
+    [
+      452,
+      4,
+      830
+    ],
+    [
+      452,
+      4,
+      849
+    ],
+    [
+      452,
+      2,
+      1119
+    ],
+    [
+      452,
+      2,
+      1128
+    ],
+    [
+      453,
+      1,
+      437
+    ],
+    [
+      453,
+      1,
+      438
+    ],
+    [
+      453,
+      2,
+      449
+    ],
+    [
+      453,
+      4,
+      479
+    ],
+    [
+      453,
+      4,
+      519
+    ],
+    [
+      453,
+      4,
+      545
+    ],
+    [
+      453,
+      4,
+      548
+    ],
+    [
+      453,
+      4,
+      564
+    ],
+    [
+      453,
+      4,
+      565
+    ],
+    [
+      453,
+      4,
+      583
+    ],
+    [
+      453,
+      4,
+      610
+    ],
+    [
+      453,
+      4,
+      615
+    ],
+    [
+      453,
+      4,
+      620
+    ],
+    [
+      453,
+      4,
+      642
+    ],
+    [
+      453,
+      4,
+      648
+    ],
+    [
+      453,
+      4,
+      663
+    ],
+    [
+      453,
+      4,
+      667
+    ],
+    [
+      453,
+      4,
+      682
+    ],
+    [
+      453,
+      4,
+      746
+    ],
+    [
+      453,
+      4,
+      756
+    ],
+    [
+      453,
+      4,
+      775
+    ],
+    [
+      453,
+      4,
+      776
+    ],
+    [
+      453,
+      4,
+      817
+    ],
+    [
+      453,
+      4,
+      838
+    ],
+    [
+      454,
+      1,
+      9
+    ],
+    [
+      454,
+      1,
+      27
+    ],
+    [
+      454,
+      1,
+      408
+    ],
+    [
+      454,
+      1,
+      417
+    ],
+    [
+      454,
+      4,
+      496
+    ],
+    [
+      454,
+      4,
+      505
+    ],
+    [
+      454,
+      4,
+      537
+    ],
+    [
+      454,
+      4,
+      538
+    ],
+    [
+      454,
+      4,
+      618
+    ],
+    [
+      454,
+      4,
+      632
+    ],
+    [
+      454,
+      4,
+      648
+    ],
+    [
+      454,
+      4,
+      698
+    ],
+    [
+      454,
+      4,
+      719
+    ],
+    [
+      454,
+      4,
+      756
+    ],
+    [
+      454,
+      4,
+      781
+    ],
+    [
+      454,
+      4,
+      793
+    ],
+    [
+      454,
+      4,
+      798
+    ],
+    [
+      454,
+      4,
+      799
+    ],
+    [
+      454,
+      4,
+      802
+    ],
+    [
+      454,
+      4,
+      812
+    ],
+    [
+      454,
+      4,
+      817
+    ],
+    [
+      454,
+      4,
+      824
+    ],
+    [
+      454,
+      4,
+      849
+    ],
+    [
+      454,
+      2,
+      1122
+    ],
+    [
+      454,
+      2,
+      1135
+    ],
+    [
+      455,
+      1,
+      289
+    ],
+    [
+      455,
+      2,
+      450
+    ],
+    [
+      455,
+      4,
+      500
+    ],
+    [
+      455,
+      4,
+      583
+    ],
+    [
+      455,
+      4,
+      618
+    ],
+    [
+      455,
+      4,
+      646
+    ],
+    [
+      455,
+      2,
+      1129
+    ],
+    [
+      456,
+      1,
+      408
+    ],
+    [
+      456,
+      1,
+      433
+    ],
+    [
+      456,
+      2,
+      1132
+    ],
+    [
+      462,
+      5,
+      3
+    ],
+    [
+      462,
+      5,
+      4
+    ],
+    [
+      462,
+      5,
+      6
+    ],
+    [
+      462,
+      5,
+      9
+    ],
+    [
+      462,
+      3,
+      443
+    ],
+    [
+      462,
+      4,
+      452
+    ],
+    [
+      462,
+      6,
+      500
+    ],
+    [
+      462,
+      4,
+      1110
+    ],
+    [
+      462,
+      4,
+      1113
+    ],
+    [
+      479,
+      5,
+      89
+    ],
+    [
+      479,
+      4,
+      443
+    ],
+    [
+      479,
+      4,
+      452
+    ],
+    [
+      479,
+      4,
+      453
+    ],
+    [
+      479,
+      4,
+      1110
+    ],
+    [
+      479,
+      5,
+      2248
+    ],
+    [
+      485,
+      4,
+      443
+    ],
+    [
+      485,
+      4,
+      1143
+    ],
+    [
+      485,
+      4,
+      1147
+    ],
+    [
+      486,
+      5,
+      132
+    ],
+    [
+      486,
+      4,
+      443
+    ],
+    [
+      486,
+      4,
+      1110
+    ],
+    [
+      486,
+      4,
+      1720
+    ],
+    [
+      496,
+      4,
+      454
+    ],
+    [
+      496,
+      4,
+      1143
+    ],
+    [
+      496,
+      5,
+      1787
+    ],
+    [
+      500,
+      5,
+      3
+    ],
+    [
+      500,
+      5,
+      4
+    ],
+    [
+      500,
+      5,
+      6
+    ],
+    [
+      500,
+      5,
+      9
+    ],
+    [
+      500,
+      5,
+      255
+    ],
+    [
+      500,
+      4,
+      443
+    ],
+    [
+      500,
+      4,
+      448
+    ],
+    [
+      500,
+      4,
+      449
+    ],
+    [
+      500,
+      4,
+      450
+    ],
+    [
+      500,
+      4,
+      452
+    ],
+    [
+      500,
+      4,
+      455
+    ],
+    [
+      500,
+      6,
+      462
+    ],
+    [
+      500,
+      5,
+      867
+    ],
+    [
+      500,
+      5,
+      869
+    ],
+    [
+      500,
+      5,
+      918
+    ],
+    [
+      500,
+      5,
+      922
+    ],
+    [
+      500,
+      5,
+      938
+    ],
+    [
+      500,
+      5,
+      949
+    ],
+    [
+      500,
+      4,
+      1113
+    ],
+    [
+      500,
+      4,
+      1138
+    ],
+    [
+      500,
+      4,
+      1140
+    ],
+    [
+      500,
+      4,
+      1143
+    ],
+    [
+      500,
+      4,
+      1144
+    ],
+    [
+      500,
+      4,
+      1146
+    ],
+    [
+      500,
+      4,
+      1147
+    ],
+    [
+      500,
+      4,
+      1148
+    ],
+    [
+      500,
+      4,
+      1149
+    ],
+    [
+      500,
+      4,
+      1150
+    ],
+    [
+      500,
+      4,
+      1151
+    ],
+    [
+      500,
+      4,
+      1152
+    ],
+    [
+      500,
+      4,
+      1154
+    ],
+    [
+      500,
+      4,
+      1157
+    ],
+    [
+      500,
+      4,
+      1159
+    ],
+    [
+      500,
+      4,
+      1165
+    ],
+    [
+      500,
+      4,
+      1167
+    ],
+    [
+      500,
+      4,
+      1169
+    ],
+    [
+      500,
+      4,
+      1174
+    ],
+    [
+      500,
+      4,
+      1176
+    ],
+    [
+      500,
+      4,
+      1181
+    ],
+    [
+      500,
+      4,
+      1182
+    ],
+    [
+      500,
+      4,
+      1183
+    ],
+    [
+      500,
+      4,
+      1186
+    ],
+    [
+      500,
+      4,
+      1187
+    ],
+    [
+      500,
+      4,
+      1188
+    ],
+    [
+      500,
+      4,
+      1191
+    ],
+    [
+      500,
+      4,
+      1194
+    ],
+    [
+      500,
+      4,
+      1196
+    ],
+    [
+      505,
+      4,
+      443
+    ],
+    [
+      505,
+      4,
+      448
+    ],
+    [
+      505,
+      4,
+      452
+    ],
+    [
+      505,
+      4,
+      454
+    ],
+    [
+      505,
+      4,
+      1110
+    ],
+    [
+      505,
+      4,
+      1113
+    ],
+    [
+      511,
+      4,
+      446
+    ],
+    [
+      511,
+      4,
+      1147
+    ],
+    [
+      511,
+      4,
+      1715
+    ],
+    [
+      519,
+      4,
+      453
+    ],
+    [
+      519,
+      4,
+      1110
+    ],
+    [
+      519,
+      4,
+      1147
+    ],
+    [
+      526,
+      5,
+      373
+    ],
+    [
+      526,
+      4,
+      452
+    ],
+    [
+      526,
+      4,
+      1147
+    ],
+    [
+      526,
+      4,
+      2475
+    ],
+    [
+      528,
+      4,
+      448
+    ],
+    [
+      528,
+      5,
+      1995
+    ],
+    [
+      532,
+      4,
+      1110
+    ],
+    [
+      532,
+      4,
+      1132
+    ],
+    [
+      532,
+      4,
+      1147
+    ],
+    [
+      532,
+      5,
+      2088
+    ],
+    [
+      537,
+      4,
+      443
+    ],
+    [
+      537,
+      4,
+      454
+    ],
+    [
+      537,
+      4,
+      1110
+    ],
+    [
+      537,
+      5,
+      2145
+    ],
+    [
+      538,
+      4,
+      443
+    ],
+    [
+      538,
+      4,
+      454
+    ],
+    [
+      538,
+      4,
+      1110
+    ],
+    [
+      538,
+      4,
+      1720
+    ],
+    [
+      541,
+      4,
+      443
+    ],
+    [
+      541,
+      4,
+      1720
+    ],
+    [
+      543,
+      4,
+      452
+    ],
+    [
+      543,
+      4,
+      1128
+    ],
+    [
+      543,
+      4,
+      1147
+    ],
+    [
+      543,
+      4,
+      2473
+    ],
+    [
+      545,
+      5,
+      174
+    ],
+    [
+      545,
+      4,
+      448
+    ],
+    [
+      545,
+      4,
+      453
+    ],
+    [
+      545,
+      4,
+      1110
+    ],
+    [
+      548,
+      4,
+      448
+    ],
+    [
+      548,
+      4,
+      453
+    ],
+    [
+      548,
+      4,
+      1110
+    ],
+    [
+      548,
+      4,
+      1720
+    ],
+    [
+      550,
+      5,
+      27
+    ],
+    [
+      550,
+      4,
+      443
+    ],
+    [
+      552,
+      4,
+      443
+    ],
+    [
+      552,
+      4,
+      1143
+    ],
+    [
+      552,
+      4,
+      2436
+    ],
+    [
+      564,
+      4,
+      453
+    ],
+    [
+      564,
+      4,
+      1143
+    ],
+    [
+      565,
+      4,
+      447
+    ],
+    [
+      565,
+      4,
+      448
+    ],
+    [
+      565,
+      4,
+      452
+    ],
+    [
+      565,
+      4,
+      453
+    ],
+    [
+      565,
+      5,
+      1072
+    ],
+    [
+      565,
+      4,
+      1110
+    ],
+    [
+      565,
+      4,
+      1113
+    ],
+    [
+      577,
+      4,
+      448
+    ],
+    [
+      577,
+      4,
+      450
+    ],
+    [
+      577,
+      4,
+      452
+    ],
+    [
+      577,
+      4,
+      1113
+    ],
+    [
+      577,
+      4,
+      1147
+    ],
+    [
+      582,
+      5,
+      433
+    ],
+    [
+      582,
+      4,
+      452
+    ],
+    [
+      582,
+      4,
+      1110
+    ],
+    [
+      582,
+      4,
+      1147
+    ],
+    [
+      583,
+      5,
+      55
+    ],
+    [
+      583,
+      4,
+      447
+    ],
+    [
+      583,
+      4,
+      448
+    ],
+    [
+      583,
+      4,
+      452
+    ],
+    [
+      583,
+      4,
+      453
+    ],
+    [
+      583,
+      4,
+      455
+    ],
+    [
+      583,
+      4,
+      1110
+    ],
+    [
+      583,
+      4,
+      1113
+    ],
+    [
+      599,
+      4,
+      447
+    ],
+    [
+      599,
+      4,
+      1110
+    ],
+    [
+      599,
+      4,
+      1147
+    ],
+    [
+      600,
+      4,
+      1143
+    ],
+    [
+      600,
+      4,
+      1172
+    ],
+    [
+      608,
+      4,
+      448
+    ],
+    [
+      608,
+      4,
+      1110
+    ],
+    [
+      608,
+      4,
+      1720
+    ],
+    [
+      608,
+      5,
+      1995
+    ],
+    [
+      610,
+      4,
+      453
+    ],
+    [
+      610,
+      4,
+      1147
+    ],
+    [
+      615,
+      4,
+      453
+    ],
+    [
+      615,
+      4,
+      1147
+    ],
+    [
+      615,
+      4,
+      1720
+    ],
+    [
+      616,
+      4,
+      443
+    ],
+    [
+      616,
+      4,
+      449
+    ],
+    [
+      616,
+      4,
+      1143
+    ],
+    [
+      617,
+      4,
+      443
+    ],
+    [
+      617,
+      4,
+      1147
+    ],
+    [
+      617,
+      4,
+      2167
+    ],
+    [
+      618,
+      5,
+      299
+    ],
+    [
+      618,
+      4,
+      443
+    ],
+    [
+      618,
+      4,
+      447
+    ],
+    [
+      618,
+      4,
+      452
+    ],
+    [
+      618,
+      4,
+      454
+    ],
+    [
+      618,
+      4,
+      455
+    ],
+    [
+      618,
+      4,
+      1113
+    ],
+    [
+      618,
+      4,
+      1720
+    ],
+    [
+      620,
+      4,
+      453
+    ],
+    [
+      620,
+      4,
+      2465
+    ],
+    [
+      621,
+      4,
+      443
+    ],
+    [
+      621,
+      4,
+      450
+    ],
+    [
+      621,
+      4,
+      452
+    ],
+    [
+      621,
+      5,
+      1716
+    ],
+    [
+      625,
+      4,
+      443
+    ],
+    [
+      625,
+      4,
+      1113
+    ],
+    [
+      625,
+      4,
+      1715
+    ],
+    [
+      632,
+      4,
+      443
+    ],
+    [
+      632,
+      4,
+      452
+    ],
+    [
+      632,
+      4,
+      454
+    ],
+    [
+      632,
+      4,
+      1113
+    ],
+    [
+      640,
+      4,
+      448
+    ],
+    [
+      640,
+      4,
+      1147
+    ],
+    [
+      642,
+      4,
+      453
+    ],
+    [
+      642,
+      4,
+      1720
+    ],
+    [
+      642,
+      5,
+      1750
+    ],
+    [
+      646,
+      5,
+      3
+    ],
+    [
+      646,
+      5,
+      4
+    ],
+    [
+      646,
+      5,
+      6
+    ],
+    [
+      646,
+      5,
+      9
+    ],
+    [
+      646,
+      4,
+      455
+    ],
+    [
+      646,
+      4,
+      1110
+    ],
+    [
+      646,
+      4,
+      1113
+    ],
+    [
+      647,
+      4,
+      446
+    ],
+    [
+      647,
+      4,
+      1110
+    ],
+    [
+      647,
+      4,
+      1147
+    ],
+    [
+      648,
+      5,
+      188
+    ],
+    [
+      648,
+      4,
+      453
+    ],
+    [
+      648,
+      4,
+      454
+    ],
+    [
+      648,
+      4,
+      1110
+    ],
+    [
+      655,
+      4,
+      443
+    ],
+    [
+      655,
+      4,
+      1110
+    ],
+    [
+      655,
+      4,
+      1720
+    ],
+    [
+      663,
+      4,
+      453
+    ],
+    [
+      663,
+      4,
+      1110
+    ],
+    [
+      663,
+      4,
+      1720
+    ],
+    [
+      663,
+      4,
+      1817
+    ],
+    [
+      664,
+      4,
+      446
+    ],
+    [
+      664,
+      4,
+      1110
+    ],
+    [
+      664,
+      4,
+      1147
+    ],
+    [
+      664,
+      4,
+      1715
+    ],
+    [
+      667,
+      4,
+      453
+    ],
+    [
+      667,
+      4,
+      1147
+    ],
+    [
+      670,
+      4,
+      452
+    ],
+    [
+      670,
+      4,
+      1110
+    ],
+    [
+      670,
+      4,
+      1113
+    ],
+    [
+      670,
+      4,
+      1147
+    ],
+    [
+      670,
+      4,
+      1720
+    ],
+    [
+      682,
+      4,
+      447
+    ],
+    [
+      682,
+      4,
+      453
+    ],
+    [
+      682,
+      5,
+      1861
+    ],
+    [
+      698,
+      4,
+      454
+    ],
+    [
+      698,
+      4,
+      1720
+    ],
+    [
+      698,
+      5,
+      1889
+    ],
+    [
+      701,
+      4,
+      448
+    ],
+    [
+      701,
+      4,
+      1110
+    ],
+    [
+      701,
+      4,
+      1715
+    ],
+    [
+      718,
+      4,
+      447
+    ],
+    [
+      718,
+      4,
+      450
+    ],
+    [
+      718,
+      4,
+      1147
+    ],
+    [
+      718,
+      4,
+      1720
+    ],
+    [
+      718,
+      4,
+      1776
+    ],
+    [
+      719,
+      4,
+      454
+    ],
+    [
+      719,
+      4,
+      1146
+    ],
+    [
+      719,
+      4,
+      1720
+    ],
+    [
+      719,
+      4,
+      2484
+    ],
+    [
+      727,
+      4,
+      450
+    ],
+    [
+      727,
+      4,
+      452
+    ],
+    [
+      727,
+      4,
+      1929
+    ],
+    [
+      743,
+      4,
+      1110
+    ],
+    [
+      743,
+      4,
+      1132
+    ],
+    [
+      743,
+      5,
+      2144
+    ],
+    [
+      746,
+      4,
+      453
+    ],
+    [
+      746,
+      4,
+      1110
+    ],
+    [
+      746,
+      4,
+      1720
+    ],
+    [
+      755,
+      4,
+      443
+    ],
+    [
+      755,
+      4,
+      1147
+    ],
+    [
+      755,
+      4,
+      1720
+    ],
+    [
+      756,
+      4,
+      443
+    ],
+    [
+      756,
+      4,
+      453
+    ],
+    [
+      756,
+      4,
+      454
+    ],
+    [
+      756,
+      4,
+      1110
+    ],
+    [
+      756,
+      4,
+      1720
+    ],
+    [
+      762,
+      5,
+      273
+    ],
+    [
+      762,
+      4,
+      452
+    ],
+    [
+      762,
+      4,
+      1110
+    ],
+    [
+      762,
+      4,
+      1147
+    ],
+    [
+      767,
+      4,
+      452
+    ],
+    [
+      767,
+      4,
+      1110
+    ],
+    [
+      767,
+      4,
+      1715
+    ],
+    [
+      775,
+      4,
+      453
+    ],
+    [
+      776,
+      4,
+      453
+    ],
+    [
+      776,
+      4,
+      1739
+    ],
+    [
+      776,
+      5,
+      1876
+    ],
+    [
+      781,
+      4,
+      454
+    ],
+    [
+      781,
+      4,
+      1110
+    ],
+    [
+      785,
+      4,
+      452
+    ],
+    [
+      785,
+      4,
+      1110
+    ],
+    [
+      785,
+      4,
+      1720
+    ],
+    [
+      786,
+      4,
+      443
+    ],
+    [
+      786,
+      4,
+      1147
+    ],
+    [
+      786,
+      4,
+      1720
+    ],
+    [
+      793,
+      4,
+      443
+    ],
+    [
+      793,
+      4,
+      454
+    ],
+    [
+      793,
+      4,
+      2474
+    ],
+    [
+      795,
+      4,
+      443
+    ],
+    [
+      795,
+      4,
+      2476
+    ],
+    [
+      798,
+      4,
+      454
+    ],
+    [
+      798,
+      4,
+      2262
+    ],
+    [
+      799,
+      4,
+      454
+    ],
+    [
+      799,
+      4,
+      1110
+    ],
+    [
+      799,
+      4,
+      1739
+    ],
+    [
+      802,
+      4,
+      454
+    ],
+    [
+      802,
+      4,
+      1110
+    ],
+    [
+      802,
+      5,
+      1995
+    ],
+    [
+      809,
+      4,
+      1110
+    ],
+    [
+      809,
+      4,
+      1132
+    ],
+    [
+      812,
+      5,
+      27
+    ],
+    [
+      812,
+      4,
+      443
+    ],
+    [
+      812,
+      4,
+      449
+    ],
+    [
+      812,
+      4,
+      454
+    ],
+    [
+      812,
+      4,
+      1110
+    ],
+    [
+      812,
+      4,
+      1739
+    ],
+    [
+      813,
+      4,
+      443
+    ],
+    [
+      813,
+      4,
+      1715
+    ],
+    [
+      813,
+      4,
+      1739
+    ],
+    [
+      817,
+      4,
+      453
+    ],
+    [
+      817,
+      4,
+      454
+    ],
+    [
+      817,
+      4,
+      1110
+    ],
+    [
+      817,
+      4,
+      1720
+    ],
+    [
+      824,
+      5,
+      189
+    ],
+    [
+      824,
+      4,
+      443
+    ],
+    [
+      824,
+      4,
+      454
+    ],
+    [
+      824,
+      4,
+      1110
+    ],
+    [
+      824,
+      4,
+      1720
+    ],
+    [
+      825,
+      4,
+      443
+    ],
+    [
+      825,
+      4,
+      1110
+    ],
+    [
+      830,
+      4,
+      448
+    ],
+    [
+      830,
+      4,
+      452
+    ],
+    [
+      830,
+      4,
+      1720
+    ],
+    [
+      831,
+      4,
+      448
+    ],
+    [
+      831,
+      4,
+      1110
+    ],
+    [
+      835,
+      4,
+      443
+    ],
+    [
+      835,
+      4,
+      1110
+    ],
+    [
+      835,
+      4,
+      1720
+    ],
+    [
+      838,
+      4,
+      453
+    ],
+    [
+      838,
+      4,
+      1110
+    ],
+    [
+      842,
+      4,
+      448
+    ],
+    [
+      842,
+      4,
+      1110
+    ],
+    [
+      842,
+      4,
+      1720
+    ],
+    [
+      847,
+      4,
+      448
+    ],
+    [
+      847,
+      4,
+      1110
+    ],
+    [
+      847,
+      4,
+      1715
+    ],
+    [
+      849,
+      5,
+      9
+    ],
+    [
+      849,
+      4,
+      452
+    ],
+    [
+      849,
+      4,
+      454
+    ],
+    [
+      849,
+      4,
+      1113
+    ],
+    [
+      861,
+      4,
+      448
+    ],
+    [
+      861,
+      4,
+      1110
+    ],
+    [
+      867,
+      5,
+      500
+    ],
+    [
+      867,
+      7,
+      1233
+    ],
+    [
+      869,
+      5,
+      500
+    ],
+    [
+      869,
+      11,
+      1596
+    ],
+    [
+      869,
+      11,
+      1637
+    ],
+    [
+      918,
+      0,
+      345
+    ],
+    [
+      918,
+      5,
+      500
+    ],
+    [
+      918,
+      7,
+      1233
+    ],
+    [
+      918,
+      11,
+      1596
+    ],
+    [
+      922,
+      0,
+      345
+    ],
+    [
+      922,
+      5,
+      500
+    ],
+    [
+      922,
+      11,
+      1596
+    ],
+    [
+      938,
+      0,
+      345
+    ],
+    [
+      938,
+      5,
+      500
+    ],
+    [
+      938,
+      7,
+      1233
+    ],
+    [
+      938,
+      11,
+      1596
+    ],
+    [
+      946,
+      5,
+      952
+    ],
+    [
+      946,
+      7,
+      1233
+    ],
+    [
+      946,
+      11,
+      1596
+    ],
+    [
+      949,
+      5,
+      500
+    ],
+    [
+      952,
+      5,
+      946
+    ],
+    [
+      952,
+      6,
+      1230
+    ],
+    [
+      966,
+      0,
+      4
+    ],
+    [
+      966,
+      0,
+      345
+    ],
+    [
+      966,
+      7,
+      1233
+    ],
+    [
+      966,
+      11,
+      1596
+    ],
+    [
+      1072,
+      0,
+      3
+    ],
+    [
+      1072,
+      0,
+      345
+    ],
+    [
+      1072,
+      7,
+      1233
+    ],
+    [
+      1072,
+      11,
+      1596
+    ],
+    [
+      1080,
+      0,
+      4
+    ],
+    [
+      1080,
+      11,
+      1596
+    ],
+    [
+      1089,
+      0,
+      4
+    ],
+    [
+      1089,
+      11,
+      1596
+    ],
+    [
+      1109,
+      0,
+      4
+    ],
+    [
+      1109,
+      0,
+      345
+    ],
+    [
+      1109,
+      7,
+      1233
+    ],
+    [
+      1109,
+      11,
+      1596
+    ],
+    [
+      1110,
+      1,
+      3
+    ],
+    [
+      1110,
+      1,
+      27
+    ],
+    [
+      1110,
+      1,
+      65
+    ],
+    [
+      1113,
+      1,
+      432
+    ],
+    [
+      1113,
+      1,
+      433
+    ],
+    [
+      1113,
+      4,
+      462
+    ],
+    [
+      1113,
+      4,
+      500
+    ],
+    [
+      1113,
+      4,
+      505
+    ],
+    [
+      1113,
+      4,
+      565
+    ],
+    [
+      1113,
+      4,
+      577
+    ],
+    [
+      1113,
+      4,
+      583
+    ],
+    [
+      1113,
+      4,
+      618
+    ],
+    [
+      1113,
+      4,
+      625
+    ],
+    [
+      1113,
+      4,
+      632
+    ],
+    [
+      1113,
+      4,
+      646
+    ],
+    [
+      1113,
+      4,
+      670
+    ],
+    [
+      1113,
+      4,
+      849
+    ],
+    [
+      1118,
+      2,
+      448
+    ],
+    [
+      1118,
+      4,
+      479
+    ],
+    [
+      1118,
+      4,
+      583
+    ],
+    [
+      1119,
+      1,
+      408
+    ],
+    [
+      1119,
+      1,
+      433
+    ],
+    [
+      1119,
+      2,
+      452
+    ],
+    [
+      1119,
+      4,
+      646
+    ],
+    [
+      1122,
+      2,
+      454
+    ],
+    [
+      1127,
+      2,
+      447
+    ],
+    [
+      1127,
+      4,
+      583
+    ],
+    [
+      1128,
+      2,
+      452
+    ],
+    [
+      1128,
+      4,
+      543
+    ],
+    [
+      1128,
+      4,
+      824
+    ],
+    [
+      1129,
+      2,
+      455
+    ],
+    [
+      1130,
+      2,
+      447
+    ],
+    [
+      1131,
+      2,
+      447
+    ],
+    [
+      1132,
+      2,
+      456
+    ],
+    [
+      1132,
+      4,
+      532
+    ],
+    [
+      1132,
+      4,
+      743
+    ],
+    [
+      1132,
+      4,
+      809
+    ],
+    [
+      1135,
+      2,
+      454
+    ],
+    [
+      1138,
+      4,
+      500
+    ],
+    [
+      1138,
+      4,
+      583
+    ],
+    [
+      1140,
+      4,
+      500
+    ],
+    [
+      1143,
+      4,
+      500
+    ],
+    [
+      1143,
+      4,
+      600
+    ],
+    [
+      1144,
+      4,
+      500
+    ],
+    [
+      1144,
+      2,
+      1181
+    ],
+    [
+      1146,
+      4,
+      500
+    ],
+    [
+      1146,
+      4,
+      583
+    ],
+    [
+      1147,
+      4,
+      462
+    ],
+    [
+      1147,
+      4,
+      500
+    ],
+    [
+      1147,
+      4,
+      583
+    ],
+    [
+      1148,
+      4,
+      479
+    ],
+    [
+      1148,
+      4,
+      500
+    ],
+    [
+      1149,
+      4,
+      500
+    ],
+    [
+      1149,
+      4,
+      583
+    ],
+    [
+      1150,
+      4,
+      500
+    ],
+    [
+      1150,
+      4,
+      583
+    ],
+    [
+      1151,
+      4,
+      500
+    ],
+    [
+      1152,
+      4,
+      479
+    ],
+    [
+      1152,
+      4,
+      500
+    ],
+    [
+      1152,
+      4,
+      583
+    ],
+    [
+      1154,
+      4,
+      500
+    ],
+    [
+      1154,
+      4,
+      577
+    ],
+    [
+      1157,
+      4,
+      500
+    ],
+    [
+      1157,
+      4,
+      505
+    ],
+    [
+      1159,
+      4,
+      500
+    ],
+    [
+      1165,
+      4,
+      500
+    ],
+    [
+      1167,
+      4,
+      500
+    ],
+    [
+      1169,
+      4,
+      500
+    ],
+    [
+      1172,
+      4,
+      600
+    ],
+    [
+      1174,
+      4,
+      462
+    ],
+    [
+      1174,
+      4,
+      500
+    ],
+    [
+      1176,
+      4,
+      462
+    ],
+    [
+      1176,
+      4,
+      479
+    ],
+    [
+      1176,
+      4,
+      500
+    ],
+    [
+      1181,
+      1,
+      55
+    ],
+    [
+      1181,
+      4,
+      500
+    ],
+    [
+      1182,
+      4,
+      462
+    ],
+    [
+      1182,
+      4,
+      500
+    ],
+    [
+      1183,
+      4,
+      500
+    ],
+    [
+      1183,
+      2,
+      1723
+    ],
+    [
+      1186,
+      4,
+      500
+    ],
+    [
+      1187,
+      4,
+      500
+    ],
+    [
+      1187,
+      4,
+      565
+    ],
+    [
+      1188,
+      4,
+      500
+    ],
+    [
+      1188,
+      2,
+      1739
+    ],
+    [
+      1191,
+      4,
+      500
+    ],
+    [
+      1194,
+      4,
+      500
+    ],
+    [
+      1196,
+      4,
+      500
+    ],
+    [
+      1196,
+      4,
+      583
+    ],
+    [
+      1200,
+      4,
+      448
+    ],
+    [
+      1200,
+      4,
+      1147
+    ],
+    [
+      1200,
+      4,
+      2495
+    ],
+    [
+      1201,
+      5,
+      4
+    ],
+    [
+      1214,
+      5,
+      2
+    ],
+    [
+      1214,
+      5,
+      6
+    ],
+    [
+      1216,
+      5,
+      6
+    ],
+    [
+      1226,
+      5,
+      3
+    ],
+    [
+      1226,
+      4,
+      1110
+    ],
+    [
+      1226,
+      4,
+      1147
+    ],
+    [
+      1227,
+      5,
+      3
+    ],
+    [
+      1227,
+      4,
+      1110
+    ],
+    [
+      1227,
+      4,
+      1147
+    ],
+    [
+      1227,
+      4,
+      1715
+    ],
+    [
+      1227,
+      4,
+      2107
+    ],
+    [
+      1230,
+      6,
+      952
+    ],
+    [
+      1230,
+      4,
+      1739
+    ],
+    [
+      1230,
+      4,
+      2034
+    ],
+    [
+      1232,
+      7,
+      3
+    ],
+    [
+      1232,
+      7,
+      27
+    ],
+    [
+      1232,
+      13,
+      1233
+    ],
+    [
+      1233,
+      7,
+      2
+    ],
+    [
+      1233,
+      7,
+      3
+    ],
+    [
+      1233,
+      7,
+      4
+    ],
+    [
+      1233,
+      7,
+      6
+    ],
+    [
+      1233,
+      7,
+      27
+    ],
+    [
+      1233,
+      7,
+      345
+    ],
+    [
+      1234,
+      7,
+      4
+    ],
+    [
+      1235,
+      7,
+      2
+    ],
+    [
+      1235,
+      7,
+      6
+    ],
+    [
+      1235,
+      7,
+      89
+    ],
+    [
+      1236,
+      7,
+      2
+    ],
+    [
+      1236,
+      7,
+      4
+    ],
+    [
+      1236,
+      7,
+      6
+    ],
+    [
+      1236,
+      7,
+      27
+    ],
+    [
+      1236,
+      13,
+      1233
+    ],
+    [
+      1237,
+      7,
+      6
+    ],
+    [
+      1238,
+      7,
+      6
+    ],
+    [
+      1239,
+      7,
+      6
+    ],
+    [
+      1240,
+      7,
+      6
+    ],
+    [
+      1240,
+      7,
+      65
+    ],
+    [
+      1241,
+      7,
+      4
+    ],
+    [
+      1241,
+      7,
+      6
+    ],
+    [
+      1242,
+      7,
+      2
+    ],
+    [
+      1242,
+      7,
+      6
+    ],
+    [
+      1243,
+      7,
+      4
+    ],
+    [
+      1244,
+      7,
+      4
+    ],
+    [
+      1245,
+      7,
+      6
+    ],
+    [
+      1246,
+      7,
+      4
+    ],
+    [
+      1246,
+      7,
+      65
+    ],
+    [
+      1246,
+      13,
+      1233
+    ],
+    [
+      1247,
+      7,
+      4
+    ],
+    [
+      1248,
+      7,
+      4
+    ],
+    [
+      1249,
+      7,
+      4
+    ],
+    [
+      1249,
+      7,
+      55
+    ],
+    [
+      1249,
+      7,
+      2121
+    ],
+    [
+      1250,
+      7,
+      4
+    ],
+    [
+      1250,
+      7,
+      6
+    ],
+    [
+      1250,
+      7,
+      9
+    ],
+    [
+      1251,
+      7,
+      6
+    ],
+    [
+      1251,
+      7,
+      10
+    ],
+    [
+      1251,
+      7,
+      230
+    ],
+    [
+      1251,
+      13,
+      1233
+    ],
+    [
+      1252,
+      7,
+      4
+    ],
+    [
+      1252,
+      7,
+      10
+    ],
+    [
+      1252,
+      13,
+      1233
+    ],
+    [
+      1253,
+      7,
+      2
+    ],
+    [
+      1253,
+      7,
+      6
+    ],
+    [
+      1253,
+      7,
+      65
+    ],
+    [
+      1253,
+      7,
+      89
+    ],
+    [
+      1254,
+      7,
+      2
+    ],
+    [
+      1254,
+      7,
+      6
+    ],
+    [
+      1255,
+      7,
+      6
+    ],
+    [
+      1255,
+      13,
+      1233
+    ],
+    [
+      1256,
+      7,
+      4
+    ],
+    [
+      1257,
+      7,
+      4
+    ],
+    [
+      1258,
+      7,
+      2
+    ],
+    [
+      1258,
+      7,
+      6
+    ],
+    [
+      1258,
+      7,
+      65
+    ],
+    [
+      1258,
+      7,
+      89
+    ],
+    [
+      1259,
+      7,
+      2
+    ],
+    [
+      1259,
+      7,
+      6
+    ],
+    [
+      1259,
+      7,
+      65
+    ],
+    [
+      1259,
+      7,
+      89
+    ],
+    [
+      1260,
+      7,
+      6
+    ],
+    [
+      1261,
+      7,
+      4
+    ],
+    [
+      1262,
+      7,
+      4
+    ],
+    [
+      1262,
+      13,
+      1233
+    ],
+    [
+      1263,
+      7,
+      4
+    ],
+    [
+      1263,
+      7,
+      6
+    ],
+    [
+      1263,
+      7,
+      9
+    ],
+    [
+      1264,
+      7,
+      4
+    ],
+    [
+      1264,
+      7,
+      299
+    ],
+    [
+      1265,
+      7,
+      4
+    ],
+    [
+      1265,
+      7,
+      1072
+    ],
+    [
+      1266,
+      7,
+      4
+    ],
+    [
+      1267,
+      7,
+      4
+    ],
+    [
+      1267,
+      7,
+      230
+    ],
+    [
+      1267,
+      13,
+      1233
+    ],
+    [
+      1268,
+      7,
+      4
+    ],
+    [
+      1269,
+      7,
+      4
+    ],
+    [
+      1270,
+      7,
+      4
+    ],
+    [
+      1271,
+      7,
+      4
+    ],
+    [
+      1271,
+      7,
+      1921
+    ],
+    [
+      1272,
+      7,
+      6
+    ],
+    [
+      1272,
+      13,
+      1233
+    ],
+    [
+      1273,
+      7,
+      6
+    ],
+    [
+      1274,
+      7,
+      4
+    ],
+    [
+      1275,
+      7,
+      6
+    ],
+    [
+      1276,
+      7,
+      6
+    ],
+    [
+      1276,
+      7,
+      89
+    ],
+    [
+      1277,
+      7,
+      2
+    ],
+    [
+      1277,
+      7,
+      6
+    ],
+    [
+      1277,
+      7,
+      1843
+    ],
+    [
+      1278,
+      7,
+      4
+    ],
+    [
+      1278,
+      7,
+      6
+    ],
+    [
+      1278,
+      13,
+      1233
+    ],
+    [
+      1278,
+      7,
+      1843
+    ],
+    [
+      1279,
+      7,
+      3
+    ],
+    [
+      1280,
+      7,
+      3
+    ],
+    [
+      1281,
+      7,
+      3
+    ],
+    [
+      1281,
+      13,
+      2440
+    ],
+    [
+      1282,
+      7,
+      3
+    ],
+    [
+      1283,
+      7,
+      6
+    ],
+    [
+      1283,
+      13,
+      1233
+    ],
+    [
+      1284,
+      7,
+      6
+    ],
+    [
+      1284,
+      13,
+      1253
+    ],
+    [
+      1285,
+      7,
+      6
+    ],
+    [
+      1285,
+      13,
+      1961
+    ],
+    [
+      1286,
+      7,
+      6
+    ],
+    [
+      1286,
+      13,
+      2268
+    ],
+    [
+      1287,
+      8,
+      4
+    ],
+    [
+      1287,
+      8,
+      6
+    ],
+    [
+      1287,
+      8,
+      10
+    ],
+    [
+      1287,
+      8,
+      27
+    ],
+    [
+      1287,
+      8,
+      345
+    ],
+    [
+      1288,
+      8,
+      3
+    ],
+    [
+      1288,
+      8,
+      6
+    ],
+    [
+      1288,
+      8,
+      10
+    ],
+    [
+      1288,
+      8,
+      27
+    ],
+    [
+      1288,
+      8,
+      345
+    ],
+    [
+      1289,
+      8,
+      4
+    ],
+    [
+      1289,
+      8,
+      9
+    ],
+    [
+      1289,
+      8,
+      27
+    ],
+    [
+      1289,
+      8,
+      89
+    ],
+    [
+      1290,
+      8,
+      4
+    ],
+    [
+      1290,
+      8,
+      6
+    ],
+    [
+      1290,
+      8,
+      27
+    ],
+    [
+      1290,
+      8,
+      345
+    ],
+    [
+      1291,
+      8,
+      2
+    ],
+    [
+      1291,
+      8,
+      4
+    ],
+    [
+      1291,
+      8,
+      345
+    ],
+    [
+      1292,
+      8,
+      6
+    ],
+    [
+      1292,
+      8,
+      345
+    ],
+    [
+      1293,
+      8,
+      2
+    ],
+    [
+      1293,
+      8,
+      4
+    ],
+    [
+      1293,
+      8,
+      6
+    ],
+    [
+      1293,
+      8,
+      27
+    ],
+    [
+      1293,
+      8,
+      345
+    ],
+    [
+      1294,
+      8,
+      2
+    ],
+    [
+      1294,
+      8,
+      4
+    ],
+    [
+      1294,
+      8,
+      6
+    ],
+    [
+      1294,
+      8,
+      27
+    ],
+    [
+      1294,
+      8,
+      345
+    ],
+    [
+      1295,
+      8,
+      4
+    ],
+    [
+      1295,
+      8,
+      27
+    ],
+    [
+      1296,
+      8,
+      4
+    ],
+    [
+      1296,
+      8,
+      6
+    ],
+    [
+      1296,
+      8,
+      10
+    ],
+    [
+      1296,
+      8,
+      89
+    ],
+    [
+      1298,
+      8,
+      4
+    ],
+    [
+      1298,
+      8,
+      6
+    ],
+    [
+      1299,
+      8,
+      6
+    ],
+    [
+      1299,
+      8,
+      9
+    ],
+    [
+      1301,
+      8,
+      6
+    ],
+    [
+      1301,
+      8,
+      9
+    ],
+    [
+      1301,
+      8,
+      27
+    ],
+    [
+      1302,
+      8,
+      3
+    ],
+    [
+      1302,
+      8,
+      4
+    ],
+    [
+      1302,
+      8,
+      6
+    ],
+    [
+      1302,
+      8,
+      27
+    ],
+    [
+      1302,
+      8,
+      89
+    ],
+    [
+      1303,
+      8,
+      6
+    ],
+    [
+      1303,
+      15,
+      1291
+    ],
+    [
+      1304,
+      8,
+      3
+    ],
+    [
+      1304,
+      8,
+      4
+    ],
+    [
+      1304,
+      8,
+      6
+    ],
+    [
+      1305,
+      8,
+      6
+    ],
+    [
+      1306,
+      8,
+      3
+    ],
+    [
+      1307,
+      8,
+      4
+    ],
+    [
+      1307,
+      8,
+      6
+    ],
+    [
+      1308,
+      8,
+      4
+    ],
+    [
+      1309,
+      8,
+      3
+    ],
+    [
+      1309,
+      8,
+      6
+    ],
+    [
+      1310,
+      8,
+      6
+    ],
+    [
+      1310,
+      8,
+      9
+    ],
+    [
+      1311,
+      8,
+      4
+    ],
+    [
+      1311,
+      8,
+      89
+    ],
+    [
+      1312,
+      8,
+      4
+    ],
+    [
+      1312,
+      8,
+      6
+    ],
+    [
+      1313,
+      8,
+      4
+    ],
+    [
+      1313,
+      8,
+      6
+    ],
+    [
+      1313,
+      8,
+      9
+    ],
+    [
+      1314,
+      8,
+      2
+    ],
+    [
+      1314,
+      8,
+      4
+    ],
+    [
+      1315,
+      8,
+      6
+    ],
+    [
+      1316,
+      8,
+      4
+    ],
+    [
+      1316,
+      8,
+      6
+    ],
+    [
+      1316,
+      8,
+      27
+    ],
+    [
+      1316,
+      8,
+      89
+    ],
+    [
+      1317,
+      8,
+      6
+    ],
+    [
+      1317,
+      8,
+      10
+    ],
+    [
+      1317,
+      8,
+      230
+    ],
+    [
+      1318,
+      8,
+      4
+    ],
+    [
+      1318,
+      8,
+      6
+    ],
+    [
+      1318,
+      8,
+      345
+    ],
+    [
+      1319,
+      8,
+      6
+    ],
+    [
+      1320,
+      8,
+      6
+    ],
+    [
+      1320,
+      8,
+      27
+    ],
+    [
+      1321,
+      8,
+      3
+    ],
+    [
+      1321,
+      8,
+      189
+    ],
+    [
+      1322,
+      8,
+      6
+    ],
+    [
+      1322,
+      8,
+      55
+    ],
+    [
+      1323,
+      8,
+      6
+    ],
+    [
+      1323,
+      8,
+      89
+    ],
+    [
+      1324,
+      8,
+      3
+    ],
+    [
+      1324,
+      8,
+      6
+    ],
+    [
+      1325,
+      8,
+      4
+    ],
+    [
+      1325,
+      8,
+      6
+    ],
+    [
+      1326,
+      8,
+      6
+    ],
+    [
+      1326,
+      8,
+      27
+    ],
+    [
+      1326,
+      8,
+      89
+    ],
+    [
+      1327,
+      8,
+      4
+    ],
+    [
+      1327,
+      8,
+      27
+    ],
+    [
+      1328,
+      8,
+      4
+    ],
+    [
+      1328,
+      15,
+      1294
+    ],
+    [
+      1329,
+      8,
+      4
+    ],
+    [
+      1330,
+      8,
+      4
+    ],
+    [
+      1330,
+      8,
+      6
+    ],
+    [
+      1333,
+      8,
+      4
+    ],
+    [
+      1333,
+      8,
+      6
+    ],
+    [
+      1333,
+      8,
+      9
+    ],
+    [
+      1334,
+      8,
+      4
+    ],
+    [
+      1334,
+      8,
+      6
+    ],
+    [
+      1334,
+      8,
+      2191
+    ],
+    [
+      1335,
+      8,
+      6
+    ],
+    [
+      1336,
+      8,
+      6
+    ],
+    [
+      1337,
+      8,
+      4
+    ],
+    [
+      1337,
+      8,
+      2275
+    ],
+    [
+      1340,
+      8,
+      6
+    ],
+    [
+      1341,
+      8,
+      6
+    ],
+    [
+      1341,
+      15,
+      1305
+    ],
+    [
+      1342,
+      8,
+      6
+    ],
+    [
+      1343,
+      8,
+      4
+    ],
+    [
+      1343,
+      15,
+      2493
+    ],
+    [
+      1344,
+      8,
+      6
+    ],
+    [
+      1344,
+      15,
+      1924
+    ],
+    [
+      1345,
+      8,
+      6
+    ],
+    [
+      1345,
+      15,
+      2022
+    ],
+    [
+      1346,
+      8,
+      6
+    ],
+    [
+      1346,
+      15,
+      1971
+    ],
+    [
+      1346,
+      15,
+      1972
+    ],
+    [
+      1350,
+      9,
+      4
+    ],
+    [
+      1350,
+      9,
+      89
+    ],
+    [
+      1350,
+      9,
+      1919
+    ],
+    [
+      1352,
+      9,
+      3
+    ],
+    [
+      1352,
+      9,
+      6
+    ],
+    [
+      1355,
+      9,
+      3
+    ],
+    [
+      1365,
+      9,
+      6
+    ],
+    [
+      1365,
+      9,
+      89
+    ],
+    [
+      1366,
+      9,
+      2
+    ],
+    [
+      1366,
+      9,
+      6
+    ],
+    [
+      1377,
+      9,
+      4
+    ],
+    [
+      1396,
+      9,
+      4
+    ],
+    [
+      1399,
+      9,
+      6
+    ],
+    [
+      1401,
+      9,
+      4
+    ],
+    [
+      1401,
+      9,
+      6
+    ],
+    [
+      1401,
+      9,
+      148
+    ],
+    [
+      1406,
+      9,
+      4
+    ],
+    [
+      1420,
+      9,
+      6
+    ],
+    [
+      1426,
+      9,
+      6
+    ],
+    [
+      1428,
+      9,
+      3
+    ],
+    [
+      1428,
+      9,
+      6
+    ],
+    [
+      1428,
+      9,
+      1984
+    ],
+    [
+      1433,
+      9,
+      3
+    ],
+    [
+      1436,
+      9,
+      6
+    ],
+    [
+      1439,
+      9,
+      6
+    ],
+    [
+      1441,
+      9,
+      4
+    ],
+    [
+      1441,
+      9,
+      2321
+    ],
+    [
+      1446,
+      9,
+      3
+    ],
+    [
+      1446,
+      9,
+      27
+    ],
+    [
+      1448,
+      9,
+      4
+    ],
+    [
+      1448,
+      9,
+      432
+    ],
+    [
+      1451,
+      9,
+      6
+    ],
+    [
+      1451,
+      9,
+      27
+    ],
+    [
+      1459,
+      9,
+      4
+    ],
+    [
+      1459,
+      9,
+      1977
+    ],
+    [
+      1466,
+      9,
+      3
+    ],
+    [
+      1467,
+      9,
+      4
+    ],
+    [
+      1477,
+      9,
+      4
+    ],
+    [
+      1477,
+      9,
+      2197
+    ],
+    [
+      1482,
+      9,
+      6
+    ],
+    [
+      1482,
+      9,
+      255
+    ],
+    [
+      1484,
+      9,
+      3
+    ],
+    [
+      1485,
+      9,
+      4
+    ],
+    [
+      1486,
+      9,
+      4
+    ],
+    [
+      1490,
+      9,
+      4
+    ],
+    [
+      1490,
+      9,
+      148
+    ],
+    [
+      1491,
+      9,
+      4
+    ],
+    [
+      1491,
+      9,
+      148
+    ],
+    [
+      1497,
+      9,
+      3
+    ],
+    [
+      1500,
+      9,
+      6
+    ],
+    [
+      1500,
+      9,
+      2324
+    ],
+    [
+      1502,
+      9,
+      3
+    ],
+    [
+      1503,
+      9,
+      4
+    ],
+    [
+      1503,
+      9,
+      9
+    ],
+    [
+      1510,
+      9,
+      6
+    ],
+    [
+      1514,
+      9,
+      6
+    ],
+    [
+      1516,
+      9,
+      6
+    ],
+    [
+      1521,
+      9,
+      3
+    ],
+    [
+      1521,
+      14,
+      2454
+    ],
+    [
+      1522,
+      9,
+      3
+    ],
+    [
+      1522,
+      14,
+      2405
+    ],
+    [
+      1525,
+      9,
+      3
+    ],
+    [
+      1526,
+      9,
+      3
+    ],
+    [
+      1526,
+      14,
+      2472
+    ],
+    [
+      1527,
+      9,
+      3
+    ],
+    [
+      1528,
+      9,
+      3
+    ],
+    [
+      1529,
+      9,
+      3
+    ],
+    [
+      1532,
+      9,
+      4
+    ],
+    [
+      1534,
+      9,
+      6
+    ],
+    [
+      1536,
+      9,
+      6
+    ],
+    [
+      1536,
+      14,
+      2346
+    ],
+    [
+      1537,
+      9,
+      6
+    ],
+    [
+      1538,
+      9,
+      4
+    ],
+    [
+      1539,
+      9,
+      6
+    ],
+    [
+      1539,
+      9,
+      2222
+    ],
+    [
+      1541,
+      9,
+      6
+    ],
+    [
+      1544,
+      9,
+      4
+    ],
+    [
+      1545,
+      9,
+      4
+    ],
+    [
+      1552,
+      9,
+      4
+    ],
+    [
+      1552,
+      14,
+      2249
+    ],
+    [
+      1552,
+      14,
+      2250
+    ],
+    [
+      1553,
+      9,
+      4
+    ],
+    [
+      1553,
+      14,
+      2479
+    ],
+    [
+      1555,
+      9,
+      4
+    ],
+    [
+      1555,
+      9,
+      2207
+    ],
+    [
+      1556,
+      9,
+      4
+    ],
+    [
+      1556,
+      14,
+      2279
+    ],
+    [
+      1557,
+      9,
+      4
+    ],
+    [
+      1557,
+      9,
+      2294
+    ],
+    [
+      1559,
+      9,
+      4
+    ],
+    [
+      1559,
+      14,
+      2390
+    ],
+    [
+      1561,
+      9,
+      4
+    ],
+    [
+      1563,
+      9,
+      4
+    ],
+    [
+      1568,
+      9,
+      6
+    ],
+    [
+      1568,
+      14,
+      2204
+    ],
+    [
+      1570,
+      9,
+      6
+    ],
+    [
+      1570,
+      14,
+      1896
+    ],
+    [
+      1572,
+      9,
+      6
+    ],
+    [
+      1572,
+      14,
+      2368
+    ],
+    [
+      1574,
+      10,
+      6
+    ],
+    [
+      1575,
+      10,
+      3
+    ],
+    [
+      1575,
+      10,
+      189
+    ],
+    [
+      1576,
+      10,
+      3
+    ],
+    [
+      1577,
+      10,
+      4
+    ],
+    [
+      1577,
+      10,
+      27
+    ],
+    [
+      1577,
+      10,
+      345
+    ],
+    [
+      1578,
+      11,
+      2
+    ],
+    [
+      1578,
+      11,
+      4
+    ],
+    [
+      1578,
+      11,
+      6
+    ],
+    [
+      1578,
+      11,
+      27
+    ],
+    [
+      1578,
+      11,
+      345
+    ],
+    [
+      1579,
+      11,
+      2
+    ],
+    [
+      1579,
+      11,
+      4
+    ],
+    [
+      1579,
+      11,
+      27
+    ],
+    [
+      1579,
+      11,
+      345
+    ],
+    [
+      1581,
+      11,
+      2
+    ],
+    [
+      1581,
+      11,
+      3
+    ],
+    [
+      1581,
+      11,
+      4
+    ],
+    [
+      1581,
+      11,
+      6
+    ],
+    [
+      1581,
+      11,
+      27
+    ],
+    [
+      1581,
+      11,
+      345
+    ],
+    [
+      1582,
+      11,
+      2
+    ],
+    [
+      1582,
+      11,
+      3
+    ],
+    [
+      1582,
+      11,
+      4
+    ],
+    [
+      1582,
+      11,
+      6
+    ],
+    [
+      1582,
+      11,
+      27
+    ],
+    [
+      1582,
+      11,
+      345
+    ],
+    [
+      1583,
+      11,
+      2
+    ],
+    [
+      1583,
+      11,
+      4
+    ],
+    [
+      1583,
+      11,
+      6
+    ],
+    [
+      1583,
+      11,
+      27
+    ],
+    [
+      1583,
+      11,
+      345
+    ],
+    [
+      1587,
+      11,
+      2
+    ],
+    [
+      1587,
+      11,
+      4
+    ],
+    [
+      1587,
+      11,
+      6
+    ],
+    [
+      1587,
+      11,
+      27
+    ],
+    [
+      1587,
+      11,
+      345
+    ],
+    [
+      1595,
+      11,
+      2
+    ],
+    [
+      1595,
+      11,
+      4
+    ],
+    [
+      1595,
+      11,
+      6
+    ],
+    [
+      1595,
+      11,
+      27
+    ],
+    [
+      1595,
+      11,
+      345
+    ],
+    [
+      1596,
+      11,
+      2
+    ],
+    [
+      1596,
+      11,
+      3
+    ],
+    [
+      1596,
+      11,
+      4
+    ],
+    [
+      1596,
+      11,
+      6
+    ],
+    [
+      1596,
+      11,
+      27
+    ],
+    [
+      1596,
+      11,
+      345
+    ],
+    [
+      1601,
+      11,
+      2
+    ],
+    [
+      1601,
+      11,
+      4
+    ],
+    [
+      1601,
+      11,
+      6
+    ],
+    [
+      1601,
+      11,
+      27
+    ],
+    [
+      1601,
+      11,
+      345
+    ],
+    [
+      1602,
+      11,
+      2
+    ],
+    [
+      1602,
+      11,
+      3
+    ],
+    [
+      1602,
+      11,
+      4
+    ],
+    [
+      1602,
+      11,
+      6
+    ],
+    [
+      1602,
+      11,
+      27
+    ],
+    [
+      1602,
+      11,
+      345
+    ],
+    [
+      1604,
+      11,
+      2
+    ],
+    [
+      1604,
+      11,
+      3
+    ],
+    [
+      1604,
+      11,
+      4
+    ],
+    [
+      1604,
+      11,
+      6
+    ],
+    [
+      1604,
+      11,
+      27
+    ],
+    [
+      1604,
+      11,
+      345
+    ],
+    [
+      1606,
+      11,
+      2
+    ],
+    [
+      1606,
+      11,
+      4
+    ],
+    [
+      1606,
+      11,
+      6
+    ],
+    [
+      1606,
+      11,
+      27
+    ],
+    [
+      1606,
+      11,
+      345
+    ],
+    [
+      1608,
+      11,
+      2
+    ],
+    [
+      1608,
+      11,
+      4
+    ],
+    [
+      1608,
+      11,
+      6
+    ],
+    [
+      1608,
+      11,
+      27
+    ],
+    [
+      1608,
+      11,
+      345
+    ],
+    [
+      1609,
+      11,
+      2
+    ],
+    [
+      1609,
+      11,
+      3
+    ],
+    [
+      1609,
+      11,
+      4
+    ],
+    [
+      1609,
+      11,
+      6
+    ],
+    [
+      1609,
+      11,
+      27
+    ],
+    [
+      1609,
+      11,
+      345
+    ],
+    [
+      1613,
+      11,
+      2
+    ],
+    [
+      1613,
+      11,
+      3
+    ],
+    [
+      1613,
+      11,
+      4
+    ],
+    [
+      1613,
+      11,
+      6
+    ],
+    [
+      1613,
+      11,
+      27
+    ],
+    [
+      1613,
+      11,
+      345
+    ],
+    [
+      1616,
+      11,
+      2
+    ],
+    [
+      1616,
+      11,
+      3
+    ],
+    [
+      1616,
+      11,
+      4
+    ],
+    [
+      1616,
+      11,
+      6
+    ],
+    [
+      1616,
+      11,
+      27
+    ],
+    [
+      1616,
+      11,
+      345
+    ],
+    [
+      1619,
+      11,
+      2
+    ],
+    [
+      1619,
+      11,
+      4
+    ],
+    [
+      1619,
+      11,
+      27
+    ],
+    [
+      1619,
+      11,
+      345
+    ],
+    [
+      1620,
+      11,
+      2
+    ],
+    [
+      1620,
+      11,
+      4
+    ],
+    [
+      1620,
+      11,
+      27
+    ],
+    [
+      1620,
+      11,
+      345
+    ],
+    [
+      1622,
+      11,
+      2
+    ],
+    [
+      1622,
+      11,
+      3
+    ],
+    [
+      1622,
+      11,
+      4
+    ],
+    [
+      1622,
+      11,
+      6
+    ],
+    [
+      1622,
+      11,
+      27
+    ],
+    [
+      1622,
+      11,
+      345
+    ],
+    [
+      1625,
+      11,
+      2
+    ],
+    [
+      1625,
+      11,
+      3
+    ],
+    [
+      1625,
+      11,
+      4
+    ],
+    [
+      1625,
+      11,
+      6
+    ],
+    [
+      1625,
+      11,
+      27
+    ],
+    [
+      1625,
+      11,
+      345
+    ],
+    [
+      1627,
+      11,
+      4
+    ],
+    [
+      1627,
+      11,
+      6
+    ],
+    [
+      1627,
+      11,
+      27
+    ],
+    [
+      1627,
+      11,
+      345
+    ],
+    [
+      1630,
+      11,
+      2
+    ],
+    [
+      1630,
+      11,
+      4
+    ],
+    [
+      1630,
+      11,
+      6
+    ],
+    [
+      1630,
+      11,
+      27
+    ],
+    [
+      1630,
+      11,
+      345
+    ],
+    [
+      1634,
+      11,
+      2
+    ],
+    [
+      1634,
+      11,
+      4
+    ],
+    [
+      1634,
+      11,
+      27
+    ],
+    [
+      1637,
+      11,
+      2
+    ],
+    [
+      1637,
+      11,
+      3
+    ],
+    [
+      1637,
+      11,
+      4
+    ],
+    [
+      1637,
+      11,
+      6
+    ],
+    [
+      1637,
+      11,
+      27
+    ],
+    [
+      1637,
+      11,
+      345
+    ],
+    [
+      1638,
+      11,
+      2
+    ],
+    [
+      1638,
+      11,
+      3
+    ],
+    [
+      1638,
+      11,
+      4
+    ],
+    [
+      1638,
+      11,
+      6
+    ],
+    [
+      1638,
+      11,
+      27
+    ],
+    [
+      1638,
+      11,
+      345
+    ],
+    [
+      1642,
+      11,
+      2
+    ],
+    [
+      1642,
+      11,
+      4
+    ],
+    [
+      1642,
+      11,
+      27
+    ],
+    [
+      1642,
+      11,
+      345
+    ],
+    [
+      1647,
+      11,
+      2
+    ],
+    [
+      1647,
+      11,
+      4
+    ],
+    [
+      1647,
+      11,
+      27
+    ],
+    [
+      1647,
+      11,
+      345
+    ],
+    [
+      1648,
+      11,
+      2
+    ],
+    [
+      1648,
+      11,
+      4
+    ],
+    [
+      1648,
+      11,
+      27
+    ],
+    [
+      1648,
+      11,
+      345
+    ],
+    [
+      1649,
+      11,
+      2
+    ],
+    [
+      1649,
+      11,
+      4
+    ],
+    [
+      1649,
+      11,
+      27
+    ],
+    [
+      1649,
+      11,
+      89
+    ],
+    [
+      1649,
+      11,
+      345
+    ],
+    [
+      1652,
+      11,
+      2
+    ],
+    [
+      1652,
+      11,
+      4
+    ],
+    [
+      1652,
+      11,
+      6
+    ],
+    [
+      1652,
+      11,
+      27
+    ],
+    [
+      1652,
+      11,
+      345
+    ],
+    [
+      1653,
+      11,
+      2
+    ],
+    [
+      1653,
+      11,
+      4
+    ],
+    [
+      1653,
+      11,
+      6
+    ],
+    [
+      1653,
+      11,
+      27
+    ],
+    [
+      1653,
+      11,
+      345
+    ],
+    [
+      1654,
+      11,
+      2
+    ],
+    [
+      1654,
+      11,
+      4
+    ],
+    [
+      1654,
+      11,
+      27
+    ],
+    [
+      1654,
+      11,
+      345
+    ],
+    [
+      1656,
+      11,
+      2
+    ],
+    [
+      1656,
+      11,
+      4
+    ],
+    [
+      1656,
+      11,
+      6
+    ],
+    [
+      1656,
+      11,
+      27
+    ],
+    [
+      1656,
+      11,
+      345
+    ],
+    [
+      1657,
+      11,
+      2
+    ],
+    [
+      1657,
+      11,
+      4
+    ],
+    [
+      1657,
+      11,
+      27
+    ],
+    [
+      1657,
+      11,
+      345
+    ],
+    [
+      1658,
+      11,
+      2
+    ],
+    [
+      1658,
+      11,
+      3
+    ],
+    [
+      1658,
+      11,
+      4
+    ],
+    [
+      1658,
+      11,
+      6
+    ],
+    [
+      1658,
+      11,
+      27
+    ],
+    [
+      1658,
+      11,
+      345
+    ],
+    [
+      1659,
+      11,
+      2
+    ],
+    [
+      1659,
+      11,
+      4
+    ],
+    [
+      1659,
+      11,
+      6
+    ],
+    [
+      1659,
+      11,
+      27
+    ],
+    [
+      1659,
+      11,
+      345
+    ],
+    [
+      1660,
+      11,
+      2
+    ],
+    [
+      1660,
+      11,
+      3
+    ],
+    [
+      1660,
+      11,
+      4
+    ],
+    [
+      1660,
+      11,
+      6
+    ],
+    [
+      1660,
+      11,
+      27
+    ],
+    [
+      1660,
+      11,
+      345
+    ],
+    [
+      1661,
+      11,
+      2
+    ],
+    [
+      1661,
+      11,
+      3
+    ],
+    [
+      1661,
+      11,
+      4
+    ],
+    [
+      1661,
+      11,
+      6
+    ],
+    [
+      1661,
+      11,
+      27
+    ],
+    [
+      1661,
+      11,
+      345
+    ],
+    [
+      1662,
+      11,
+      2
+    ],
+    [
+      1662,
+      11,
+      4
+    ],
+    [
+      1662,
+      11,
+      6
+    ],
+    [
+      1662,
+      11,
+      27
+    ],
+    [
+      1662,
+      11,
+      345
+    ],
+    [
+      1663,
+      11,
+      2
+    ],
+    [
+      1663,
+      11,
+      4
+    ],
+    [
+      1663,
+      11,
+      6
+    ],
+    [
+      1663,
+      11,
+      27
+    ],
+    [
+      1663,
+      11,
+      345
+    ],
+    [
+      1666,
+      11,
+      2
+    ],
+    [
+      1666,
+      11,
+      3
+    ],
+    [
+      1666,
+      11,
+      4
+    ],
+    [
+      1666,
+      11,
+      6
+    ],
+    [
+      1666,
+      11,
+      27
+    ],
+    [
+      1666,
+      11,
+      345
+    ],
+    [
+      1668,
+      11,
+      2
+    ],
+    [
+      1668,
+      11,
+      3
+    ],
+    [
+      1668,
+      11,
+      4
+    ],
+    [
+      1668,
+      11,
+      6
+    ],
+    [
+      1668,
+      11,
+      27
+    ],
+    [
+      1668,
+      11,
+      345
+    ],
+    [
+      1673,
+      11,
+      2
+    ],
+    [
+      1673,
+      11,
+      4
+    ],
+    [
+      1673,
+      11,
+      6
+    ],
+    [
+      1673,
+      11,
+      27
+    ],
+    [
+      1673,
+      11,
+      345
+    ],
+    [
+      1676,
+      11,
+      2
+    ],
+    [
+      1676,
+      11,
+      4
+    ],
+    [
+      1676,
+      11,
+      27
+    ],
+    [
+      1676,
+      11,
+      345
+    ],
+    [
+      1678,
+      11,
+      2
+    ],
+    [
+      1678,
+      11,
+      4
+    ],
+    [
+      1678,
+      11,
+      27
+    ],
+    [
+      1678,
+      11,
+      345
+    ],
+    [
+      1680,
+      11,
+      2
+    ],
+    [
+      1680,
+      11,
+      3
+    ],
+    [
+      1680,
+      11,
+      4
+    ],
+    [
+      1680,
+      11,
+      6
+    ],
+    [
+      1680,
+      11,
+      27
+    ],
+    [
+      1680,
+      11,
+      345
+    ],
+    [
+      1681,
+      11,
+      2
+    ],
+    [
+      1681,
+      11,
+      4
+    ],
+    [
+      1681,
+      11,
+      27
+    ],
+    [
+      1681,
+      11,
+      345
+    ],
+    [
+      1682,
+      11,
+      2
+    ],
+    [
+      1682,
+      11,
+      4
+    ],
+    [
+      1682,
+      11,
+      6
+    ],
+    [
+      1682,
+      11,
+      27
+    ],
+    [
+      1682,
+      11,
+      345
+    ],
+    [
+      1685,
+      11,
+      2
+    ],
+    [
+      1685,
+      11,
+      3
+    ],
+    [
+      1685,
+      11,
+      4
+    ],
+    [
+      1685,
+      11,
+      6
+    ],
+    [
+      1685,
+      11,
+      27
+    ],
+    [
+      1685,
+      11,
+      345
+    ],
+    [
+      1686,
+      11,
+      2
+    ],
+    [
+      1686,
+      11,
+      4
+    ],
+    [
+      1686,
+      11,
+      6
+    ],
+    [
+      1686,
+      11,
+      27
+    ],
+    [
+      1686,
+      11,
+      345
+    ],
+    [
+      1687,
+      11,
+      2
+    ],
+    [
+      1687,
+      11,
+      4
+    ],
+    [
+      1687,
+      11,
+      27
+    ],
+    [
+      1688,
+      11,
+      2
+    ],
+    [
+      1688,
+      11,
+      4
+    ],
+    [
+      1688,
+      11,
+      6
+    ],
+    [
+      1688,
+      11,
+      27
+    ],
+    [
+      1688,
+      11,
+      345
+    ],
+    [
+      1691,
+      11,
+      2
+    ],
+    [
+      1691,
+      11,
+      4
+    ],
+    [
+      1691,
+      11,
+      6
+    ],
+    [
+      1691,
+      11,
+      27
+    ],
+    [
+      1691,
+      11,
+      345
+    ],
+    [
+      1692,
+      11,
+      2
+    ],
+    [
+      1692,
+      11,
+      4
+    ],
+    [
+      1692,
+      11,
+      27
+    ],
+    [
+      1692,
+      11,
+      345
+    ],
+    [
+      1694,
+      11,
+      2
+    ],
+    [
+      1694,
+      11,
+      4
+    ],
+    [
+      1694,
+      11,
+      27
+    ],
+    [
+      1694,
+      11,
+      345
+    ],
+    [
+      1697,
+      11,
+      2
+    ],
+    [
+      1697,
+      11,
+      4
+    ],
+    [
+      1697,
+      12,
+      6
+    ],
+    [
+      1697,
+      11,
+      27
+    ],
+    [
+      1697,
+      11,
+      345
+    ],
+    [
+      1701,
+      11,
+      2
+    ],
+    [
+      1701,
+      11,
+      3
+    ],
+    [
+      1701,
+      11,
+      4
+    ],
+    [
+      1701,
+      11,
+      6
+    ],
+    [
+      1701,
+      11,
+      27
+    ],
+    [
+      1701,
+      11,
+      345
+    ],
+    [
+      1702,
+      11,
+      2
+    ],
+    [
+      1702,
+      11,
+      4
+    ],
+    [
+      1702,
+      11,
+      27
+    ],
+    [
+      1702,
+      11,
+      345
+    ],
+    [
+      1706,
+      11,
+      2
+    ],
+    [
+      1706,
+      11,
+      4
+    ],
+    [
+      1706,
+      11,
+      6
+    ],
+    [
+      1706,
+      11,
+      27
+    ],
+    [
+      1706,
+      11,
+      345
+    ],
+    [
+      1708,
+      11,
+      2
+    ],
+    [
+      1708,
+      11,
+      4
+    ],
+    [
+      1708,
+      11,
+      6
+    ],
+    [
+      1708,
+      11,
+      27
+    ],
+    [
+      1708,
+      11,
+      345
+    ],
+    [
+      1711,
+      11,
+      4
+    ],
+    [
+      1711,
+      11,
+      27
+    ],
+    [
+      1715,
+      4,
+      511
+    ],
+    [
+      1715,
+      4,
+      625
+    ],
+    [
+      1715,
+      4,
+      664
+    ],
+    [
+      1715,
+      4,
+      701
+    ],
+    [
+      1715,
+      4,
+      767
+    ],
+    [
+      1715,
+      4,
+      813
+    ],
+    [
+      1715,
+      4,
+      847
+    ],
+    [
+      1715,
+      4,
+      1227
+    ],
+    [
+      1716,
+      5,
+      621
+    ],
+    [
+      1720,
+      4,
+      538
+    ],
+    [
+      1720,
+      4,
+      541
+    ],
+    [
+      1720,
+      4,
+      548
+    ],
+    [
+      1720,
+      4,
+      608
+    ],
+    [
+      1720,
+      4,
+      615
+    ],
+    [
+      1720,
+      4,
+      618
+    ],
+    [
+      1720,
+      4,
+      642
+    ],
+    [
+      1720,
+      4,
+      655
+    ],
+    [
+      1720,
+      4,
+      663
+    ],
+    [
+      1720,
+      4,
+      670
+    ],
+    [
+      1720,
+      4,
+      698
+    ],
+    [
+      1720,
+      4,
+      718
+    ],
+    [
+      1720,
+      4,
+      719
+    ],
+    [
+      1720,
+      4,
+      746
+    ],
+    [
+      1720,
+      4,
+      755
+    ],
+    [
+      1720,
+      4,
+      756
+    ],
+    [
+      1720,
+      4,
+      785
+    ],
+    [
+      1720,
+      4,
+      786
+    ],
+    [
+      1720,
+      4,
+      824
+    ],
+    [
+      1720,
+      4,
+      830
+    ],
+    [
+      1720,
+      4,
+      835
+    ],
+    [
+      1720,
+      4,
+      842
+    ],
+    [
+      1723,
+      2,
+      1183
+    ],
+    [
+      1739,
+      4,
+      776
+    ],
+    [
+      1739,
+      4,
+      799
+    ],
+    [
+      1739,
+      2,
+      1188
+    ],
+    [
+      1739,
+      4,
+      1230
+    ],
+    [
+      1750,
+      5,
+      642
+    ],
+    [
+      1776,
+      2,
+      449
+    ],
+    [
+      1787,
+      5,
+      496
+    ],
+    [
+      1788,
+      0,
+      332
+    ],
+    [
+      1820,
+      8,
+      100
+    ],
+    [
+      1843,
+      0,
+      127
+    ],
+    [
+      1843,
+      7,
+      1266
+    ],
+    [
+      1843,
+      7,
+      1277
+    ],
+    [
+      1843,
+      7,
+      1278
+    ],
+    [
+      1844,
+      0,
+      127
+    ],
+    [
+      1861,
+      5,
+      682
+    ],
+    [
+      1876,
+      5,
+      776
+    ],
+    [
+      1889,
+      5,
+      698
+    ],
+    [
+      1896,
+      14,
+      1570
+    ],
+    [
+      1919,
+      9,
+      1350
+    ],
+    [
+      1919,
+      11,
+      1711
+    ],
+    [
+      1921,
+      7,
+      1271
+    ],
+    [
+      1924,
+      15,
+      1344
+    ],
+    [
+      1961,
+      13,
+      1285
+    ],
+    [
+      1971,
+      15,
+      1346
+    ],
+    [
+      1972,
+      15,
+      1346
+    ],
+    [
+      1977,
+      9,
+      1459
+    ],
+    [
+      1984,
+      9,
+      1428
+    ],
+    [
+      1995,
+      5,
+      528
+    ],
+    [
+      1995,
+      5,
+      608
+    ],
+    [
+      1995,
+      5,
+      802
+    ],
+    [
+      2022,
+      15,
+      1345
+    ],
+    [
+      2031,
+      14,
+      1544
+    ],
+    [
+      2034,
+      4,
+      1230
+    ],
+    [
+      2074,
+      13,
+      1280
+    ],
+    [
+      2075,
+      14,
+      1529
+    ],
+    [
+      2088,
+      5,
+      532
+    ],
+    [
+      2121,
+      7,
+      1249
+    ],
+    [
+      2144,
+      5,
+      743
+    ],
+    [
+      2145,
+      5,
+      537
+    ],
+    [
+      2167,
+      4,
+      617
+    ],
+    [
+      2185,
+      14,
+      1545
+    ],
+    [
+      2191,
+      8,
+      1334
+    ],
+    [
+      2197,
+      9,
+      1477
+    ],
+    [
+      2204,
+      14,
+      1568
+    ],
+    [
+      2207,
+      9,
+      1555
+    ],
+    [
+      2222,
+      9,
+      1539
+    ],
+    [
+      2225,
+      14,
+      1538
+    ],
+    [
+      2248,
+      5,
+      479
+    ],
+    [
+      2249,
+      14,
+      1552
+    ],
+    [
+      2250,
+      14,
+      1552
+    ],
+    [
+      2262,
+      4,
+      798
+    ],
+    [
+      2268,
+      13,
+      1286
+    ],
+    [
+      2275,
+      8,
+      1337
+    ],
+    [
+      2279,
+      14,
+      1556
+    ],
+    [
+      2280,
+      14,
+      1556
+    ],
+    [
+      2294,
+      9,
+      1557
+    ],
+    [
+      2321,
+      9,
+      1441
+    ],
+    [
+      2324,
+      9,
+      1500
+    ],
+    [
+      2328,
+      5,
+      849
+    ],
+    [
+      2346,
+      14,
+      1536
+    ],
+    [
+      2349,
+      9,
+      1516
+    ],
+    [
+      2354,
+      14,
+      1563
+    ],
+    [
+      2368,
+      14,
+      1572
+    ],
+    [
+      2390,
+      14,
+      1559
+    ],
+    [
+      2405,
+      14,
+      1522
+    ],
+    [
+      2414,
+      9,
+      1377
+    ],
+    [
+      2436,
+      4,
+      552
+    ],
+    [
+      2440,
+      13,
+      1281
+    ],
+    [
+      2454,
+      14,
+      1521
+    ]
+  ],
+  "triple_columns": [
+    "head_node_id",
+    "relation_id",
+    "tail_node_id"
+  ]
+}
