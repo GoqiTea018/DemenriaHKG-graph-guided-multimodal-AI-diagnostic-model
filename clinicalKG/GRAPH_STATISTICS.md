@@ -85,7 +85,6 @@
 ```bash
 pip install -r clinicalKG/requirements.txt
 python clinicalKG/tools/graph_overview.py
-python -m unittest clinicalKG.tests.test_graph_overview -v
 ```
 
 脚本按 250,000 行分块读取，使用稀疏邻接矩阵计算连通分量和最短路径，只对展示子图运行布局。每次生成 PNG、SVG、完整规模 JSON，以及含实体名称、类型和真实关系的展示子图 JSON；重新生成后据 JSON 更新本页与两份 README 的表格。

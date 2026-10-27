@@ -13,3 +13,6 @@ tests/.runs/
 *.tmp
 # Curated field-to-entity seed dictionaries are needed for portable graph construction.
 !**/*_Seed_DementiaHKG.csv
+
+# Public cohort DemRKG graph CSVs (no patient records).
+!DemRKL/**/*DementiaHKG_PrimeKG_Sub.csv

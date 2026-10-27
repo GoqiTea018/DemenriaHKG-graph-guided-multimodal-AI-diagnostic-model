@@ -2,9 +2,11 @@
 
 DemRKL 为 ADNI、AIBL、NACC、PPMI 分别构建临床相关 DemRKG，并训练相应的 DistMult 嵌入及 KAMT 诊断模型。代码及生成资产沿用 `DementiaHKG` 名称，论文中使用 DemRKG。
 
-## 构建流程与模型框架
+## 构建流程
 
-![DemRKG 构建框架](../figures/DemRKG-construction.png)
+![DemRKG 构建流程](../figures/DemRKG-construction.png)
+
+[论文原流程图 SVG](../figures/DemRKG-construction.svg)
 
 构建流程包括临床字段与核心 seed 对齐、类型/关系过滤、一跳检索、两跳候选扩展、度数感知评分、按源节点选取 Top-k，以及合并去重。ADNI/NACC 的 k 为 5，AIBL/PPMI 的 k 为 6。输出关系三元组用于 DistMult 训练。
 
@@ -24,7 +26,7 @@ flowchart LR
 
 ![KAMT 模型框架](../figures/KAMT-framework.png)
 
-两幅框架图复用当前论文版本；建图框架另附 [SVG 源图](../figures/DemRKG-construction.svg)。
+以上两张图复用论文现有的 DemRKG 流程图与 KAMT 框架图。
 
 ## 各队列实际图谱规模
 
@@ -46,7 +48,7 @@ flowchart LR
 | NACC | `NACC/DementiaHKG/NACC_DementiaHKG_PrimeKG_Sub.csv` |
 | PPMI | `PPMI/DementiaHKG/PPMI_DementiaHKG_PrimeKG_Sub.csv` |
 
-绘图脚本优先查找本目录各队列副本文件夹中的同名 CSV，再查找上述原队列目录。`数据集-DementiaHKG-G.csv` 是用于嵌入训练的 `head/relation/tail` 格式，详细 CSV 同时提供绘图所需的实体类型。
+上述四个详细图谱 CSV 已附在本目录对应的 `数据集_DemRKL/` 中。绘图脚本优先读取这些文件，再查找原队列目录。`数据集-DementiaHKG-G.csv` 是用于嵌入训练的 `head/relation/tail` 格式，详细 CSV 同时提供绘图所需的实体类型。
 
 ## 图谱可视化
 
@@ -91,4 +93,4 @@ python clinicalKG/DemRKL/ADNI_DemRKL/ADNI_DemRKL_build.py --stage graph
 python clinicalKG/tools/graph_overview.py --graph DemRKL
 ```
 
-三种 KG 的统一训练与统计入口是 [Run_Experiments.ipynb](../Run_Experiments.ipynb)。原图谱 CSV 在本地准备，字段—实体种子字典、建图代码、统计和绘图产物随仓库提供。更多数据与路径说明见 [clinicalKG README](../README.md)。
+三种 KG 的统一训练与统计入口是 [Run_Experiments.ipynb](../Run_Experiments.ipynb)。四个 DemRKG 详细图谱 CSV、字段—实体种子字典、建图代码、统计和绘图产物随仓库提供；完整原始 PrimeKG `kg.csv` 作为本地输入准备。更多数据与路径说明见 [clinicalKG README](../README.md)。

@@ -2,7 +2,7 @@
 
 PrimeKGL 在完整原始 `kg.csv` 上训练一次 DistMult，ADNI、AIBL、NACC、PPMI 共用实体嵌入与索引。各队列根据自己的临床字段生成患者实体激活序列，再运行 KAMT 多模态诊断。完整图谱保留全部输入边记录、实体类型与关系类型。
 
-## 流程与模型框架
+## 运行流程
 
 ```mermaid
 flowchart LR
@@ -18,7 +18,7 @@ flowchart LR
 
 ![KAMT 模型框架](../figures/KAMT-framework.png)
 
-上图来自当前论文的 KAMT 框架，左侧以 DemRKG 嵌入标注知识输入；在本流程中，该输入使用共享的 Full PrimeKG 嵌入。知识序列经模态知识加权后进入单 token 残差融合与分类模块。
+上图复用论文中的 KAMT 框架，左侧以 DemRKG 标注知识嵌入输入；PrimeKGL 在此处使用共享的 Full PrimeKG 嵌入。
 
 ## 实际图谱规模
 

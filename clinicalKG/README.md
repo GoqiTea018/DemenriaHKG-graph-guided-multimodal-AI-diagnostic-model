@@ -6,10 +6,10 @@
 - **DemRKL**：保留各队列原有的 seed、黑名单、两跳评分、Top-k、DistMult 和多模态训练。
 - **Full PrimeKG 只训练一次**。四个队列读取相同的实体嵌入及实体索引；患者 `Entities.json` 和诊断模型分别生成/训练。
 
-## 图谱、框架与规模统计
+## 图谱与规模统计
 
-- [PrimeKGL：Full PrimeKG 流程、框架和图谱](PrimeKGL/README.md)
-- [DemRKL：DemRKG 构建框架和四队列图谱](DemRKL/README.md)
+- [PrimeKGL：Full PrimeKG 流程和图谱](PrimeKGL/README.md)
+- [DemRKL：DemRKG 构建和四队列图谱](DemRKL/README.md)
 - [完整图谱规模、实体类型及关系数量](GRAPH_STATISTICS.md)
 
 | 图谱 | 实体（名称索引） | 实体类型 | 边记录 | 去重有向三元组 | 关系类型 |
@@ -20,7 +20,7 @@
 | NACC | 6,547 | 8 | 42,909 | 42,909 | 17 |
 | PPMI | 2,497 | 8 | 13,050 | 13,050 | 17 |
 
-以上统计来自实际图谱 CSV。两份方法 README 附有框架、PNG/SVG 图谱和可追溯的展示子图 JSON。
+以上统计来自实际图谱 CSV。两份方法 README 附有论文现有的 KAMT 框架图、DemRKG 流程图、PNG/SVG 图谱和可追溯的展示子图 JSON；四个 DemRKG 详细图谱 CSV 位于各队列 DemRKL 目录。
 
 ## 1. 目录与文件名
 
