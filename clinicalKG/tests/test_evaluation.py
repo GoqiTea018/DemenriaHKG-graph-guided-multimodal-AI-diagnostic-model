@@ -233,6 +233,8 @@ class EvaluationWorkflow(unittest.TestCase):
                                 any(isinstance(target, ast.Name) and target.id == "DATASET_CHOICE"
                                     for target in node.targets)
                                 for node in ast.parse(source).body)
+                if is_config:
+                    source = source.replace("SEED_COUNT = 10", f"SEED_COUNT = {len(SEEDS)}")
                 exec(compile(source, "Run_Experiments.ipynb", "exec"), namespace)
                 if is_config:
                     namespace.update(DATASET_CHOICE=1, DATASET="ADNI", OUTPUT_ROOT=self.output,

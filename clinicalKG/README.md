@@ -78,6 +78,8 @@ Full PrimeKG 嵌入优先读取 `shared/FullPrimeKG/`；已有的 `PrimeKGL/Prim
 | 参数 | 含义 |
 |---|---|
 | `DATASET_CHOICE` | `1=ADNI`、`2=NACC`、`3=AIBL`、`4=PPMI` |
+| `SEED_COUNT=5` | 原五种子：`11、23、37、51、67` |
+| `SEED_COUNT=10` | 指定十种子：`51、37、67、71、109、27、11、23、97、83`（默认） |
 | `RUN_MODE="check"` | 检查临床数据、MRI 和图谱资产 |
 | `RUN_MODE="all"` | 依次训练三种 KG 配置，再汇总统计 |
 | `RUN_MODE="train"` | 训练三种配置并汇总指标 |
@@ -85,7 +87,7 @@ Full PrimeKG 嵌入优先读取 `shared/FullPrimeKG/`；已有的 `PrimeKGL/Prim
 | `RETRAIN=False` | 复用已完成且配置匹配的训练 |
 | `RETRAIN=True` | 重训当前数据集、当前配置并覆盖对应输出 |
 
-三种 KG 分别有训练 cell，可以独立执行。训练使用现有十个种子 `51、37、67、71、109、27、11、23、97、83`，沿用原记录级分层划分及最后一轮模型的验证集评估。统计包括 Macro-Precision、Macro-Recall、Macro-F1、Accuracy、AUC，患者级配对 bootstrap 置信区间、置换检验 p 值和 Holm 校正。曲线与预测、权重独立保存。
+三种 KG 分别有训练 cell，可以独立执行。训练按 `SEED_COUNT` 选择五次或十次，沿用原记录级分层划分及最后一轮模型的验证集评估。统计包括 Macro-Precision、Macro-Recall、Macro-F1、Accuracy、AUC，患者级配对 bootstrap 置信区间、置换检验 p 值和 Holm 校正。曲线与预测、权重独立保存。
 
 ## 本地输出
 
@@ -113,4 +115,10 @@ python -m unittest discover -s clinicalKG/tests -p "test_*.py"
 
 检查覆盖 notebook 导入与路径、合成预测的配对统计、训练产物和 Full PrimeKG 断点恢复。
 
-当前实验标识由完整种子列表生成，新结果与已有的五次及十次历史结果分别保存。`KG_ABLATION_SEEDS` 如需覆盖，应在启动 notebook 或重新执行主入口配置 cell 前设置；训练、汇总、配对统计和绘图共用该配置。每轮日志与最终指标的 AUC 均为 AIBL：macro OvO；ADNI/NACC/PPMI：macro OvR。
+当前实验标识由完整种子列表生成，新结果与已有的五次及十次历史结果分别保存。主 notebook 通过 `SEED_COUNT=5/10` 统一配置训练、汇总、配对统计和绘图；修改后重新执行配置 cell。独立 notebook 可在启动前设置 `CLINICALKG_SEED_COUNT=5/10`，命令行自定义种子仍可使用 `KG_ABLATION_SEEDS`。每轮日志与最终指标的 AUC 均为 AIBL：macro OvO；ADNI/NACC/PPMI：macro OvR。
+
+## 评估数据与模型轮次
+
+当前主入口与独立训练 notebook 共用 `run/common/kg_ablation.py`：训练完成后，在验证集（val）上计算最后一轮模型的 Accuracy、Macro-Precision、Macro-Recall、Macro-F1 和 Macro-AUC。所有诊断训练 notebook 当前设置为 200 epochs，因此汇总对应第 200 轮的 val 预测。每轮 train/val 指标另存于 history CSV；主汇总和配对统计使用训练结束后保存的 val 预测。
+
+`summary.csv` 和模型检查点记录 `evaluation_split=val`、`model_selection=final_epoch` 与实际 epoch。p 值和置信区间采用相同的 val 预测及所选全部种子。旧 ADNI 实验采用最佳 checkpoint 的 test 评估，历史结果的具体设置见本地汇总文档。

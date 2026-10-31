@@ -5,7 +5,14 @@ import os
 
 from clinicalKG.run.common.paths import PROJECT_ROOT, work_dir, asset_path
 ROOT = PROJECT_ROOT
-DEFAULT_SEEDS = (51, 37, 67, 71, 109, 27, 11, 23, 97, 83)
+SEED_PRESETS = {
+    5: (11, 23, 37, 51, 67),
+    10: (51, 37, 67, 71, 109, 27, 11, 23, 97, 83),
+}
+_seed_count = int(os.environ.get("CLINICALKG_SEED_COUNT", "10"))
+if _seed_count not in SEED_PRESETS:
+    raise ValueError("CLINICALKG_SEED_COUNT must be 5 or 10")
+DEFAULT_SEEDS = SEED_PRESETS[_seed_count]
 _seed_override = os.environ.get("KG_ABLATION_SEEDS")
 SEEDS = tuple(int(value.strip()) for value in _seed_override.split(",")) if _seed_override else DEFAULT_SEEDS
 if not SEEDS or len(SEEDS) != len(set(SEEDS)) or any(seed < 0 or seed >= 2**32 for seed in SEEDS):
