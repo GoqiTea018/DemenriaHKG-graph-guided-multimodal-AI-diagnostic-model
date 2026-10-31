@@ -8,7 +8,7 @@ import unittest
 from unittest.mock import patch
 
 from clinicalKG.run.common import paths
-from clinicalKG.run.common.config import DATASETS, GRAPHS, notebook_path, model_path
+from clinicalKG.run.common.config import DATASETS, GRAPHS, SEEDS, EXPERIMENT_TAG, notebook_path, model_path, auc_mode
 from clinicalKG.run.common.classification_worker import training_cells
 
 
@@ -77,7 +77,30 @@ class NotebookLayout(unittest.TestCase):
         self.assertEqual(len(outputs), 12)
         self.assertTrue(all(path.parent == root for path in outputs))
         self.assertEqual(paths.result_path(root, "ADNI", None, "paired_statistics.csv"),
-                         root / "ADNI_paired_statistics.csv")
+                         root / f"ADNI_{EXPERIMENT_TAG}_paired_statistics.csv")
+
+    def test_requested_seeds_and_auc_are_shared_by_logs_and_final_scores(self):
+        self.assertEqual(SEEDS, (51, 37, 67, 71, 109, 27, 11, 23, 97, 83))
+        for dataset in DATASETS:
+            self.assertEqual(auc_mode(dataset), "ovo" if dataset == "AIBL" else "ovr")
+            for graph in GRAPHS:
+                notebook = json.loads(notebook_path(dataset, graph).read_text(encoding="utf-8"))
+                counts = {"roc_auc_score": 0, "run_ablation": 0}
+                for cell in notebook["cells"]:
+                    if cell["cell_type"] != "code":
+                        continue
+                    for call in ast.walk(ast.parse("".join(cell["source"]))):
+                        if not isinstance(call, ast.Call) or not isinstance(call.func, ast.Name):
+                            continue
+                        name = call.func.id
+                        if name not in counts:
+                            continue
+                        keyword = "multi_class" if name == "roc_auc_score" else "auc_mode"
+                        value = next(item.value for item in call.keywords if item.arg == keyword)
+                        self.assertEqual(ast.unparse(value), "dataset_auc_mode(DATASET)")
+                        counts[name] += 1
+                self.assertGreaterEqual(counts["roc_auc_score"], 2)
+                self.assertEqual(counts["run_ablation"], 1)
 
     def test_layout_alias_preserves_asset_and_protocol_checks(self):
         from clinicalKG.run.common import evaluation

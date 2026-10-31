@@ -1,4 +1,4 @@
-"""Five seeded runs; final-epoch validation metrics matching the original notebooks."""
+"""Seeded runs; final-epoch validation metrics matching the original notebooks."""
 
 from __future__ import annotations
 
@@ -94,10 +94,6 @@ def run_ablation(*, dataset, graph, make_model, train_loader, val_loader,
     contain sensitive patient-level information.
     """
     output_root = os.environ.get("KG_ABLATION_OUTPUT")
-    if os.environ.get("KG_ABLATION_SEEDS"):
-        seeds = tuple(int(value) for value in os.environ["KG_ABLATION_SEEDS"].split(","))
-        if not seeds or len(seeds) != len(set(seeds)):
-            raise ValueError("KG_ABLATION_SEEDS must contain distinct integer seeds")
     if not output_root:
         raise RuntimeError("Set KG_ABLATION_OUTPUT to a private directory before running")
     output_dir = Path(output_root)

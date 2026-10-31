@@ -56,11 +56,12 @@ def asset_path(dataset, graph, filename):
     return str(next((p for p in candidates if p.is_file()), candidates[0]))
 
 def result_path(root, dataset, graph, filename):
-    """Flat output filenames: DATASET_GRAPH_filename or DATASET_filename."""
+    """Flat filenames include the exact seed set to keep experiments separate."""
+    from .config import EXPERIMENT_TAG
     if dataset not in DATASETS or graph not in (None, "CustomKG", "PrimeKG", "DementiaHKG"):
         raise ValueError((dataset, graph))
     filename = str(filename)
     if Path(filename).name != filename:
         raise ValueError(filename)
-    prefix = dataset + ("_" + graph if graph else "")
+    prefix = dataset + "_" + EXPERIMENT_TAG + ("_" + graph if graph else "")
     return Path(root) / f"{prefix}_{filename}"

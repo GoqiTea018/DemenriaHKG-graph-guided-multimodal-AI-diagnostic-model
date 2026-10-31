@@ -1,12 +1,27 @@
 """Locations shared by notebook and command-line entry points."""
 
 from pathlib import Path
+import os
 
 from clinicalKG.run.common.paths import PROJECT_ROOT, work_dir, asset_path
 ROOT = PROJECT_ROOT
-SEEDS = (11, 23, 37, 51, 67)
+DEFAULT_SEEDS = (51, 37, 67, 71, 109, 27, 11, 23, 97, 83)
+_seed_override = os.environ.get("KG_ABLATION_SEEDS")
+SEEDS = tuple(int(value.strip()) for value in _seed_override.split(",")) if _seed_override else DEFAULT_SEEDS
+if not SEEDS or len(SEEDS) != len(set(SEEDS)) or any(seed < 0 or seed >= 2**32 for seed in SEEDS):
+    raise ValueError("KG_ABLATION_SEEDS must contain distinct integers in [0, 2**32)")
+EXPERIMENT_TAG = "seeds_" + "-".join(map(str, SEEDS))
 DATASETS = ("ADNI", "AIBL", "NACC", "PPMI")
 GRAPHS = ("CustomKG", "PrimeKG", "DementiaHKG")
+
+
+def auc_mode(dataset):
+    """Use the same multi-class AUC definition for epoch logs and final scores."""
+    if dataset not in DATASETS:
+        raise ValueError(dataset)
+    return "ovo" if dataset == "AIBL" else "ovr"
+
+
 MRI = {
     "ADNI": (("AD.csv", "ad_nii_KG"), ("mci.csv", "NC_nii_KG"), ("normal.csv", "normal_nii_kg")),
     "AIBL": (("AD.csv", "AD"), ("MCI.csv", "MCI"), ("NC.csv", "NC")),

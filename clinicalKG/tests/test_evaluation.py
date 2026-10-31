@@ -35,7 +35,7 @@ class EvaluationWorkflow(unittest.TestCase):
         for graph in GRAPHS:
             folder = self.output
             folder.mkdir(parents=True, exist_ok=True)
-            manifest = {**EVALUATION_PROTOCOL, "dataset": "ADNI", "graph": graph, "split_sha256": "synthetic-common-split",
+            manifest = {**EVALUATION_PROTOCOL, "dataset": "ADNI", "graph": graph, "split_sha256": "synthetic-common-split", "training_seeds": list(SEEDS),
                         "primekg": {"scope": "full_original_graph"} if graph == "PrimeKG" else None}
             (result_path(folder, "ADNI", graph, "run_manifest.json")).write_text(json.dumps(manifest), encoding="utf-8")
             with (result_path(folder, "ADNI", graph, "summary.csv")).open("w", newline="", encoding="utf-8") as handle:
@@ -108,6 +108,7 @@ class EvaluationWorkflow(unittest.TestCase):
                 patch.object(evaluation, "_complete", return_value=True):
             evaluation.train_classifiers("ADNI", self.output, graphs=("CustomKG",))
         worker.assert_called_once()
+        self.assertEqual(worker.call_args.args[1]["KG_ABLATION_SEEDS"], ",".join(map(str, SEEDS)))
 
     def test_statistics_provenance_and_curves(self):
         self.fixtures()

@@ -1,8 +1,8 @@
 """Paired, patient-clustered KG ablation comparisons from exported predictions.
 
 Example: python -m experiments.kg_ablation_stats D:/private/kg_results ADNI --metric f1
-The five seeds are averaged within each resample. All records belonging to a
-patient, across all five seeds, move together. A record-level analysis is
+The configured seeds are averaged within each resample. All records belonging to a
+patient, across all configured seeds, move together. A record-level analysis is
 possible only with an explicit --unit record choice.
 """
 

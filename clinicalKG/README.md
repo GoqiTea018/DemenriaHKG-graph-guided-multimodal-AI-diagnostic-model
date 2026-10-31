@@ -85,20 +85,20 @@ Full PrimeKG 嵌入优先读取 `shared/FullPrimeKG/`；已有的 `PrimeKGL/Prim
 | `RETRAIN=False` | 复用已完成且配置匹配的训练 |
 | `RETRAIN=True` | 重训当前数据集、当前配置并覆盖对应输出 |
 
-三种 KG 分别有训练 cell，可以独立执行。训练使用现有五个种子 `11、23、37、51、67`，沿用原记录级分层划分及最后一轮模型的验证集评估。统计包括 Macro-Precision、Macro-Recall、Macro-F1、Accuracy、AUC，患者级配对 bootstrap 置信区间、置换检验 p 值和 Holm 校正。曲线与预测、权重独立保存。
+三种 KG 分别有训练 cell，可以独立执行。训练使用现有十个种子 `51、37、67、71、109、27、11、23、97、83`，沿用原记录级分层划分及最后一轮模型的验证集评估。统计包括 Macro-Precision、Macro-Recall、Macro-F1、Accuracy、AUC，患者级配对 bootstrap 置信区间、置换检验 p 值和 Holm 校正。曲线与预测、权重独立保存。
 
 ## 本地输出
 
-`analysis/` 内不设数据集子目录。统一命名为 `数据集_KG名称_文件名`；跨方法统计使用 `数据集_文件名`：
+`analysis/` 内不设数据集子目录。新实验统一命名为 `数据集_实验标识_KG名称_文件名`；跨方法统计使用 `数据集_实验标识_文件名`：
 
 ```text
-analysis/ADNI_PrimeKG_seed_11.csv
-analysis/ADNI_PrimeKG_history_seed_11.csv
-analysis/ADNI_PrimeKG_last_seed_11.pt
-analysis/ADNI_DementiaHKG_summary.csv
-analysis/ADNI_metrics_mean_sd.csv
-analysis/ADNI_paired_statistics.csv
-analysis/ADNI_training_curves.png
+analysis/ADNI_seeds_51-37-67-71-109-27-11-23-97-83_PrimeKG_seed_11.csv
+analysis/ADNI_seeds_51-37-67-71-109-27-11-23-97-83_PrimeKG_history_seed_11.csv
+analysis/ADNI_seeds_51-37-67-71-109-27-11-23-97-83_PrimeKG_last_seed_11.pt
+analysis/ADNI_seeds_51-37-67-71-109-27-11-23-97-83_DementiaHKG_summary.csv
+analysis/ADNI_seeds_51-37-67-71-109-27-11-23-97-83_metrics_mean_sd.csv
+analysis/ADNI_seeds_51-37-67-71-109-27-11-23-97-83_paired_statistics.csv
+analysis/ADNI_seeds_51-37-67-71-109-27-11-23-97-83_training_curves.png
 ```
 
 历史额外种子、旧协议及归档实验的文件名保留原实验目录标识，分别保存。中间工作记录放在 `run/record/`，以 `ADNI_`、`AIBL_`、`NACC_`、`PPMI_` 开头；共享记录使用 `ALL_`。两处均仅保留在本地。旧到新文件路径映射保存在本地 `run/record/ALL_目录迁移映射_2026-10-31.json`。
@@ -112,3 +112,5 @@ python -m unittest discover -s clinicalKG/tests -p "test_*.py"
 ```
 
 检查覆盖 notebook 导入与路径、合成预测的配对统计、训练产物和 Full PrimeKG 断点恢复。
+
+当前实验标识由完整种子列表生成，新结果与已有的五次及十次历史结果分别保存。`KG_ABLATION_SEEDS` 如需覆盖，应在启动 notebook 或重新执行主入口配置 cell 前设置；训练、汇总、配对统计和绘图共用该配置。每轮日志与最终指标的 AUC 均为 AIBL：macro OvO；ADNI/NACC/PPMI：macro OvR。

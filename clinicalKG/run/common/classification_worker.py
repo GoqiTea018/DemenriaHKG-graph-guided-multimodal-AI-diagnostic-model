@@ -24,7 +24,7 @@ def training_cells(dataset, graph):
         if any(isinstance(node, ast.Call) and isinstance(node.func, ast.Name)
                and node.func.id == "run_ablation" for node in ast.walk(tree)):
             return cells
-    raise ValueError(f"No five-run training cell in {path}")
+    raise ValueError(f"No training cell in {path}")
 
 
 def adapt_source(source, dataset, graph):

@@ -13,7 +13,7 @@ import subprocess
 import sys
 
 from .paths import CLINICALKG_ROOT, PROJECT_ROOT, ANALYSIS_ROOT, dataset_dir, full_primekg_dir, asset_path, result_path
-from .config import GRAPHS, SEEDS, MRI, asset_names, notebook_path, model_path
+from .config import GRAPHS, SEEDS, EXPERIMENT_TAG, MRI, asset_names, notebook_path, model_path, auc_mode as dataset_auc_mode
 
 DATASET_CHOICES = {1: "ADNI", 2: "NACC", 3: "AIBL", 4: "PPMI"}
 DEFAULT_OUTPUT = ANALYSIS_ROOT
@@ -139,7 +139,7 @@ def _graph_manifest(dataset, graph, full_kg):
     manifest = {"dataset": dataset, "graph": graph, "label": LABELS[graph],
             "training_seeds": list(SEEDS), **EVALUATION_PROTOCOL,
             "split_sha256": hashlib.sha256(split.encode("utf-8")).hexdigest(),
-            "auc_mode": "ovo" if dataset == "AIBL" else "ovr",
+            "auc_mode": dataset_auc_mode(dataset),
             "notebook_sha256": _hash(notebook_path(dataset, graph)),
             "kg_assets": {key: {"path": str(path.resolve()), "sha256": _hash(path)}
                           for key, path in assets.items()},
@@ -226,6 +226,7 @@ def train_classifiers(dataset, output_root=None, graphs=GRAPHS, reuse_completed=
         raise FileNotFoundError("Input check failed; see the listed paths. No training started.")
     env = os.environ.copy()
     env["KG_ABLATION_OUTPUT"] = str(output_root)
+    env["KG_ABLATION_SEEDS"] = ",".join(map(str, SEEDS))
     env["MPLBACKEND"] = "Agg"
     env["PYTHONIOENCODING"] = "utf-8"
     env["PYTHONPATH"] = os.pathsep.join((str(CLINICALKG_ROOT.parent),
@@ -241,9 +242,9 @@ def train_classifiers(dataset, output_root=None, graphs=GRAPHS, reuse_completed=
             if not _matches_saved_manifest(old, manifest):
                 raise ValueError(f"Results use different assets/settings: {folder}. Set RETRAIN=True to rerun the final-epoch validation protocol.")
             if reuse_completed and _complete(folder, dataset, graph):
-                print(f"Reusing completed five-run results: {LABELS[graph]}", flush=True)
+                print(f"Reusing completed {len(SEEDS)}-run results: {LABELS[graph]}", flush=True)
                 continue
-        elif folder.is_dir() and any(folder.glob(f"{dataset}_{graph}_seed_*.csv")):
+        elif folder.is_dir() and any(folder.glob(f"{dataset}_{EXPERIMENT_TAG}_{graph}_seed_*.csv")):
             raise ValueError(f"Results have no graph provenance: {folder}. Choose a new output directory.")
         _write_json(manifest_path, manifest)
         print(f"Training {dataset} / {LABELS[graph]}: seeds {SEEDS}", flush=True)
@@ -261,6 +262,8 @@ def _validate_saved_definitions(output_root, dataset, graphs):
         manifest = json.loads(path.read_text(encoding="utf-8"))
         if manifest.get("dataset") != dataset or manifest.get("graph") != graph:
             raise ValueError(f"Dataset/graph mismatch: {path}")
+        if manifest.get("training_seeds") != list(SEEDS):
+            raise ValueError(f"Seed configuration mismatch: {path}")
         if any(manifest.get(key) != value for key, value in EVALUATION_PROTOCOL.items()):
             raise ValueError(f"Old evaluation protocol: {path}. Rerun training with RETRAIN=True for final-epoch validation metrics.")
         if graph == "PrimeKG" and (manifest.get("primekg") or {}).get("scope") != "full_original_graph":
@@ -279,7 +282,8 @@ def saved_result_status(output_root, dataset, graphs=GRAPHS):
         summary = (result_path(folder, dataset, graph, "summary.csv")).is_file()
         path = result_path(folder, dataset, graph, "run_manifest.json")
         manifest = json.loads(path.read_text(encoding="utf-8")) if path.is_file() else {}
-        current = all(manifest.get(key) == value for key, value in EVALUATION_PROTOCOL.items())
+        current = (manifest.get("training_seeds") == list(SEEDS)
+                   and all(manifest.get(key) == value for key, value in EVALUATION_PROTOCOL.items()))
         rows.append({"graph": graph, "method": LABELS[graph], "predictions": f"{predictions}/{len(SEEDS)}",
                      "histories": f"{histories}/{len(SEEDS)}", "checkpoints": f"{checkpoints}/{len(SEEDS)}",
                      "summary": summary, "current_protocol": current,
@@ -297,7 +301,7 @@ def metric_table(output_root, dataset, graphs=GRAPHS, write=True):
         path = result_path(Path(output_root), dataset, graph, "summary.csv")
         runs = pd.read_csv(path)
         if len(runs) != len(SEEDS) or set(runs["seed"]) != set(SEEDS):
-            raise ValueError(f"Incomplete five-run summary: {path}")
+            raise ValueError(f"Incomplete {len(SEEDS)}-run summary: {path}")
         row = {"dataset": dataset, "graph": graph, "method": LABELS[graph], "runs": len(runs)}
         for name in ("accuracy", "precision", "recall", "f1", "auc"):
             row[name + "_mean"] = float(np.mean(runs[name]))
@@ -326,7 +330,7 @@ def run_statistics(output_root, dataset, metrics=("f1", "accuracy", "auc"),
                 missing.append(f"{LABELS[graph]}: {filename}")
     if missing:
         raise FileNotFoundError(
-            f"{dataset} 的五次训练结果尚未齐全。请等待对应 KG 的训练 cell 完成，"
+            f"{dataset} 的 {len(SEEDS)} 次训练结果尚未齐全。请等待对应 KG 的训练 cell 完成，"
             "再运行统计 cell；已完成的其他 KG 无需重跑。缺少：\n" + "\n".join(missing))
     manifests = list(_validate_saved_definitions(output_root, dataset, graphs))
     if len({entry["split_sha256"] for entry in manifests}) != 1:
@@ -349,12 +353,12 @@ def run_statistics(output_root, dataset, metrics=("f1", "accuracy", "auc"),
             if (len(cached) == len(expected) and {tuple(row) for row in cached[["metric", "baseline"]].to_numpy()} == expected):
                 print(f"{dataset}: 读取已保存的五指标统计结果，预测文件与统计参数一致。", flush=True)
                 return metric_table(output_root, dataset, graphs), cached
-    # Read all five-run predictions once, so each metric uses the same snapshot.
+    # Read all configured-seed predictions once, so each metric uses the same snapshot.
     predictions = {graph: read_predictions(Path(output_root), dataset, graph) for graph in graphs}
     reference = predictions["DementiaHKG"]
     comparisons = {graph: aligned_arrays(reference, predictions[graph], "patient")
                    for graph in graphs if graph != "DementiaHKG"}
-    auc_mode = "ovo" if dataset == "AIBL" else "ovr"
+    auc_mode = dataset_auc_mode(dataset)
     all_rows = []
     for metric in metrics:
         if metric not in ("f1", "accuracy", "auc", "precision", "recall"):
@@ -410,7 +414,7 @@ def run_pipeline(dataset_choice=1, mode="all", output_root=None,
 
 
 def plot_training_curves(output_root, dataset, graphs=GRAPHS):
-    """Five-run mean ± sample SD; training/validation curves, no test-epoch tuning."""
+    """Configured-seed mean ± sample SD for training and validation curves."""
     import matplotlib.pyplot as plt
     import numpy as np
     import pandas as pd
@@ -434,7 +438,7 @@ def plot_training_curves(output_root, dataset, graphs=GRAPHS):
             ax.set(title=f"{LABELS[graph]} — {label}", xlabel="Epoch", ylabel=label)
             ax.grid(alpha=0.25)
             ax.legend()
-    fig.suptitle(f"{dataset}: five independent training runs (mean ± SD)", fontsize=14)
+    fig.suptitle(f"{dataset}: {len(SEEDS)} independent training runs (mean ± SD)", fontsize=14)
     fig.tight_layout()
     destination = result_path(Path(output_root), dataset, None, "training_curves.png")
     fig.savefig(destination, dpi=180, bbox_inches="tight")
