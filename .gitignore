@@ -1,44 +1,31 @@
-# Python 编译文件与缓存
+# Local clinical data, archived sources and retired project directories
+/.local_archive/
+/ADNI/
+/AIBL/
+/NACC/
+/PPMI/
+/experiments/
+/semantic_subgraph/
+/SOTA/
+/tests/
+# Python / Jupyter
 __pycache__/
 *.py[cod]
-*$py.class
-
-# 虚拟环境 (如果使用了的话)
-venv/
-.venv/
-env/
-
-# Jupyter Notebook 自动保存的检查点
+.pytest_cache/
 .ipynb_checkpoints/
-
-# 深度学习模型权重与训练日志 (体积庞大，通常不上传)
+.venv/
+venv/
+.env
+.idea/
+.vscode/
+# Generated arrays, weights, images and clinical tables
 *.pt
 *.pth
 *.ckpt
 *.npy
-runs/
-logs/
-experiments/results/
-experiments/.test-runs/
-
-# 医学影像与大型数据集 (防止超出 GitHub 100MB 单文件限制)
 *.nii
 *.nii.gz
 *.dcm
-data/
-dataset/
-datasets/
 *.csv
 *.xlsx
-
-# 环境变量与机密配置
-.env
-
-# 操作系统与编辑器生成的隐藏文件
-.DS_Store
-Thumbs.db
-.vscode/
-
-# Local test caches and reproducible figure output
-.pytest_cache/
-semantic_subgraph/output/
+*.tmp

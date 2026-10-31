@@ -1,18 +1,18 @@
-# Generated shared Full PrimeKG assets and per-patient/model outputs.
-shared/FullPrimeKG/*
-!shared/FullPrimeKG/.gitkeep
-results/
-results_full_primekg/
+# Local experiment outputs and working notes
+analysis/
+run/record/
+run/ADNI/
+run/AIBL/
+run/NACC/
+run/PPMI/
+run/kg.csv
+shared/
 tests/.runs/
-**/*-Entities.json
-**/*-Entity2ID.json
-**/*-Relation2ID.json
-**/*-LossHistory.json
-**/*-LossCurve.png
-**/*-TrainingState.json
-*.tmp
-# Curated field-to-entity seed dictionaries are needed for portable graph construction.
-!**/*_Seed_DementiaHKG.csv
-
-# Public cohort DemRKG graph CSVs (no patient records).
-!DemRKL/**/*DementiaHKG_PrimeKG_Sub.csv
+# PrimeKG/DemRKG local intermediate files (code-only publication)
+*.json
+*.png
+*.svg
+*.html
+*.pdf
+*.txt
+!requirements.txt

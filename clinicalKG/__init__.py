@@ -1,1 +1,1 @@
-"""Portable copies of the PrimeKGL and DemRKL workflows."""
+"""Clinical knowledge-guided multimodal learning."""

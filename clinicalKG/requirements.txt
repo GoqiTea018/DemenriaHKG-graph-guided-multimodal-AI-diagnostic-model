@@ -12,3 +12,7 @@ tqdm
 # Optional notebook model summaries/profiling:
 torchinfo
 thop
+
+# Notebook execution
+jupyterlab
+ipykernel
