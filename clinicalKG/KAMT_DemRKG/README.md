@@ -1,22 +1,40 @@
-# KAMT_DemRKG：进阶版
+# DemRKGL (KAMT_DemRKG)
 
-KAMT_DemRKG 将面向临床特征构建的 DemRKG 与三模态诊断模型结合。本目录由原 `DemRKL/` 中的现有代码整理而来，包含疾病检索、seed 对齐、子图构建、患者映射、图谱嵌入和诊断训练。
+DemRKGL combines a clinically aligned **DemRKG** with knowledge-guided multimodal diagnosis. This directory, named `KAMT_DemRKG` in the codebase, contains disease search, clinical seed alignment, graph construction, patient mapping, DistMult pretraining, and diagnostic training for ADNI, AIBL, NACC, and PPMI.
 
-## 文件
+## Workflow
 
-- `数据集三模态+DemRKG.ipynb`：ADNI、AIBL、NACC、PPMI 的现有训练 notebook。
-- `数据集_KAMT_DemRKG_disease_search.ipynb`：疾病实体检索。
-- `数据集_KAMT_DemRKG_seed_mapping.ipynb`：临床字段与 seed 对齐。
-- `NACC_KAMT_DemRKG_unmatched_seed_search.ipynb`：NACC 未匹配 seed 检索。
-- `数据集_KAMT_DemRKG_build.ipynb`：DemRKG 构建、患者映射和 DistMult 训练。
-- `数据集_model.py`：各队列现有模型实现。
+![DemRKG construction: clinical seed alignment, degree-aware pruning, and entity representations](../docs/images/demrkg-workflow.png)
 
-## 使用
+The figure summarizes three stages that produce the graph representations used by the diagnostic model:
 
-1. 按 [总说明](../README.md) 配置数据目录、原始 PrimeKG 和本地 seed 映射文件。
-2. 已有 seed 映射时，直接使用 `数据集_KAMT_DemRKG_build.ipynb`。重新生成映射时，依次运行疾病检索、seed 对齐及建图 notebook。
-3. 打开 `数据集三模态+DemRKG.ipynb` 独立训练，或通过 [统一实验入口](../run/Run_Experiments.ipynb) 与 CustomKG、Full PrimeKG 一起训练和比较。
+1. **Clinical seed alignment.** Extract clinical keywords from cohort-specific diagnostic records and assessment scales. Align these fields with PrimeKG entities and combine them with core seeds identified through medical domain knowledge.
+2. **Degree-aware graph pruning.** Retrieve one-hop neighborhoods, apply entity-type and relation filters, expand to two-hop candidates, and perform source-wise top-k selection. Candidate ranking combines local connectivity with a penalty based on global graph degree to obtain the refined triples.
+3. **Relation-trained entity representations.** Train DistMult on the refined triples with a margin-ranking objective. Export the entity embedding matrix and entity index for patient-specific knowledge activation.
 
-建图沿用现有筛选、两跳评分、Top-k 和嵌入设置；ADNI/NACC 的 k 为 5，AIBL/PPMI 为 6。训练 notebook 使用 `DemRKG` 命名；现有图谱资产仍通过内部 `DementiaHKG` 标识读取。
+The diagnostic stage retrieves each patient's mapped entity embeddings, integrates them with EHR, MRI, and biomarker representations, and fuses the resulting features for classification.
 
-`*_Seed_DementiaHKG.csv`、图谱 CSV、患者实体 JSON、嵌入及索引保存在本地。本目录优先使用已有资产，也可从数据目录下的 `DementiaHKG/` 读取。诊断训练、预测与统计结果平铺保存到本地 `clinicalKG/analysis/`。
+## Files
+
+| File or group | Purpose |
+| --- | --- |
+| `<DATASET>_KAMT_DemRKG_disease_search.ipynb` | Search for relevant disease entities |
+| `<DATASET>_KAMT_DemRKG_seed_mapping.ipynb` | Align clinical fields with seed entities |
+| `<DATASET>_KAMT_DemRKG_build.ipynb` | Construct DemRKG, map patients, and train DistMult |
+| Cohort diagnostic training notebooks | Standalone training for ADNI, AIBL, NACC, and PPMI |
+| `<DATASET>_model.py` | Cohort-specific model implementations |
+
+## Usage
+
+1. Follow the [clinicalKG guide](../README.md) to configure cohort data, the original PrimeKG, and local seed-mapping files.
+2. Prepare clinical seeds by running the cohort's disease-search notebook followed by its seed-mapping notebook. Existing seed mappings can be supplied directly to the construction notebook.
+3. Run the appropriate construction notebook: [ADNI](ADNI_KAMT_DemRKG_build.ipynb), [AIBL](AIBL_KAMT_DemRKG_build.ipynb), [NACC](NACC_KAMT_DemRKG_build.ipynb), or [PPMI](PPMI_KAMT_DemRKG_build.ipynb).
+4. Open the cohort's diagnostic training notebook in this directory, or use [Run_Experiments.ipynb](../run/Run_Experiments.ipynb) to train and compare DemRKG, Full PrimeKG, and CustomKG.
+
+## Graph settings and local assets
+
+Construction notebooks define the entity-type and relation filters, two-hop scoring, top-k selection, and embedding settings. The source-wise selection uses **k = 5 for ADNI and NACC** and **k = 6 for AIBL and PPMI**.
+
+Local assets include the clinical seed tables (`*_Seed_DementiaHKG.csv`), graph CSV files, patient-to-entity mappings, embeddings, and entity indices. The training workflow uses the name `DemRKG`; existing graph assets and the shared experiment runner use the internal identifier `DementiaHKG`.
+
+Diagnostic predictions, checkpoints, metrics, and curves are saved in `clinicalKG/analysis/`. See the [shared evaluation guide](../README.md#evaluation-and-statistics) for final-epoch validation metrics and paired statistical analysis.

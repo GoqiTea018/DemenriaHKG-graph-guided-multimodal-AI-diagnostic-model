@@ -1,10 +1,30 @@
-# PrimeKGL / KAMT_DemRKG
+# clinicalKG: Knowledge-Guided Multimodal Diagnosis
 
-面向 ADNI、AIBL、NACC、PPMI 四个案例的知识图谱引导三模态（EHR+MRI+BM）诊断代码。
+Knowledge-guided diagnostic models that combine electronic health records (EHR), magnetic resonance imaging (MRI), and biomarkers (BM) across **ADNI, AIBL, NACC, and PPMI**.
 
-- **[PrimeKGL](clinicalKG/PrimeKGL/README.md)**：基础版，使用完整 PrimeKG 的共享 DistMult 嵌入与患者实体映射。
-- **[KAMT_DemRKG](clinicalKG/KAMT_DemRKG/README.md)**：进阶版，包含 DemRKG 构建、患者映射与知识引导多模态训练。
-- **[运行说明](clinicalKG/README.md)**：安装、数据路径、独立训练及三种 KG 的统一比较。
-- **[实验主入口](clinicalKG/run/Run_Experiments.ipynb)**：调用 CustomKG、PrimeKG、DementiaHKG 训练 notebook，汇总五项指标、置信区间和 p 值。
+This branch provides two knowledge pipelines and a shared experiment runner for comparison with CustomKG.
 
+| Project | Knowledge source | Documentation |
+| --- | --- | --- |
+| **PrimeKGL** | Shared DistMult representations learned from the complete raw PrimeKG | [Workflow and usage](clinicalKG/PrimeKGL/README.md) |
+| **DemRKGL (KAMT_DemRKG)** | Clinically aligned DemRKG subgraphs with degree-aware pruning | [Workflow and usage](clinicalKG/KAMT_DemRKG/README.md) |
 
+## PrimeKGL workflow
+
+![PrimeKGL workflow: complete PrimeKG pretraining, patient mapping, and multimodal diagnosis](clinicalKG/docs/images/primekgl-workflow.svg)
+
+The complete PrimeKG is encoded once with DistMult. Each cohort maps patient clinical features to graph entities, retrieves their embeddings, and combines the resulting knowledge sequences with EHR, MRI, and biomarker representations for diagnosis.
+
+## DemRKGL workflow
+
+![DemRKG construction: clinical seed alignment, degree-aware pruning, and entity representations](clinicalKG/docs/images/demrkg-workflow.png)
+
+Clinical fields and medical domain knowledge identify seed entities in PrimeKG. Neighborhood retrieval, type and relation filtering, and source-wise top-k selection produce DemRKG. DistMult embeddings support patient-specific knowledge activation and the downstream multimodal diagnostic model.
+
+## Getting started
+
+1. Install dependencies and configure data paths using the [clinicalKG setup guide](clinicalKG/README.md).
+2. Prepare graph embeddings and patient mappings using the method-specific workflows above.
+3. Open [Run_Experiments.ipynb](clinicalKG/run/Run_Experiments.ipynb) to check inputs, train CustomKG / Full PrimeKG / DemRKG configurations, and summarize metrics and paired statistics.
+
+The [clinicalKG guide](clinicalKG/README.md) describes the directory layout, runtime options, evaluation protocol, and output files.

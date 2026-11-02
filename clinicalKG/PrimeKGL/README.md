@@ -1,27 +1,61 @@
-# PrimeKGL：基础版
+# PrimeKGL
 
-PrimeKGL 在完整原始 PrimeKG 上训练一套共享 DistMult 嵌入，结合各数据集的患者实体映射进行三模态诊断。四个数据集共用图谱嵌入及实体索引，分别生成患者查询和训练诊断模型。
+PrimeKGL combines representations learned from the **complete raw PrimeKG** with patient-specific entity mappings for multimodal diagnosis. ADNI, AIBL, NACC, and PPMI share the pretrained graph embeddings and entity index, while each cohort prepares its own patient mappings and trains its diagnostic model.
 
-## 文件
+## Workflow
 
-- `Full_PrimeKG.ipynb`：共享图谱预训练 notebook，包含中断保存和恢复功能。
-- `full_primekg.py`：相同预训练器的 Python 实现与命令行入口。
-- `Step3-Build-数据集-PrimeKG.ipynb`：各数据集患者映射及共享资产调用。
-- `数据集三模态+PrimeKG.ipynb`：ADNI、AIBL、NACC、PPMI 诊断训练入口。
-- `数据集_model.py`：保留各队列现有模型实现。
+![PrimeKGL workflow: shared Full PrimeKG embeddings and knowledge-guided multimodal diagnosis](../docs/images/primekgl-workflow.svg)
 
-## 使用
+1. **Encode the complete graph.** Read every triple in the raw `kg.csv`, index its named entities and relations, and train DistMult with a margin-ranking objective and negative tail sampling.
+2. **Share graph representations.** Save the entity embedding matrix, entity and relation indices, and resumable training state for reuse across the four cohorts.
+3. **Map patients to entities.** Use cohort-specific clinical feature mappings to build each patient's entity sequence and retrieve the corresponding embeddings.
+4. **Train the diagnostic model.** Encode EHR, MRI, and biomarkers, incorporate patient-specific knowledge through modality-aware retrieval, and fuse the representations for diagnosis.
+5. **Evaluate repeated runs.** Use the shared experiment runner to collect final-epoch validation predictions, metrics, training curves, and paired statistics.
 
-1. 按 [总说明](../README.md) 配置临床数据和完整 `kg.csv`。
-2. 打开 `Full_PrimeKG.ipynb` 训练共享嵌入；已有完整图谱嵌入时直接使用本地文件。
-3. 打开相应的 `Step3-Build-数据集-PrimeKG.ipynb`，执行患者映射相关 cell。
-4. 打开 `数据集三模态+PrimeKG.ipynb` 独立训练，或通过 [统一实验入口](../run/Run_Experiments.ipynb) 调用。
+## Files
 
-从仓库根目录运行完整图谱预训练器：
+| File or group | Purpose |
+| --- | --- |
+| [Full_PrimeKG.ipynb](Full_PrimeKG.ipynb) | Shared graph pretraining with interruption recovery |
+| [full_primekg.py](full_primekg.py) | Python implementation and command-line pretraining entry point |
+| `Step3-Build-<DATASET>-PrimeKG.ipynb` | Cohort-specific patient mapping and shared asset loading |
+| Cohort diagnostic training notebooks | Standalone training for ADNI, AIBL, NACC, and PPMI |
+| `<DATASET>_model.py` | Cohort-specific model implementations |
+
+## Usage
+
+1. Install dependencies and configure cohort data and raw `kg.csv` paths using the [clinicalKG guide](../README.md).
+2. Run [Full_PrimeKG.ipynb](Full_PrimeKG.ipynb) to generate shared graph representations, or configure an existing Full PrimeKG embedding directory.
+3. Run the patient-mapping cells in the appropriate notebook: [ADNI](Step3-Build-ADNI-PrimeKG.ipynb), [AIBL](Step3-Build-AIBL-PrimeKG.ipynb), [NACC](Step3-Build-NACC-PrimeKG.ipynb), or [PPMI](Step3-Build-PPMI-PrimeKG.ipynb).
+4. Open the cohort's diagnostic training notebook in this directory, or use [Run_Experiments.ipynb](../run/Run_Experiments.ipynb) for the shared comparison.
+
+Full graph pretraining can also be launched from the repository root:
 
 ```bash
-python -m clinicalKG.PrimeKGL.full_primekg --raw-kg kg.csv --epochs 50 --device cuda
-python -m clinicalKG.PrimeKGL.full_primekg --raw-kg kg.csv --epochs 50 --device cuda --resume
+python -m clinicalKG.PrimeKGL.full_primekg --raw-kg /path/to/kg.csv --epochs 50 --device cuda
 ```
 
-默认 DistMult 为 128 维、batch size 512、学习率 0.005、50 epochs。训练使用完整输入图谱的实体、关系和边记录。共享输出位于本地 `clinicalKG/shared/FullPrimeKG/`，已有的本目录 `PrimeKG-*` 中间文件继续保留并可读取。诊断训练结果平铺保存到本地 `clinicalKG/analysis/`。
+To resume an interrupted run with a total target of 50 epochs:
+
+```bash
+python -m clinicalKG.PrimeKGL.full_primekg --raw-kg /path/to/kg.csv --epochs 50 --device cuda --resume
+```
+
+## Pretraining settings and outputs
+
+| Setting | Default |
+| --- | --- |
+| Embedding model | DistMult |
+| Embedding dimension | 128 |
+| Batch size | 512 |
+| Learning rate | 0.005 |
+| Pretraining epochs | 50 |
+
+Pretraining uses the complete input graph's edge records and named entity and relation vocabulary. Shared outputs are stored locally in `clinicalKG/shared/FullPrimeKG/`:
+
+- `PrimeKG-Embeddings.npy`: entity representations.
+- `PrimeKG-Entity2ID.json` and `PrimeKG-Relation2ID.json`: graph indices.
+- `PrimeKG-DistMult-last.pt` and `PrimeKG-TrainingState.json`: checkpoint and training metadata.
+- `PrimeKG-LossHistory.json` and `PrimeKG-LossCurve.png`: pretraining loss records.
+
+Existing `PrimeKG-*` assets in this method directory are also supported by the shared path resolver. Diagnostic predictions, checkpoints, metrics, and curves are stored in the local `clinicalKG/analysis/` directory. See the [evaluation and output guide](../README.md#evaluation-and-statistics) for the shared protocol.

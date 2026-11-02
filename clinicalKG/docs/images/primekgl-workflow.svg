@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1152pt" height="547.2pt" viewBox="0 0 1152 547.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-02T19:29:29.766042</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.6, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 547.2
+L 1152 547.2
+L 1152 0
+L 0 0
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 38.16 241.2
+L 1113.84 241.2
+Q 1124.64 241.2 1124.64 230.4
+L 1124.64 89.28
+Q 1124.64 78.48 1113.84 78.48
+L 38.16 78.48
+Q 27.36 78.48 27.36 89.28
+L 27.36 230.4
+Q 27.36 241.2 38.16 241.2
+z
+" clip-path="url(#pba4fe52164)" style="fill: #f0f5f9"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 58.32 219.6
+L 322.56 219.6
+Q 330.48 219.6 330.48 211.68
+L 330.48 138.24
+Q 330.48 130.32 322.56 130.32
+L 58.32 130.32
+Q 50.4 130.32 50.4 138.24
+L 50.4 211.68
+Q 50.4 219.6 58.32 219.6
+z
+" clip-path="url(#pba4fe52164)" style="fill: #ffffff; stroke: #94afc2; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 389.52 219.6
+L 686.16 219.6
+Q 694.08 219.6 694.08 211.68
+L 694.08 138.24
+Q 694.08 130.32 686.16 130.32
+L 389.52 130.32
+Q 381.6 130.32 381.6 138.24
+L 381.6 211.68
+Q 381.6 219.6 389.52 219.6
+z
+" clip-path="url(#pba4fe52164)" style="fill: #e0eef7; stroke: #82a9c4; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 753.12 219.6
+L 1085.76 219.6
+Q 1093.68 219.6 1093.68 211.68
+L 1093.68 138.24
+Q 1093.68 130.32 1085.76 130.32
+L 753.12 130.32
+Q 745.2 130.32 745.2 138.24
+L 745.2 211.68
+Q 745.2 219.6 753.12 219.6
+z
+" clip-path="url(#pba4fe52164)" style="fill: #dbece6; stroke: #84ab9c; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 331.2 174.96
+Q 355.32 174.96 377.427539 174.96
+" clip-path="url(#pba4fe52164)" style="fill: none; stroke: #617d94; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 371.027539 171.76
+L 377.427539 174.96
+L 371.027539 178.16
+z
+" clip-path="url(#pba4fe52164)" style="fill: #617d94; stroke: #617d94; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 694.8 174.96
+Q 718.92 174.96 741.027539 174.96
+" clip-path="url(#pba4fe52164)" style="fill: none; stroke: #617d94; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 734.627539 171.76
+L 741.027539 174.96
+L 734.627539 178.16
+z
+" clip-path="url(#pba4fe52164)" style="fill: #617d94; stroke: #617d94; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 38.16 496.8
+L 1113.84 496.8
+Q 1124.64 496.8 1124.64 486
+L 1124.64 277.92
+Q 1124.64 267.12 1113.84 267.12
+L 38.16 267.12
+Q 27.36 267.12 27.36 277.92
+L 27.36 486
+Q 27.36 496.8 38.16 496.8
+z
+" clip-path="url(#pba4fe52164)" style="fill: #f5f3fa"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 58.32 467.28
+L 322.56 467.28
+Q 330.48 467.28 330.48 459.36
+L 330.48 383.04
+Q 330.48 375.12 322.56 375.12
+L 58.32 375.12
+Q 50.4 375.12 50.4 383.04
+L 50.4 459.36
+Q 50.4 467.28 58.32 467.28
+z
+" clip-path="url(#pba4fe52164)" style="fill: #ffffff; stroke: #afa0c7; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 389.52 467.28
+L 686.16 467.28
+Q 694.08 467.28 694.08 459.36
+L 694.08 383.04
+Q 694.08 375.12 686.16 375.12
+L 389.52 375.12
+Q 381.6 375.12 381.6 383.04
+L 381.6 459.36
+Q 381.6 467.28 389.52 467.28
+z
+" clip-path="url(#pba4fe52164)" style="fill: #e9e2f3; stroke: #a991c3; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 753.12 467.28
+L 1085.76 467.28
+Q 1093.68 467.28 1093.68 459.36
+L 1093.68 383.04
+Q 1093.68 375.12 1085.76 375.12
+L 753.12 375.12
+Q 745.2 375.12 745.2 383.04
+L 745.2 459.36
+Q 745.2 467.28 753.12 467.28
+z
+" clip-path="url(#pba4fe52164)" style="fill: #dfece6; stroke: #84ab9c; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 331.2 421.2
+Q 355.32 421.2 377.427539 421.2
+" clip-path="url(#pba4fe52164)" style="fill: none; stroke: #617d94; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 371.027539 418
+L 377.427539 421.2
+L 371.027539 424.4
+z
+" clip-path="url(#pba4fe52164)" style="fill: #617d94; stroke: #617d94; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 694.8 421.2
+Q 718.92 421.2 741.027539 421.2
+" clip-path="url(#pba4fe52164)" style="fill: none; stroke: #617d94; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 734.627539 418
+L 741.027539 421.2
+L 734.627539 424.4
+z
+" clip-path="url(#pba4fe52164)" style="fill: #617d94; stroke: #617d94; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 919.44 221.04
+Q 919.44 237.24 919.44 253.44
+" clip-path="url(#pba4fe52164)" style="fill: none; stroke: #617d94; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 919.44 253.44
+Q 728.64 253.44 537.84 253.44
+" clip-path="url(#pba4fe52164)" style="fill: none; stroke: #617d94; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 537.84 253.44
+Q 537.84 312.84 537.84 370.227539
+" clip-path="url(#pba4fe52164)" style="fill: none; stroke: #617d94; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 541.04 363.827539
+L 537.84 370.227539
+L 534.64 363.827539
+z
+" clip-path="url(#pba4fe52164)" style="fill: #617d94; stroke: #617d94; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 919.44 349.2
+Q 919.44 360.72 919.44 370.227539
+" clip-path="url(#pba4fe52164)" style="fill: none; stroke: #618b78; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 922.64 363.827539
+L 919.44 370.227539
+L 916.24 363.827539
+z
+" clip-path="url(#pba4fe52164)" style="fill: #618b78; stroke: #618b78; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 26px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #183246" x="32.4" y="38.854375" transform="rotate(-0 32.4 38.854375)">PrimeKGL</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #536a7c" x="219.6" y="36.370938" transform="rotate(-0 219.6 36.370938)">Full-graph knowledge for multimodal diagnosis</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #365e7b" x="46.8" y="106.56" transform="rotate(-0 46.8 106.56)">1  SHARED GRAPH PRETRAINING</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #183246" x="190.44" y="160.823125" transform="rotate(-0 190.44 160.823125)">Complete raw PrimeKG</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 11.7px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #536a7c" x="190.44" y="183.228469" transform="rotate(-0 190.44 183.228469)">All triples in kg.csv</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #183246" x="537.84" y="160.768437" transform="rotate(-0 537.84 160.768437)">DistMult pretraining</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 11.7px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #536a7c" x="537.84" y="183.091359" transform="rotate(-0 537.84 183.091359)">128 dimensions | margin-ranking loss</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #183246" x="919.44" y="160.768437" transform="rotate(-0 919.44 160.768437)">Shared graph representations</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 11.7px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #536a7c" x="919.44" y="183.228469" transform="rotate(-0 919.44 183.228469)">Entity embeddings + entity / relation indices</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #6b5984" x="46.8" y="294.48" transform="rotate(-0 46.8 294.48)">2  COHORT-SPECIFIC PATIENT MAPPING AND DIAGNOSIS</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #183246" x="190.44" y="405.623125" transform="rotate(-0 190.44 405.623125)">Patient clinical features</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 11.7px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #536a7c" x="190.44" y="430.908469" transform="rotate(-0 190.44 430.908469)">Clinical field-to-entity mapping</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #183246" x="537.84" y="405.568437" transform="rotate(-0 537.84 405.568437)">Patient knowledge sequences</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 11.7px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #536a7c" x="537.84" y="430.908469" transform="rotate(-0 537.84 430.908469)">Retrieve mapped entity embeddings</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #183246" x="919.44" y="405.568437" transform="rotate(-0 919.44 405.568437)">Knowledge-guided diagnosis</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 11.7px; font-family: 'DejaVu Sans'; fill: #536a7c" transform="translate(821.998195 422.801968)">Modality-aware retrieval + fusion</text>
+    <text style="font-size: 11.7px; font-family: 'DejaVu Sans'; fill: #536a7c" transform="translate(854.287453 439.014969)">Diagnostic predictions</text>
+   </g>
+   <g id="text_17">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #376955" x="919.44" y="335.507187" transform="rotate(-0 919.44 335.507187)">EHR  +  MRI  +  Biomarkers</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #536a7c" x="576" y="525.6" transform="rotate(-0 576 525.6)">ADNI  |  AIBL  |  NACC  |  PPMI</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pba4fe52164">
+   <rect x="0" y="0" width="1152" height="547.2"/>
+  </clipPath>
+ </defs>
+</svg>

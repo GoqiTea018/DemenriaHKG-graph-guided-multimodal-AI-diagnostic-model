@@ -16,3 +16,8 @@ tests/.runs/
 *.pdf
 *.txt
 !requirements.txt
+
+# Published project workflow figures
+!docs/images/demrkg-workflow.png
+!docs/images/primekgl-workflow.svg
+!docs/images/primekgl-workflow.png
