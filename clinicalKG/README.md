@@ -55,6 +55,61 @@ python -m jupyterlab
 
 Open the relevant notebook and execute its cells in order. The shared entry point is [run/Run_Experiments.ipynb](run/Run_Experiments.ipynb).
 
+## Dataset download and organization
+
+The project's MRI dataset is hosted on [Zenodo (record 19646995)](https://zenodo.org/records/19646995), DOI: [10.5281/zenodo.19646995](https://doi.org/10.5281/zenodo.19646995). The record was published on April 19, 2026 and lists the release under **CC BY 4.0**. PrimeKGL and DemRKGL share these cohort inputs.
+
+### Download files
+
+| Cohort | Archive | Size (GB) | NIfTI files | Archive layout |
+| --- | --- | ---: | ---: | --- |
+| ADNI | [ADNI.zip](https://zenodo.org/records/19646995/files/ADNI.zip?download=1) | 16.77 | 3,146 | `MRI/` |
+| AIBL | [AIBL.zip](https://zenodo.org/records/19646995/files/AIBL.zip?download=1) | 3.07 | 516 | `AD/`, `MCI/`, `NC/` |
+| PPMI | [PPMI.zip](https://zenodo.org/records/19646995/files/PPMI.zip?download=1) | 3.47 | 414 | `PD/`, `Control/`, `Prodromal/`, `SWEDD/` |
+| NACC | [NACC_nii_ad.zip](https://zenodo.org/records/19646995/files/NACC_nii_ad.zip?download=1) | 4.92 | 713 | `NACC_nii_ad/` |
+| NACC | [NACC_mci.zip](https://zenodo.org/records/19646995/files/NACC_mci.zip?download=1) | 6.07 | 879 | `NACC_mci/` |
+| NACC | [NACC_nii_no.zip](https://zenodo.org/records/19646995/files/NACC_nii_no.zip?download=1) | 14.75 | 2,116 | `NACC_nii_no/` |
+
+Sizes use decimal GB. Counts describe the NIfTI files stored in each archive; training examples are selected by matching the clinical CSV records to MRI files. Zenodo provides an MD5 checksum for each archive.
+
+### Cohorts and clinical tables
+
+The diagnostic workflows combine NIfTI MRI volumes with cohort-specific clinical CSV tables. Prepare the CSV tables separately and place them alongside the extracted MRI folders. The six Zenodo archives contain the MRI volumes.
+
+| Cohort | Diagnostic groups | Clinical CSV -> MRI folder |
+| --- | --- | --- |
+| ADNI | Alzheimer's disease, mild cognitive impairment, normal controls | `AD.csv` -> `ad_nii_KG/`; `mci.csv` -> `NC_nii_KG/`; `normal.csv` -> `normal_nii_kg/` |
+| AIBL | Alzheimer's disease, mild cognitive impairment, normal controls | `AD.csv` -> `AD/`; `MCI.csv` -> `MCI/`; `NC.csv` -> `NC/` |
+| NACC | Alzheimer's disease, mild cognitive impairment, normal controls | `NACC_ad.csv` -> `NACC_nii_ad/`; `NACC_mci.csv` -> `NACC_mci/`; `NACC_normal.csv` -> `NACC_nii_no/` |
+| PPMI | Parkinson's disease, controls, prodromal participants, SWEDD | `PD1.csv` -> `PD/`; `control.csv` -> `Control/`; `prodromal.csv` -> `Prodromal/`; `swedd.csv` -> `SWEDD/` |
+
+SWEDD denotes scans without evidence of dopaminergic deficit. The clinical tables provide the cohort-specific tabular inputs and MRI identifiers consumed by the training notebooks. Their required names and MRI folder pairs are defined in [run/common/config.py](run/common/config.py).
+
+### Prepare the directory layout
+
+1. Download the archives for the cohorts you plan to use and extract them into a data workspace.
+2. Create a cohort directory for each dataset. For AIBL and PPMI, place the extracted class folders under `AIBL/` and `PPMI/`. For NACC, extract all three archives under a common `NACC/` directory.
+3. For ADNI, use the MRI identifiers in `AD.csv`, `mci.csv`, and `normal.csv` to organize the files from the archive's `MRI/` directory into `ad_nii_KG/`, `NC_nii_KG/`, and `normal_nii_kg/`, respectively. The configured MCI folder is named `NC_nii_KG/`.
+4. Place the clinical CSV tables at the root of each cohort directory and set `CLINICALKG_PROJECT_ROOT` to their common parent. An alternative is to place each cohort directly under `clinicalKG/run/<DATASET>/`.
+5. Configure graph inputs as described below and run `RUN_MODE="check"` in [Run_Experiments.ipynb](run/Run_Experiments.ipynb) before training.
+
+For example, the NACC directory should contain:
+
+```text
+<DATA_ROOT>/
+`-- NACC/
+    |-- NACC_ad.csv
+    |-- NACC_mci.csv
+    |-- NACC_normal.csv
+    |-- NACC_nii_ad/
+    |-- NACC_mci/
+    `-- NACC_nii_no/
+```
+
+Full PrimeKG pretraining reads the original `kg.csv` through `CLINICALKG_RAW_KG`. Patient mappings, seed tables, and graph embeddings are configured separately from the MRI archives using the [PrimeKGL](PrimeKGL/README.md) and [DemRKGL](KAMT_DemRKG/README.md) workflows.
+
+When using this dataset, cite [Zenodo DOI 10.5281/zenodo.19646995](https://doi.org/10.5281/zenodo.19646995).
+
 ## Data and graph paths
 
 Paths are centralized in [run/common/paths.py](run/common/paths.py). Place each cohort's clinical CSV files, MRI folders, and graph assets under `clinicalKG/run/<DATASET>/`, or set `CLINICALKG_PROJECT_ROOT` to the parent directory containing `ADNI/`, `AIBL/`, `NACC/`, and `PPMI/` before starting Jupyter.

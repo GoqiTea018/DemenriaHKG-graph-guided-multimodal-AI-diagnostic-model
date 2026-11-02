@@ -24,6 +24,10 @@ The diagnostic stage retrieves each patient's mapped entity embeddings, integrat
 | Cohort diagnostic training notebooks | Standalone training for ADNI, AIBL, NACC, and PPMI |
 | `<DATASET>_model.py` | Cohort-specific model implementations |
 
+## Dataset
+
+Download the cohort MRI archives from [Zenodo](https://zenodo.org/records/19646995), DOI: [10.5281/zenodo.19646995](https://doi.org/10.5281/zenodo.19646995). The [shared dataset guide](../README.md#dataset-download-and-organization) describes the ADNI, AIBL, NACC, and PPMI files and the clinical CSV / MRI directory layout. DemRKGL uses the same cohort inputs as PrimeKGL, together with clinical seed mappings and the constructed DemRKG representations.
+
 ## Usage
 
 1. Follow the [clinicalKG guide](../README.md) to configure cohort data, the original PrimeKG, and local seed-mapping files.
