@@ -43,4 +43,4 @@ The runner writes cohort- and seed-tagged files under `clinicalKG/analysis/`. Pe
 | `analysis_definition.json` | Metrics, seeds, resampling settings, and input fingerprints |
 | `training_curves.png` | Training curves generated from the saved histories |
 
-The comparison runner uses final-epoch validation predictions. AIBL uses macro one-vs-one AUC. ADNI, NACC, and PPMI use macro one-vs-rest AUC.
+The comparison runner reports validation metrics from epoch 200. All four cohorts use macro one-vs-rest AUC.

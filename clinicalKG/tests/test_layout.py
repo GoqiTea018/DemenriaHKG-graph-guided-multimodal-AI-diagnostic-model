@@ -115,7 +115,7 @@ else:
     def test_requested_seeds_and_auc_are_shared_by_logs_and_final_scores(self):
         self.assertEqual(SEEDS, (51, 37, 67, 71, 109, 27, 11, 23, 97, 83))
         for dataset in DATASETS:
-            self.assertEqual(auc_mode(dataset), "ovo" if dataset == "AIBL" else "ovr")
+            self.assertEqual(auc_mode(dataset), "ovr")
             for graph in GRAPHS:
                 notebook = json.loads(notebook_path(dataset, graph).read_text(encoding="utf-8"))
                 counts = {"roc_auc_score": 0, "run_ablation": 0}

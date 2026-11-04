@@ -15,7 +15,7 @@ from pathlib import Path
 import numpy as np
 from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score, roc_auc_score
 
-from .config import SEEDS
+from .config import SEEDS, auc_mode as dataset_auc_mode
 from .paths import result_path
 
 
@@ -140,7 +140,7 @@ def main():
     if args.resamples < 100:
         parser.error("Use at least 100 resamples")
     reference = read_predictions(args.output_root, args.dataset, "DementiaHKG")
-    auc_mode = "ovo" if args.dataset == "AIBL" else "ovr"
+    auc_mode = dataset_auc_mode(args.dataset)
     results = []
     for graph in ("CustomKG", "PrimeKG"):
         candidate = read_predictions(args.output_root, args.dataset, graph)

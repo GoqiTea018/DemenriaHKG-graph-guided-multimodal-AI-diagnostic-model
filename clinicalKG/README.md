@@ -84,7 +84,7 @@ SWEDD denotes scans without evidence of dopaminergic deficit. The clinical table
 4. Place the clinical CSV tables at the root of each cohort directory and set `CLINICALKG_PROJECT_ROOT` to their common parent. An alternative is to place each cohort directly under `clinicalKG/run/<DATASET>/`.
 5. Configure graph inputs as described below and run `RUN_MODE="check"` in [Run_Experiments.ipynb](run/Run_Experiments.ipynb) before training.
 
-For example, the NACC directory should contain:
+The NACC directory layout is shown below.
 
 ```text
 <DATA_ROOT>/
@@ -148,7 +148,7 @@ Each graph configuration has a separate training cell. Re-execute the configurat
 
 The shared runner and standalone diagnostic notebooks use [run/common/kg_ablation.py](run/common/kg_ablation.py). Training follows the existing record-level stratified split. The current diagnostic notebooks run for 200 epochs and evaluate the final model on the validation set.
 
-Reported metrics are Accuracy, Macro-Precision, Macro-Recall, Macro-F1, and Macro-AUC. AIBL uses macro one-vs-one AUC; ADNI, NACC, and PPMI use macro one-vs-rest AUC. Paired analysis uses the same saved validation predictions and selected seeds to compute patient-level bootstrap confidence intervals, permutation-test p-values, and Holm-adjusted p-values.
+Reported metrics are Accuracy, Macro-Precision, Macro-Recall, Macro-F1, and Macro-AUC. All four cohorts use macro one-vs-rest AUC. Paired analysis uses the same saved validation predictions and selected seeds to compute patient-level bootstrap confidence intervals, permutation-test p-values, and Holm-adjusted p-values.
 
 Summary files and checkpoints record `evaluation_split=val`, `model_selection=final_epoch`, and the actual epoch. Epoch-level training and validation metrics are saved separately in history CSV files.
 
