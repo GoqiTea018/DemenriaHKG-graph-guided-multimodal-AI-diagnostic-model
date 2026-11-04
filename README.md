@@ -1,5 +1,7 @@
 # clinicalKG: Knowledge-Guided Multimodal Diagnosis
 
+See the [run guide](clinicalKG/run/README.md) for cohort files, graph asset paths, and training entry points.
+
 Knowledge-guided diagnostic models that combine electronic health records (EHR), magnetic resonance imaging (MRI), and biomarkers (BM) across **ADNI, AIBL, NACC, and PPMI**.
 
 This branch provides two knowledge pipelines and a shared experiment runner for comparison with CustomKG.

@@ -1,5 +1,7 @@
 # PrimeKGL
 
+See the [run guide](../run/README.md) for cohort files, graph asset paths, and training entry points.
+
 PrimeKGL combines representations learned from the **complete raw PrimeKG** with patient-specific entity mappings for multimodal diagnosis. ADNI, AIBL, NACC, and PPMI share the pretrained graph embeddings and entity index, while each cohort prepares its own patient mappings and trains its diagnostic model.
 
 ## Workflow
