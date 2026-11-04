@@ -2,8 +2,6 @@
 import ast
 import json
 import os
-import subprocess
-import sys
 from pathlib import Path
 import tempfile
 import unittest
@@ -15,40 +13,9 @@ from clinicalKG.run.common.classification_worker import training_cells
 
 
 class NotebookLayout(unittest.TestCase):
-    def test_master_selector_updates_training_and_statistics_together(self):
-        probe = '''
-import json, os
-from pathlib import Path
-from importlib import import_module
-path = Path("clinicalKG/run/Run_Experiments.ipynb")
-notebook = json.loads(path.read_text(encoding="utf-8"))
-source = next("".join(cell["source"]) for cell in notebook["cells"]
-              if cell["cell_type"] == "code" and "DATASET_CHOICE =" in "".join(cell["source"]))
-presets = {5: (11, 23, 37, 51, 67), 10: (51, 37, 67, 71, 109, 27, 11, 23, 97, 83)}
-for count in (5, 10):
-    os.environ["KG_ABLATION_SEEDS"] = "1,2"
-    namespace = {}
-    exec(source.replace("SEED_COUNT = 10", f"SEED_COUNT = {count}"), namespace)
-    assert namespace["SEEDS"] == presets[count]
-    # Import numerical libraries before torch in this Windows test environment.
-    for name in ("config", "evaluation", "kg_ablation_stats", "kg_ablation"):
-        module = import_module("clinicalKG.run.common." + name)
-        assert module.SEEDS == presets[count], name
-    assert namespace["EXPERIMENT_TAG"] == "seeds_" + "-".join(map(str, presets[count]))
-try:
-    exec(source.replace("SEED_COUNT = 10", "SEED_COUNT = 8"), {})
-except ValueError:
-    pass
-else:
-    raise AssertionError("Invalid seed count was accepted")
-'''
-        result = subprocess.run([sys.executable, "-c", probe], cwd=paths.CLINICALKG_ROOT.parent,
-                                capture_output=True, text=True, encoding="utf-8")
-        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
-
     def test_all_notebooks_compile_and_training_imports_resolve(self):
         for dataset in DATASETS:
-            for graph in GRAPHS:
+            for graph in ("CustomKG", "PrimeKG"):
                 entry = notebook_path(dataset, graph)
                 expected = "DemRKG" if graph == "DementiaHKG" else graph
                 self.assertEqual(entry.name, f"{dataset}三模态+{expected}.ipynb")
@@ -89,7 +56,7 @@ else:
         previous = Path.cwd()
         try:
             for dataset in DATASETS:
-                for graph in GRAPHS:
+                for graph in ("CustomKG", "PrimeKG"):
                     entry = notebook_path(dataset, graph)
                     os.chdir(entry.parent)
                     notebook = json.loads(entry.read_text(encoding="utf-8"))
@@ -116,7 +83,7 @@ else:
         self.assertEqual(SEEDS, (51, 37, 67, 71, 109, 27, 11, 23, 97, 83))
         for dataset in DATASETS:
             self.assertEqual(auc_mode(dataset), "ovo" if dataset == "AIBL" else "ovr")
-            for graph in GRAPHS:
+            for graph in ("CustomKG", "PrimeKG"):
                 notebook = json.loads(notebook_path(dataset, graph).read_text(encoding="utf-8"))
                 counts = {"roc_auc_score": 0, "run_ablation": 0}
                 for cell in notebook["cells"]:

@@ -31,7 +31,7 @@ Download the cohort MRI archives from [Zenodo](https://zenodo.org/records/196469
 1. Install dependencies and configure cohort data and raw `kg.csv` paths using the [clinicalKG guide](../README.md).
 2. Run [Full_PrimeKG.ipynb](Full_PrimeKG.ipynb) to generate shared graph representations, or configure an existing Full PrimeKG embedding directory.
 3. Run the patient-mapping cells in the appropriate notebook: [ADNI](Step3-Build-ADNI-PrimeKG.ipynb), [AIBL](Step3-Build-AIBL-PrimeKG.ipynb), [NACC](Step3-Build-NACC-PrimeKG.ipynb), or [PPMI](Step3-Build-PPMI-PrimeKG.ipynb).
-4. Open the cohort's diagnostic training notebook in this directory, or use [Run_Experiments.ipynb](../run/Run_Experiments.ipynb) for the shared comparison.
+4. Open the cohort's diagnostic training notebook in this directory, or use [Run_Experiments.ipynb](https://github.com/GoqiTea018/DemRKG-model/tree/clinicalKG/clinicalKG/run/Run_Experiments.ipynb) for the shared comparison.
 
 Full graph pretraining can also be launched from the repository root:
 
