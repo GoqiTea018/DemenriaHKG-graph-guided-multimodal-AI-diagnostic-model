@@ -31,7 +31,7 @@ SWEDD denotes scans without evidence of dopaminergic deficit. The clinical table
 4. Place the clinical CSV tables at the root of each cohort directory and set `CLINICALKG_PROJECT_ROOT` to their common parent. An alternative is to place each cohort directly under `clinicalKG/run/<DATASET>/`.
 5. Follow the [DemRKGL guide](KAMT_DemRKG/README.md) to prepare graph assets and run the cohort notebook.
 
-For example, the NACC directory should contain:
+The NACC directory layout is shown below.
 
 ```text
 <DATA_ROOT>/

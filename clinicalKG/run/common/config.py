@@ -26,7 +26,7 @@ def auc_mode(dataset):
     """Use the same multi-class AUC definition for epoch logs and final scores."""
     if dataset not in DATASETS:
         raise ValueError(dataset)
-    return "ovo" if dataset == "AIBL" else "ovr"
+    return "ovr"
 
 
 MRI = {
