@@ -1,6 +1,6 @@
 # DemRKGL
 
-See the [run guide](run/README.md) for cohort files, graph asset paths, and training entry points.
+See the [run guide](run/README.md) for the [complete runtime layout](run/README.md#complete-runtime-layout), cohort files, and training entry points.
 
 See the [DemRKGL workflow](KAMT_DemRKG/README.md) for installation, graph preparation, and cohort-specific training. The [clinicalKG branch](https://github.com/GoqiTea018/DemRKG-model/tree/clinicalKG/clinicalKG) contains the shared comparison workflow.
 

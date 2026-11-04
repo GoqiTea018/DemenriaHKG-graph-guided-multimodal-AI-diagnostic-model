@@ -2,6 +2,77 @@
 
 Install the dependencies with `python -m pip install -r clinicalKG/requirements.txt` from the repository root. Start Jupyter after setting `CLINICALKG_PROJECT_ROOT` to the absolute path of your data root. An existing `clinicalKG/run/<DATASET>/` takes precedence over `<DATA_ROOT>/<DATASET>/`.
 
+## Complete runtime layout
+
+Use a repository checkout and a separate data directory. Set `CLINICALKG_PROJECT_ROOT` to the absolute path of `<DATA_ROOT>`. Set `CLINICALKG_RAW_KG` to the absolute path of `kg.csv` when generating graph assets.
+
+```text
+<REPO>/
+  clinicalKG/
+    requirements.txt
+    run/
+      README.md
+      Run_DemRKGL.ipynb
+      common/
+    KAMT_DemRKG/                      # Construction notebooks, seed CSVs, and generated graph CSVs
+    analysis/                         # Generated predictions, metrics, and checkpoints
+
+<DATA_ROOT>/
+  kg.csv                              # Original PrimeKG for graph generation
+  ADNI/
+    ADNI诊断.csv
+    AD.csv
+    ad_nii_KG/
+    mci.csv
+    NC_nii_KG/
+    normal.csv
+    normal_nii_kg/
+    DementiaHKG/
+      ADNI-DementiaHKG-Embeddings.npy
+      ADNI-DementiaHKG-Entity2ID.json
+      ADNI-DementiaHKG-Entities.json
+  AIBL/
+    AIBL诊断.csv
+    AD.csv
+    AD/
+    MCI.csv
+    MCI/
+    NC.csv
+    NC/
+    DementiaHKG/
+      AIBL-DementiaHKG-Embeddings.npy
+      AIBL-DementiaHKG-Entity2ID.json
+      AIBL-DementiaHKG-Entities.json
+  NACC/
+    NACC诊断.csv
+    NACC_ad.csv
+    NACC_nii_ad/
+    NACC_mci.csv
+    NACC_mci/
+    NACC_normal.csv
+    NACC_nii_no/
+    DementiaHKG/
+      NACC-DementiaHKG-Embeddings.npy
+      NACC-DementiaHKG-Entity2ID.json
+      NACC-DementiaHKG-Entities.json
+  PPMI/
+    PPMI诊断.csv
+    PD1.csv
+    PD/
+    control.csv
+    Control/
+    prodromal.csv
+    Prodromal/
+    swedd.csv
+    SWEDD/
+    DementiaHKG/
+      PPMI-DementiaHKG-Embeddings.npy
+      PPMI-DementiaHKG-Entity2ID.json
+      PPMI-DementiaHKG-Entities.json
+```
+
+The NIfTI directories contain the MRI volumes matched by the adjacent classification CSVs. Keep a cohort together in one directory. To use the repository-local layout, place the entire cohort directory under `clinicalKG/run/` with the same contents.
+
 ## Cohort inputs
 
 Manually prepare the cohort clinical CSVs and NIfTI MRI files. Place all listed CSVs and MRI directories directly under the indicated cohort directory. Each diagnosis CSV is the consolidated input for clinical-to-graph mapping. The classification notebooks read the class-specific CSVs and match their MRI identifiers to the corresponding NIfTI directories.
