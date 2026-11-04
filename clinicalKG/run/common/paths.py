@@ -19,7 +19,7 @@ def dataset_dir(dataset):
 def work_dir(dataset, method):
     if dataset not in DATASETS or method not in ("PrimeKGL", "KAMT_DemRKG", "DemRKL"):
         raise ValueError((dataset, method))
-    return CLINICALKG_ROOT / ("KAMT_DemRKG" if method == "DemRKL" else method)
+    return CLINICALKG_ROOT / ("KAMT_DemRKG" if method == "DemRKL" else method) / dataset
 
 def raw_primekg_path():
     override = os.environ.get("CLINICALKG_RAW_KG")
@@ -51,7 +51,8 @@ def asset_path(dataset, graph, filename):
         method = None
     else:
         raise ValueError(graph)
-    candidates = ([work_dir(dataset, method) / filename] if method else [])
+    candidates = ([work_dir(dataset, method) / filename, CLINICALKG_ROOT / method / filename]
+                  if method else [])
     candidates += [dataset_dir(dataset) / graph / filename, dataset_dir(dataset) / filename]
     return str(next((p for p in candidates if p.is_file()), candidates[0]))
 

@@ -1,6 +1,6 @@
 # DemRKGL (KAMT_DemRKG)
 
-See the [run guide](../run/README.md) for cohort files, graph asset paths, and training entry points.
+Use the cohort folders below for step-by-step execution. The [batch guide](../run/README.md) covers training with prepared graph assets.
 
 DemRKGL combines a clinically aligned **DemRKG** with knowledge-guided multimodal diagnosis. This directory, named `KAMT_DemRKG` in the codebase, contains disease search, clinical seed alignment, graph construction, patient mapping, DistMult pretraining, and diagnostic training for ADNI, AIBL, NACC, and PPMI.
 
@@ -30,12 +30,27 @@ The diagnostic stage retrieves each patient's mapped entity embeddings, integrat
 
 The [shared dataset guide](../README.md#dataset-organization) describes the ADNI, AIBL, NACC, and PPMI files and the clinical CSV / MRI directory layout. DemRKGL uses the same cohort inputs as PrimeKGL, together with clinical seed mappings and the constructed DemRKG representations.
 
-## Usage
+## Run one cohort step by step
 
-1. Follow the [clinicalKG guide](../README.md) to configure cohort data, the original PrimeKG, and local seed-mapping files.
-2. Prepare clinical seeds by running the cohort's disease-search notebook followed by its seed-mapping notebook. Existing seed mappings can be supplied directly to the construction notebook.
-3. Run the appropriate construction notebook: [ADNI](ADNI_KAMT_DemRKG_build.ipynb), [AIBL](AIBL_KAMT_DemRKG_build.ipynb), [NACC](NACC_KAMT_DemRKG_build.ipynb), or [PPMI](PPMI_KAMT_DemRKG_build.ipynb).
-4. Open the cohort's diagnostic training notebook in this directory, or use [Run_Experiments.ipynb](https://github.com/GoqiTea018/DemRKG-model/tree/clinicalKG/clinicalKG/run/Run_Experiments.ipynb) to train and compare DemRKG, Full PrimeKG, and CustomKG.
+From the repository root, install the dependencies and start Jupyter with your data paths.
+
+~~~powershell
+python -m pip install -r clinicalKG/requirements.txt
+$env:CLINICALKG_PROJECT_ROOT = "D:/data/cohorts"
+$env:CLINICALKG_RAW_KG = "D:/data/PrimeKG/kg.csv"
+$env:CLINICALKG_SEED_COUNT = "10"
+python -m jupyterlab
+~~~
+
+Open the guide for your cohort and execute its notebooks in order.
+
+- [ADNI](ADNI/README.md)
+- [AIBL](AIBL/README.md)
+- [NACC](NACC/README.md)
+- [PPMI](PPMI/README.md)
+
+For batch diagnostic training, open [Run_DemRKGL.ipynb](../run/Run_DemRKGL.ipynb), choose DATASET and SEED_COUNT, and run the configuration cell with TRAIN = False to check inputs. Then set TRAIN = True and run the cell again.
+
 
 ## Graph settings and local assets
 
@@ -44,3 +59,7 @@ Construction notebooks define the entity-type and relation filters, two-hop scor
 Local assets include the clinical seed tables (`*_Seed_DementiaHKG.csv`), graph CSV files, patient-to-entity mappings, embeddings, and entity indices. The training workflow uses the name `DemRKG`; existing graph assets and the shared experiment runner use the internal identifier `DementiaHKG`.
 
 Diagnostic predictions, checkpoints, metrics, and curves are saved in `clinicalKG/analysis/`. See the [shared evaluation guide](https://github.com/GoqiTea018/DemRKG-model/blob/clinicalKG/clinicalKG/run/README.md#recorded-results) for final-epoch validation metrics and paired statistical analysis.
+
+## Compare DemRKG and Full PrimeKG
+
+Use the [clinicalKG comparison guide](https://github.com/GoqiTea018/DemRKG-model/blob/clinicalKG/clinicalKG/README.md) to run both methods under the shared protocol. The comparison reports accuracy, macro precision, macro recall, macro F1, and macro one-vs-rest ROC AUC on the epoch-200 validation split. The paired analysis reports metric differences on aligned predictions, bootstrap confidence intervals, permutation p-values, and Holm-adjusted p-values.
