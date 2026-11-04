@@ -76,7 +76,9 @@ Sizes use decimal GB. Counts describe the NIfTI files stored in each archive; tr
 
 Manually download both the [clinical diagnosis CSVs (Zenodo record 23941459)](https://zenodo.org/records/23941459) and the NIfTI MRI archives listed above. Place the CSVs alongside the extracted MRI folders for each cohort.
 
-Each cohort includes a consolidated diagnosis CSV for DemRKG construction and class-specific CSVs derived from the same records by diagnostic label. The downstream classification notebooks combine samples from the class-specific tables and apply the cohort-specific training, validation, and test split protocol.
+The consolidated diagnosis tables (`ADNI诊断.csv`, `AIBL诊断.csv`, `NACC诊断.csv`, `PPMI诊断.csv`) are inputs to the DemRKG construction notebooks. The notebooks use the clinical records to build patient-to-graph mappings that associate each record with relevant DemRKG entities.
+
+The class-specific CSVs listed below contain the same records grouped by diagnostic label. The downstream classification notebooks combine samples from those tables and apply the cohort-specific training, validation, and test split protocol.
 
 | Cohort | Diagnostic groups | Clinical CSV -> MRI folder |
 | --- | --- | --- |
