@@ -4,7 +4,7 @@ Install the dependencies with `python -m pip install -r clinicalKG/requirements.
 
 ## Cohort inputs
 
-Manually download [clinical CSVs](https://zenodo.org/records/23941459) and [NIfTI MRI archives](https://zenodo.org/records/19646995). Place all listed CSVs and MRI directories directly under the indicated cohort directory. Each diagnosis CSV is the consolidated input for clinical-to-graph mapping. The classification notebooks read the class-specific CSVs and match their MRI identifiers to the corresponding NIfTI directories.
+Manually prepare the cohort clinical CSVs and NIfTI MRI files. Place all listed CSVs and MRI directories directly under the indicated cohort directory. Each diagnosis CSV is the consolidated input for clinical-to-graph mapping. The classification notebooks read the class-specific CSVs and match their MRI identifiers to the corresponding NIfTI directories.
 
 | Cohort directory | Diagnosis CSV | Classification CSV → NIfTI directory |
 | --- | --- | --- |
@@ -13,7 +13,7 @@ Manually download [clinical CSVs](https://zenodo.org/records/23941459) and [NIfT
 | NACC | `NACC诊断.csv` | `NACC_ad.csv` → `NACC_nii_ad/`, `NACC_mci.csv` → `NACC_mci/`, `NACC_normal.csv` → `NACC_nii_no/` |
 | PPMI | `PPMI诊断.csv` | `PD1.csv` → `PD/`, `control.csv` → `Control/`, `prodromal.csv` → `Prodromal/`, `swedd.csv` → `SWEDD/` |
 
-For ADNI, organize the extracted `MRI/` files into the three folders using the MRI identifiers in the classification CSVs. Extract all three NACC archives into the same cohort directory.
+For ADNI, organize the extracted `MRI/` files into the three folders using the MRI identifiers in the classification CSVs. Place all three NACC MRI folders in the same cohort directory.
 
 ## Graph inputs
 

@@ -25,9 +25,7 @@ Clinical fields and medical domain knowledge identify seed entities in PrimeKG. 
 
 ## Dataset
 
-The project's MRI dataset is available on [Zenodo (record 19646995)](https://zenodo.org/records/19646995), DOI: [10.5281/zenodo.19646995](https://doi.org/10.5281/zenodo.19646995). The release provides ADNI, AIBL, and PPMI archives and three class-specific NACC archives.
-
-The [dataset guide](clinicalKG/README.md#dataset-download-and-organization) lists download links, archive sizes, clinical CSV / MRI folder pairs, and extraction instructions. Both PrimeKGL and DemRKGL use the same cohort data.
+The [dataset guide](clinicalKG/README.md#dataset-organization) lists the required clinical CSVs and MRI directories. Both PrimeKGL and DemRKGL use the same cohort data.
 
 ## Getting started
 
