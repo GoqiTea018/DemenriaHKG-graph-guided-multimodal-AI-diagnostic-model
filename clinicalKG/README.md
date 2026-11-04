@@ -1,5 +1,7 @@
 # PrimeKGL
 
+See the [run guide](run/README.md) for cohort files, graph asset paths, and training entry points.
+
 See the [PrimeKGL workflow](PrimeKGL/README.md) for installation, graph preparation, and cohort-specific training. The [clinicalKG branch](https://github.com/GoqiTea018/DemRKG-model/tree/clinicalKG/clinicalKG) contains the shared comparison workflow.
 
 ## Dataset download and organization
@@ -81,6 +83,6 @@ python -m jupyterlab
 
 In PowerShell, use `$env:CLINICALKG_PROJECT_ROOT = "D:/data"` and `$env:CLINICALKG_RAW_KG = "D:/data/kg.csv"`.
 
-The `run/<DATASET>/` directory takes precedence over the corresponding directory under `CLINICALKG_PROJECT_ROOT`. Cohort-specific CSV and MRI folder names are defined in [run/common/config.py](run/common/config.py). Graph assets can reside in the method directory or in the cohort's `CustomKG/`, `PrimeKG/`, or `DementiaHKG/` directory.
+The `run/<DATASET>/` directory takes precedence over the corresponding directory under `CLINICALKG_PROJECT_ROOT`. Cohort-specific CSV and MRI folder names are defined in [run/common/config.py](run/common/config.py). Graph assets can reside in the method directory or in the cohort's `PrimeKG/` directory.
 
 Shared Full PrimeKG embeddings are resolved from `shared/FullPrimeKG/` or existing `PrimeKGL/PrimeKG-*` files. Raw data, embeddings, patient mappings, and experiment outputs are stored locally; workflow figures are included in the repository.

@@ -1,5 +1,7 @@
 # PrimeKGL
 
+See the [run guide](../run/README.md) for cohort files, graph asset paths, and training entry points.
+
 PrimeKGL combines representations learned from the **complete raw PrimeKG** with patient-specific entity mappings for multimodal diagnosis. ADNI, AIBL, NACC, and PPMI share the pretrained graph embeddings and entity index, while each cohort prepares its own patient mappings and trains its diagnostic model.
 
 ## Workflow
@@ -62,4 +64,4 @@ Pretraining uses the complete input graph's edge records and named entity and re
 - `PrimeKG-DistMult-last.pt` and `PrimeKG-TrainingState.json`: checkpoint and training metadata.
 - `PrimeKG-LossHistory.json` and `PrimeKG-LossCurve.png`: pretraining loss records.
 
-Existing `PrimeKG-*` assets in this method directory are also supported by the shared path resolver. Diagnostic predictions, checkpoints, metrics, and curves are stored in the local `clinicalKG/analysis/` directory. See the [evaluation and output guide](../README.md#evaluation-and-statistics) for the shared protocol.
+Existing `PrimeKG-*` assets in this method directory are also supported by the shared path resolver. Diagnostic predictions, checkpoints, metrics, and curves are stored in the local `clinicalKG/analysis/` directory. See the [evaluation and output guide](https://github.com/GoqiTea018/DemRKG-model/blob/clinicalKG/clinicalKG/run/README.md#recorded-results) for the shared protocol.
