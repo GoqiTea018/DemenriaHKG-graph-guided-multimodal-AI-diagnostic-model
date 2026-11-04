@@ -23,4 +23,4 @@ To generate graph assets from scratch, set `CLINICALKG_RAW_KG` to the original P
 
 ## Train PrimeKGL
 
-Open [Run_PrimeKGL.ipynb](Run_PrimeKGL.ipynb), select a cohort and run the input check before enabling training. For cross-method comparisons, use the [clinicalKG comparison runner and output guide](https://github.com/GoqiTea018/DemRKG-model/blob/clinicalKG/clinicalKG/run/README.md).
+Open [Run_PrimeKGL.ipynb](Run_PrimeKGL.ipynb), select a cohort and run the input check before enabling training. The epoch-200 validation report includes accuracy, macro precision, macro recall, macro F1, and macro one-vs-rest AUC. For cross-method comparisons, use the [clinicalKG comparison runner and output guide](https://github.com/GoqiTea018/DemRKG-model/blob/clinicalKG/clinicalKG/run/README.md).
