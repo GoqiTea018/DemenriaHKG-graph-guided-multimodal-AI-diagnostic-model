@@ -33,7 +33,7 @@ Download the cohort MRI archives from [Zenodo](https://zenodo.org/records/196469
 1. Follow the [clinicalKG guide](../README.md) to configure cohort data, the original PrimeKG, and local seed-mapping files.
 2. Prepare clinical seeds by running the cohort's disease-search notebook followed by its seed-mapping notebook. Existing seed mappings can be supplied directly to the construction notebook.
 3. Run the appropriate construction notebook: [ADNI](ADNI_KAMT_DemRKG_build.ipynb), [AIBL](AIBL_KAMT_DemRKG_build.ipynb), [NACC](NACC_KAMT_DemRKG_build.ipynb), or [PPMI](PPMI_KAMT_DemRKG_build.ipynb).
-4. Open the cohort's diagnostic training notebook in this directory, or use [Run_Experiments.ipynb](../run/Run_Experiments.ipynb) to train and compare DemRKG, Full PrimeKG, and CustomKG.
+4. Open the cohort's diagnostic training notebook in this directory, or use [Run_Experiments.ipynb](https://github.com/GoqiTea018/DemRKG-model/tree/clinicalKG/clinicalKG/run/Run_Experiments.ipynb) to train and compare DemRKG, Full PrimeKG, and CustomKG.
 
 ## Graph settings and local assets
 
