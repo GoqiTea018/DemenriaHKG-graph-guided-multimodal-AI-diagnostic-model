@@ -2,6 +2,16 @@
 
 Install the dependencies with `python -m pip install -r clinicalKG/requirements.txt` from the repository root. Start Jupyter after setting `CLINICALKG_PROJECT_ROOT` to the absolute path of your data root. An existing `clinicalKG/run/<DATASET>/` takes precedence over `<DATA_ROOT>/<DATASET>/`.
 
+## Required downloads
+
+| Download | Contents | Destination |
+| --- | --- | --- |
+| Clinical tables | Consolidated diagnosis CSV and class-specific CSVs for the selected cohort | Place the CSVs directly in `<DATA_ROOT>/<DATASET>/`. |
+| MRI data | NIfTI volumes for the selected cohort | Extract or organize the volumes into the named MRI folders under `<DATA_ROOT>/<DATASET>/`, as shown below. |
+| Graph assets | Precomputed embeddings, indices, and cohort mappings required by the selected workflow | Follow the graph paths in the directory tree and Graph inputs section. |
+
+For graph construction, obtain the original PrimeKG `kg.csv` and set `CLINICALKG_RAW_KG` to its path.
+
 ## Complete runtime layout
 
 Use a repository checkout and a separate data directory. Set `CLINICALKG_PROJECT_ROOT` to the absolute path of `<DATA_ROOT>`. Set `CLINICALKG_RAW_KG` to the absolute path of `kg.csv` when generating graph assets.
