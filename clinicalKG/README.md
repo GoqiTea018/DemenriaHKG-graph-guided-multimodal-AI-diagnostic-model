@@ -1,8 +1,7 @@
 # PrimeKGL
 
-See the [run guide](run/README.md) for the [complete runtime layout](run/README.md#complete-runtime-layout), cohort files, and training entry points.
-
-See the [PrimeKGL workflow](PrimeKGL/README.md) for installation, graph preparation, and cohort-specific training. The [clinicalKG branch](https://github.com/GoqiTea018/DemRKG-model/tree/clinicalKG/clinicalKG) contains the shared comparison workflow.
+- **Step-by-step workflow** — [PrimeKGL setup and cohort guides](PrimeKGL/README.md#run-one-cohort-step-by-step): [ADNI](PrimeKGL/ADNI/README.md), [AIBL](PrimeKGL/AIBL/README.md), [NACC](PrimeKGL/NACC/README.md), [PPMI](PrimeKGL/PPMI/README.md).
+- **Batch diagnostic training** — [Run_PrimeKGL.ipynb](run/Run_PrimeKGL.ipynb) with [runtime setup](run/README.md).
 
 ## Dataset organization
 
@@ -69,3 +68,7 @@ In PowerShell, use `$env:CLINICALKG_PROJECT_ROOT = "D:/data"` and `$env:CLINICAL
 The `run/<DATASET>/` directory takes precedence over the corresponding directory under `CLINICALKG_PROJECT_ROOT`. Cohort-specific CSV and MRI folder names are defined in [run/common/config.py](run/common/config.py). Graph assets can reside in the method directory or in the cohort's `PrimeKG/` directory.
 
 Shared Full PrimeKG embeddings are resolved from `shared/FullPrimeKG/` or existing `PrimeKGL/PrimeKG-*` files. Raw data, embeddings, patient mappings, and experiment outputs are stored locally; workflow figures are included in the repository.
+
+## Compare DemRKG and Full PrimeKG
+
+Use the [clinicalKG comparison guide](https://github.com/GoqiTea018/DemRKG-model/blob/clinicalKG/clinicalKG/README.md) to run both methods under the shared protocol. The comparison reports accuracy, macro precision, macro recall, macro F1, and macro one-vs-rest ROC AUC on the epoch-200 validation split. The paired analysis reports metric differences on aligned predictions, bootstrap confidence intervals, permutation p-values, and Holm-adjusted p-values.

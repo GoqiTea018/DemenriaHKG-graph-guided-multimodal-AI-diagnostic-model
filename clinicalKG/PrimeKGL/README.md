@@ -1,6 +1,6 @@
 # PrimeKGL
 
-See the [run guide](../run/README.md) for cohort files, graph asset paths, and training entry points.
+Use the cohort folders below for step-by-step execution. The [batch guide](../run/README.md) covers training with prepared graph assets.
 
 PrimeKGL combines representations learned from the **complete raw PrimeKG** with patient-specific entity mappings for multimodal diagnosis. ADNI, AIBL, NACC, and PPMI share the pretrained graph embeddings and entity index, while each cohort prepares its own patient mappings and trains its diagnostic model.
 
@@ -28,24 +28,37 @@ PrimeKGL combines representations learned from the **complete raw PrimeKG** with
 
 The [shared dataset guide](../README.md#dataset-organization) describes the ADNI, AIBL, NACC, and PPMI files and the clinical CSV / MRI directory layout. PrimeKGL uses these cohort inputs together with the complete raw PrimeKG and shared graph embeddings.
 
-## Usage
+## Run one cohort step by step
 
-1. Install dependencies and configure cohort data and raw `kg.csv` paths using the [clinicalKG guide](../README.md).
-2. Run [Full_PrimeKG.ipynb](Full_PrimeKG.ipynb) to generate shared graph representations, or configure an existing Full PrimeKG embedding directory.
-3. Run the patient-mapping cells in the appropriate notebook: [ADNI](Step3-Build-ADNI-PrimeKG.ipynb), [AIBL](Step3-Build-AIBL-PrimeKG.ipynb), [NACC](Step3-Build-NACC-PrimeKG.ipynb), or [PPMI](Step3-Build-PPMI-PrimeKG.ipynb).
-4. Open the cohort's diagnostic training notebook in this directory, or use [Run_Experiments.ipynb](https://github.com/GoqiTea018/DemRKG-model/tree/clinicalKG/clinicalKG/run/Run_Experiments.ipynb) for the shared comparison.
+From the repository root, install the dependencies and start Jupyter with your data paths.
 
-Full graph pretraining can also be launched from the repository root:
+~~~powershell
+python -m pip install -r clinicalKG/requirements.txt
+$env:CLINICALKG_PROJECT_ROOT = "D:/data/cohorts"
+$env:CLINICALKG_RAW_KG = "D:/data/PrimeKG/kg.csv"
+$env:CLINICALKG_SEED_COUNT = "10"
+python -m jupyterlab
+~~~
 
-```bash
+Run [Full_PrimeKG.ipynb](Full_PrimeKG.ipynb) once before preparing any cohort, or point CLINICALKG_FULL_PRIMEKG_DIR to existing shared assets.
+
+Open the guide for your cohort and execute its notebooks in order.
+
+- [ADNI](ADNI/README.md)
+- [AIBL](AIBL/README.md)
+- [NACC](NACC/README.md)
+- [PPMI](PPMI/README.md)
+
+For batch diagnostic training, open [Run_PrimeKGL.ipynb](../run/Run_PrimeKGL.ipynb), choose DATASET and SEED_COUNT, and run the configuration cell with TRAIN = False to check inputs. Then set TRAIN = True and run the cell again.
+
+
+## Command-line graph pretraining
+
+~~~bash
 python -m clinicalKG.PrimeKGL.full_primekg --raw-kg /path/to/kg.csv --epochs 50 --device cuda
-```
+~~~
 
-To resume an interrupted run with a total target of 50 epochs:
-
-```bash
-python -m clinicalKG.PrimeKGL.full_primekg --raw-kg /path/to/kg.csv --epochs 50 --device cuda --resume
-```
+Add --resume to continue from the saved checkpoint toward the same total epoch target.
 
 ## Pretraining settings and outputs
 
@@ -65,3 +78,7 @@ Pretraining uses the complete input graph's edge records and named entity and re
 - `PrimeKG-LossHistory.json` and `PrimeKG-LossCurve.png`: pretraining loss records.
 
 Existing `PrimeKG-*` assets in this method directory are also supported by the shared path resolver. Diagnostic predictions, checkpoints, metrics, and curves are stored in the local `clinicalKG/analysis/` directory. See the [evaluation and output guide](https://github.com/GoqiTea018/DemRKG-model/blob/clinicalKG/clinicalKG/run/README.md#recorded-results) for the shared protocol.
+
+## Compare DemRKG and Full PrimeKG
+
+Use the [clinicalKG comparison guide](https://github.com/GoqiTea018/DemRKG-model/blob/clinicalKG/clinicalKG/README.md) to run both methods under the shared protocol. The comparison reports accuracy, macro precision, macro recall, macro F1, and macro one-vs-rest ROC AUC on the epoch-200 validation split. The paired analysis reports metric differences on aligned predictions, bootstrap confidence intervals, permutation p-values, and Holm-adjusted p-values.
