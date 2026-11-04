@@ -1,6 +1,6 @@
 # clinicalKG
 
-See the [run guide](run/README.md) for cohort files, graph asset paths, and training entry points.
+See the [run guide](run/README.md) for the [complete runtime layout](run/README.md#complete-runtime-layout), cohort files, and training entry points.
 
 This package provides **PrimeKGL** and **DemRKGL (KAMT_DemRKG)** for knowledge-guided multimodal diagnosis across ADNI, AIBL, NACC, and PPMI. A shared experiment runner compares CustomKG, Full PrimeKG, and DemRKG using EHR, MRI, and biomarker inputs.
 
