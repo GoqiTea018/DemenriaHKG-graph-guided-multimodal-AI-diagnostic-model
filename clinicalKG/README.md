@@ -74,7 +74,9 @@ Sizes use decimal GB. Counts describe the NIfTI files stored in each archive; tr
 
 ### Cohorts and clinical tables
 
-The diagnostic workflows combine NIfTI MRI volumes with cohort-specific clinical CSV tables. Prepare the CSV tables separately and place them alongside the extracted MRI folders. The six Zenodo archives contain the MRI volumes.
+Manually download both the [clinical diagnosis CSVs (Zenodo record 23941459)](https://zenodo.org/records/23941459) and the NIfTI MRI archives listed above. Place the CSVs alongside the extracted MRI folders for each cohort.
+
+Each cohort includes a consolidated diagnosis CSV for DemRKG construction and class-specific CSVs derived from the same records by diagnostic label. The downstream classification notebooks combine samples from the class-specific tables and apply the cohort-specific training, validation, and test split protocol.
 
 | Cohort | Diagnostic groups | Clinical CSV -> MRI folder |
 | --- | --- | --- |
