@@ -1,5 +1,7 @@
 # DemRKGL (KAMT_DemRKG)
 
+See the [run guide](../run/README.md) for cohort files, graph asset paths, and training entry points.
+
 DemRKGL combines a clinically aligned **DemRKG** with knowledge-guided multimodal diagnosis. This directory, named `KAMT_DemRKG` in the codebase, contains disease search, clinical seed alignment, graph construction, patient mapping, DistMult pretraining, and diagnostic training for ADNI, AIBL, NACC, and PPMI.
 
 ## Workflow
@@ -41,4 +43,4 @@ Construction notebooks define the entity-type and relation filters, two-hop scor
 
 Local assets include the clinical seed tables (`*_Seed_DementiaHKG.csv`), graph CSV files, patient-to-entity mappings, embeddings, and entity indices. The training workflow uses the name `DemRKG`; existing graph assets and the shared experiment runner use the internal identifier `DementiaHKG`.
 
-Diagnostic predictions, checkpoints, metrics, and curves are saved in `clinicalKG/analysis/`. See the [shared evaluation guide](../README.md#evaluation-and-statistics) for final-epoch validation metrics and paired statistical analysis.
+Diagnostic predictions, checkpoints, metrics, and curves are saved in `clinicalKG/analysis/`. See the [shared evaluation guide](https://github.com/GoqiTea018/DemRKG-model/blob/clinicalKG/clinicalKG/run/README.md#recorded-results) for final-epoch validation metrics and paired statistical analysis.
