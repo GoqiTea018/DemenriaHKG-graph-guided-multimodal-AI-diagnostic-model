@@ -26,7 +26,7 @@ PrimeKGL combines representations learned from the **complete raw PrimeKG** with
 
 ## Dataset
 
-Download the cohort MRI archives from [Zenodo](https://zenodo.org/records/19646995), DOI: [10.5281/zenodo.19646995](https://doi.org/10.5281/zenodo.19646995). The [shared dataset guide](../README.md#dataset-download-and-organization) describes the ADNI, AIBL, NACC, and PPMI files and the clinical CSV / MRI directory layout. PrimeKGL uses these cohort inputs together with the complete raw PrimeKG and shared graph embeddings.
+The [shared dataset guide](../README.md#dataset-organization) describes the ADNI, AIBL, NACC, and PPMI files and the clinical CSV / MRI directory layout. PrimeKGL uses these cohort inputs together with the complete raw PrimeKG and shared graph embeddings.
 
 ## Usage
 
