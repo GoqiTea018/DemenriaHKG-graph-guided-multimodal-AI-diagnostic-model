@@ -127,12 +127,7 @@ Download the clinical CSVs, NIfTI volumes, and graph assets. Place the four coho
         CustomKG-PPMI.txt
 ```
 
-From the repository root, set the cohort data root in PowerShell and launch Jupyter from the same shell.
-
-```powershell
-$env:CLINICALKG_PROJECT_ROOT = (Resolve-Path ./clinicalKG).Path
-python -m jupyterlab
-```
+Set `CLINICALKG_PROJECT_ROOT` to the absolute path of the `clinicalKG/` directory.
 
 When generating graph assets from scratch, place the original PrimeKG `kg.csv` at `clinicalKG/kg.csv`. A cohort directory under `clinicalKG/run/` takes precedence over the corresponding directory in this layout.
 
