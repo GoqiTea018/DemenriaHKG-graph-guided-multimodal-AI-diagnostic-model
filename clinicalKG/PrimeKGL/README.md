@@ -1,5 +1,7 @@
 # PrimeKGL
 
+In VS Code or Jupyter, open [Run_PrimeKGL.ipynb](../run/Run_PrimeKGL.ipynb), select the cohort, and run the notebook cells in order.
+
 Use the cohort folders below for step-by-step execution. The [batch guide](../run/README.md) covers training with prepared graph assets.
 
 PrimeKGL combines representations learned from the **complete raw PrimeKG** with patient-specific entity mappings for multimodal diagnosis. ADNI, AIBL, NACC, and PPMI share the pretrained graph embeddings and entity index, while each cohort prepares its own patient mappings and trains its diagnostic model.
@@ -19,7 +21,7 @@ PrimeKGL combines representations learned from the **complete raw PrimeKG** with
 | File or group | Purpose |
 | --- | --- |
 | [Full_PrimeKG.ipynb](Full_PrimeKG.ipynb) | Shared graph pretraining with interruption recovery |
-| [full_primekg.py](full_primekg.py) | Python implementation and command-line pretraining entry point |
+| [full_primekg.py](full_primekg.py) | Pretraining implementation used by the notebook |
 | `Step3-Build-<DATASET>-PrimeKG.ipynb` | Cohort-specific patient mapping and shared asset loading |
 | Cohort diagnostic training notebooks | Standalone training for ADNI, AIBL, NACC, and PPMI |
 | `<DATASET>_model.py` | Cohort-specific model implementations |
@@ -32,14 +34,6 @@ The [shared dataset guide](../README.md#dataset-organization) describes the ADNI
 
 From the repository root, install the dependencies and start Jupyter with your data paths.
 
-~~~powershell
-python -m pip install -r clinicalKG/requirements.txt
-$env:CLINICALKG_PROJECT_ROOT = "D:/data/cohorts"
-$env:CLINICALKG_RAW_KG = "D:/data/PrimeKG/kg.csv"
-$env:CLINICALKG_SEED_COUNT = "10"
-python -m jupyterlab
-~~~
-
 Run [Full_PrimeKG.ipynb](Full_PrimeKG.ipynb) once before preparing any cohort, or point CLINICALKG_FULL_PRIMEKG_DIR to existing shared assets.
 
 Open the guide for your cohort and execute its notebooks in order.
@@ -50,15 +44,6 @@ Open the guide for your cohort and execute its notebooks in order.
 - [PPMI](PPMI/README.md)
 
 For batch diagnostic training, open [Run_PrimeKGL.ipynb](../run/Run_PrimeKGL.ipynb), choose DATASET and SEED_COUNT, and run the configuration cell with TRAIN = False to check inputs. Then set TRAIN = True and run the cell again.
-
-
-## Command-line graph pretraining
-
-~~~bash
-python -m clinicalKG.PrimeKGL.full_primekg --raw-kg /path/to/kg.csv --epochs 50 --device cuda
-~~~
-
-Add --resume to continue from the saved checkpoint toward the same total epoch target.
 
 ## Pretraining settings and outputs
 

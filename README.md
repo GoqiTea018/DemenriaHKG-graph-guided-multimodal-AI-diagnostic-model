@@ -1,5 +1,7 @@
 # PrimeKGL
 
+In VS Code or Jupyter, open [Run_PrimeKGL.ipynb](clinicalKG/run/Run_PrimeKGL.ipynb), select the cohort, and run the notebook cells in order.
+
 - [Step-by-step cohort guides](clinicalKG/PrimeKGL/README.md#run-one-cohort-step-by-step) cover graph preparation and individual notebook execution for ADNI, AIBL, NACC, and PPMI.
 - [Batch training guide](clinicalKG/run/README.md) explains how Run_PrimeKGL.ipynb checks the selected cohort inputs and launches diagnostic training across the chosen seed preset using prepared graph assets.
 - [Cohort data and local paths](clinicalKG/README.md) lists the clinical tables and MRI directories.

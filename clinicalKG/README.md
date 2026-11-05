@@ -1,5 +1,7 @@
 # PrimeKGL
 
+In VS Code or Jupyter, open [Run_PrimeKGL.ipynb](run/Run_PrimeKGL.ipynb), select the cohort, and run the notebook cells in order.
+
 - **Step-by-step workflow** — [PrimeKGL setup and cohort guides](PrimeKGL/README.md#run-one-cohort-step-by-step): [ADNI](PrimeKGL/ADNI/README.md), [AIBL](PrimeKGL/AIBL/README.md), [NACC](PrimeKGL/NACC/README.md), [PPMI](PrimeKGL/PPMI/README.md).
 - **Batch diagnostic training** — [Run_PrimeKGL.ipynb](run/Run_PrimeKGL.ipynb) with [runtime setup](run/README.md).
 
@@ -54,16 +56,6 @@ Paths are centralized in [run/common/paths.py](run/common/paths.py). Place each 
 | `CLINICALKG_PROJECT_ROOT` | Parent directory of the four cohort data directories |
 | `CLINICALKG_RAW_KG` | Path to the complete raw PrimeKG `kg.csv` |
 | `CLINICALKG_FULL_PRIMEKG_DIR` | Directory containing existing Full PrimeKG embeddings and indices |
-
-For example, in a Bash session:
-
-```bash
-export CLINICALKG_PROJECT_ROOT=/path/to/cohort-data
-export CLINICALKG_RAW_KG=/path/to/PrimeKG/kg.csv
-python -m jupyterlab
-```
-
-In PowerShell, use `$env:CLINICALKG_PROJECT_ROOT = "D:/data"` and `$env:CLINICALKG_RAW_KG = "D:/data/kg.csv"`.
 
 The `run/<DATASET>/` directory takes precedence over the corresponding directory under `CLINICALKG_PROJECT_ROOT`. Cohort-specific CSV and MRI folder names are defined in [run/common/config.py](run/common/config.py). Graph assets can reside in the method directory or in the cohort's `PrimeKG/` directory.
 
