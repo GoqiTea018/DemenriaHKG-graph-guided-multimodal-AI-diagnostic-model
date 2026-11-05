@@ -1,5 +1,7 @@
 # DemRKGL (KAMT_DemRKG)
 
+In VS Code or Jupyter, open [Run_Experiments.ipynb](../run/Run_Experiments.ipynb), select the cohort, and run the notebook cells in order.
+
 See the [run guide](../run/README.md) for cohort files, graph asset paths, and training entry points.
 
 DemRKGL combines a clinically aligned **DemRKG** with knowledge-guided multimodal diagnosis. This directory, named `KAMT_DemRKG` in the codebase, contains disease search, clinical seed alignment, graph construction, patient mapping, DistMult pretraining, and diagnostic training for ADNI, AIBL, NACC, and PPMI.

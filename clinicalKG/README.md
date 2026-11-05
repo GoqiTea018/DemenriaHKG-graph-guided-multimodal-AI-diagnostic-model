@@ -1,5 +1,7 @@
 # clinicalKG
 
+In VS Code or Jupyter, open [Run_Experiments.ipynb](run/Run_Experiments.ipynb), select the cohort, and run the notebook cells in order.
+
 See the [run guide](run/README.md) for the [complete runtime layout](run/README.md#complete-runtime-layout), cohort files, and training entry points.
 
 This package provides **PrimeKGL** and **DemRKGL (KAMT_DemRKG)** for knowledge-guided multimodal diagnosis across ADNI, AIBL, NACC, and PPMI. A shared experiment runner compares CustomKG, Full PrimeKG, and DemRKG using EHR, MRI, and biomarker inputs.
@@ -47,13 +49,6 @@ clinicalKG/
 Each method directory contains the four cohorts' notebooks and model implementations. Notebooks are the training entry points; `*_model.py` and `run/common/` provide the supporting implementation.
 
 ## Installation
-
-Use Python 3.10 or later. Install a PyTorch / torchvision build compatible with your server's CUDA environment, then run from the repository root:
-
-```bash
-python -m pip install -r clinicalKG/requirements.txt
-python -m jupyterlab
-```
 
 Open the relevant notebook and execute its cells in order. The shared entry point is [run/Run_Experiments.ipynb](run/Run_Experiments.ipynb).
 
@@ -109,16 +104,6 @@ Paths are centralized in [run/common/paths.py](run/common/paths.py). Place each 
 | `CLINICALKG_RAW_KG` | Path to the complete raw PrimeKG `kg.csv` |
 | `CLINICALKG_FULL_PRIMEKG_DIR` | Directory containing existing Full PrimeKG embeddings and indices |
 
-For example, in a Bash session:
-
-```bash
-export CLINICALKG_PROJECT_ROOT=/path/to/cohort-data
-export CLINICALKG_RAW_KG=/path/to/PrimeKG/kg.csv
-python -m jupyterlab
-```
-
-In PowerShell, use `$env:CLINICALKG_PROJECT_ROOT = "D:/data"` and `$env:CLINICALKG_RAW_KG = "D:/data/kg.csv"`.
-
 The `run/<DATASET>/` directory takes precedence over the corresponding directory under `CLINICALKG_PROJECT_ROOT`. Cohort-specific CSV and MRI folder names are defined in [run/common/config.py](run/common/config.py). Graph assets can reside in the method directory or in the cohort's `CustomKG/`, `PrimeKG/`, or `DementiaHKG/` directory.
 
 Shared Full PrimeKG embeddings are resolved from `shared/FullPrimeKG/` or existing `PrimeKGL/PrimeKG-*` files. Raw data, embeddings, patient mappings, and experiment outputs are stored locally; workflow figures are included in the repository.
@@ -169,13 +154,3 @@ analysis/ADNI_seeds_11-23-37-51-67_training_curves.png
 ```
 
 Historical runs retain their experiment identifiers. Working notes are stored locally in `run/record/`, prefixed with the cohort name or `ALL_` for shared records.
-
-## Checks
-
-From the repository root:
-
-```bash
-python -m unittest discover -s clinicalKG/tests -p "test_*.py"
-```
-
-The checks cover notebook imports and paths, paired statistics on synthetic predictions, training artifacts, and Full PrimeKG checkpoint recovery.

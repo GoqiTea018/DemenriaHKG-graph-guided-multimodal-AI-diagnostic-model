@@ -1,5 +1,7 @@
 # PrimeKGL
 
+In VS Code or Jupyter, open [Run_Experiments.ipynb](../run/Run_Experiments.ipynb), select the cohort, and run the notebook cells in order.
+
 See the [run guide](../run/README.md) for cohort files, graph asset paths, and training entry points.
 
 PrimeKGL combines representations learned from the **complete raw PrimeKG** with patient-specific entity mappings for multimodal diagnosis. ADNI, AIBL, NACC, and PPMI share the pretrained graph embeddings and entity index, while each cohort prepares its own patient mappings and trains its diagnostic model.
@@ -19,7 +21,7 @@ PrimeKGL combines representations learned from the **complete raw PrimeKG** with
 | File or group | Purpose |
 | --- | --- |
 | [Full_PrimeKG.ipynb](Full_PrimeKG.ipynb) | Shared graph pretraining with interruption recovery |
-| [full_primekg.py](full_primekg.py) | Python implementation and command-line pretraining entry point |
+| [full_primekg.py](full_primekg.py) | Pretraining implementation used by the notebook |
 | `Step3-Build-<DATASET>-PrimeKG.ipynb` | Cohort-specific patient mapping and shared asset loading |
 | Cohort diagnostic training notebooks | Standalone training for ADNI, AIBL, NACC, and PPMI |
 | `<DATASET>_model.py` | Cohort-specific model implementations |
@@ -35,17 +37,7 @@ The [shared dataset guide](../README.md#dataset-organization) describes the ADNI
 3. Run the patient-mapping cells in the appropriate notebook: [ADNI](Step3-Build-ADNI-PrimeKG.ipynb), [AIBL](Step3-Build-AIBL-PrimeKG.ipynb), [NACC](Step3-Build-NACC-PrimeKG.ipynb), or [PPMI](Step3-Build-PPMI-PrimeKG.ipynb).
 4. Open the cohort's diagnostic training notebook in this directory, or use [Run_Experiments.ipynb](../run/Run_Experiments.ipynb) for the shared comparison.
 
-Full graph pretraining can also be launched from the repository root:
-
-```bash
-python -m clinicalKG.PrimeKGL.full_primekg --raw-kg /path/to/kg.csv --epochs 50 --device cuda
-```
-
-To resume an interrupted run with a total target of 50 epochs:
-
-```bash
-python -m clinicalKG.PrimeKGL.full_primekg --raw-kg /path/to/kg.csv --epochs 50 --device cuda --resume
-```
+Set `RESUME=True` in [Full_PrimeKG.ipynb](Full_PrimeKG.ipynb) to continue pretraining.
 
 ## Pretraining settings and outputs
 

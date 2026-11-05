@@ -1,5 +1,7 @@
 # clinicalKG: Knowledge-Guided Multimodal Diagnosis
 
+In VS Code or Jupyter, open [Run_Experiments.ipynb](clinicalKG/run/Run_Experiments.ipynb), select the cohort, and run the notebook cells in order.
+
 See the [run guide](clinicalKG/run/README.md) for cohort files, graph asset paths, and training entry points.
 
 Knowledge-guided diagnostic models that combine electronic health records (EHR), magnetic resonance imaging (MRI), and biomarkers (BM) across **ADNI, AIBL, NACC, and PPMI**.

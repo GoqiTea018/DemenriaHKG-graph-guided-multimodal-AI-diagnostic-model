@@ -1,6 +1,8 @@
 # Running clinicalKG experiments
 
-Install the dependencies with `python -m pip install -r clinicalKG/requirements.txt` from the repository root. Start Jupyter after setting `CLINICALKG_PROJECT_ROOT` to the absolute path of your data root. An existing `clinicalKG/run/<DATASET>/` takes precedence over `<DATA_ROOT>/<DATASET>/`.
+In VS Code or Jupyter, open [Run_Experiments.ipynb](Run_Experiments.ipynb), select the cohort, and run the notebook cells in order.
+
+Use a kernel with the dependencies in `clinicalKG/requirements.txt`. Start Jupyter after setting `CLINICALKG_PROJECT_ROOT` to the absolute path of your data root. An existing `clinicalKG/run/<DATASET>/` takes precedence over `<DATA_ROOT>/<DATASET>/`.
 
 ## Required downloads
 
