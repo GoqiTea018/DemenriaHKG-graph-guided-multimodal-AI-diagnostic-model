@@ -34,3 +34,106 @@ The [dataset guide](clinicalKG/README.md#dataset-organization) lists the require
 3. Open [Run_Experiments.ipynb](clinicalKG/run/Run_Experiments.ipynb) to check inputs, train CustomKG / Full PrimeKG / DemRKG configurations, and summarize metrics and paired statistics.
 
 The [clinicalKG guide](clinicalKG/README.md) describes the directory layout, runtime options, evaluation protocol, and output files.
+
+## Recommended deployment
+
+Download the clinical CSVs, NIfTI volumes, and graph assets. Place the four cohort directories directly under `clinicalKG/` using the layout below.
+
+```text
+<REPO>/
+  clinicalKG/
+    requirements.txt
+    run/
+      README.md
+      Run_Experiments.ipynb
+      common/
+    PrimeKGL/                         # Mapping and pretraining notebooks and cohort seed CSVs
+    shared/FullPrimeKG/
+      PrimeKG-Embeddings.npy
+      PrimeKG-Entity2ID.json
+      PrimeKG-TrainingState.json
+    KAMT_DemRKG/                      # Construction notebooks, seed CSVs, and generated graph CSVs
+    analysis/                         # Generated predictions, metrics, and checkpoints
+    kg.csv                              # Original PrimeKG for graph generation
+    ADNI/
+      ADNI诊断.csv
+      AD.csv
+      ad_nii_KG/
+      mci.csv
+      NC_nii_KG/
+      normal.csv
+      normal_nii_kg/
+      PrimeKG/
+        ADNI-PrimeKG-Raw-Entities.json
+      DementiaHKG/
+        ADNI-DementiaHKG-Embeddings.npy
+        ADNI-DementiaHKG-Entity2ID.json
+        ADNI-DementiaHKG-Entities.json
+      CustomKG/
+        CustomKG-ADNI.npy
+        CustomKG-ADNI.txt
+    AIBL/
+      AIBL诊断.csv
+      AD.csv
+      AD/
+      MCI.csv
+      MCI/
+      NC.csv
+      NC/
+      PrimeKG/
+        AIBL-PrimeKG-Raw-Entities.json
+      DementiaHKG/
+        AIBL-DementiaHKG-Embeddings.npy
+        AIBL-DementiaHKG-Entity2ID.json
+        AIBL-DementiaHKG-Entities.json
+      CustomKG/
+        CustomKG-AIBL.npy
+        CustomKG-AIBL.txt
+    NACC/
+      NACC诊断.csv
+      NACC_ad.csv
+      NACC_nii_ad/
+      NACC_mci.csv
+      NACC_mci/
+      NACC_normal.csv
+      NACC_nii_no/
+      PrimeKG/
+        NACC-PrimeKG-Entities.json
+      DementiaHKG/
+        NACC-DementiaHKG-Embeddings.npy
+        NACC-DementiaHKG-Entity2ID.json
+        NACC-DementiaHKG-Entities.json
+      CustomKG/
+        CustomKG-NACC.npy
+        CustomKG-NACC.txt
+    PPMI/
+      PPMI诊断.csv
+      PD1.csv
+      PD/
+      control.csv
+      Control/
+      prodromal.csv
+      Prodromal/
+      swedd.csv
+      SWEDD/
+      PrimeKG/
+        PPMI-PrimeKG-Entities.json
+      DementiaHKG/
+        PPMI-DementiaHKG-Embeddings.npy
+        PPMI-DementiaHKG-Entity2ID.json
+        PPMI-DementiaHKG-Entities.json
+      CustomKG/
+        CustomKG-PPMI.npy
+        CustomKG-PPMI.txt
+```
+
+From the repository root, set the cohort data root in PowerShell and launch Jupyter from the same shell.
+
+```powershell
+$env:CLINICALKG_PROJECT_ROOT = (Resolve-Path ./clinicalKG).Path
+python -m jupyterlab
+```
+
+When generating graph assets from scratch, place the original PrimeKG `kg.csv` at `clinicalKG/kg.csv`. A cohort directory under `clinicalKG/run/` takes precedence over the corresponding directory in this layout.
+
+Open [Run_Experiments.ipynb](clinicalKG/run/Run_Experiments.ipynb) to compare methods. The [run guide](clinicalKG/run/README.md) documents graph inputs and result files.
