@@ -1,5 +1,7 @@
 # AIBL step-by-step workflow
 
+In VS Code or Jupyter, open [Run_DemRKGL.ipynb](../../run/Run_DemRKGL.ipynb), select the cohort, and run the notebook cells in order.
+
 Follow the [environment setup](../README.md#run-one-cohort-step-by-step) before starting Jupyter. Set CLINICALKG_PROJECT_ROOT to the parent of the four cohort data folders. A local clinicalKG/run/AIBL/ takes precedence over <DATA_ROOT>/AIBL/.
 
 ## Inputs

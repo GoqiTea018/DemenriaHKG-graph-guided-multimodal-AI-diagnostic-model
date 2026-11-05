@@ -1,5 +1,7 @@
 # DemRKGL (KAMT_DemRKG)
 
+In VS Code or Jupyter, open [Run_DemRKGL.ipynb](../run/Run_DemRKGL.ipynb), select the cohort, and run the notebook cells in order.
+
 Use the cohort folders below for step-by-step execution. The [batch guide](../run/README.md) covers training with prepared graph assets.
 
 DemRKGL combines a clinically aligned **DemRKG** with knowledge-guided multimodal diagnosis. This directory, named `KAMT_DemRKG` in the codebase, contains disease search, clinical seed alignment, graph construction, patient mapping, DistMult pretraining, and diagnostic training for ADNI, AIBL, NACC, and PPMI.
@@ -34,14 +36,6 @@ The [shared dataset guide](../README.md#dataset-organization) describes the ADNI
 
 From the repository root, install the dependencies and start Jupyter with your data paths.
 
-~~~powershell
-python -m pip install -r clinicalKG/requirements.txt
-$env:CLINICALKG_PROJECT_ROOT = "D:/data/cohorts"
-$env:CLINICALKG_RAW_KG = "D:/data/PrimeKG/kg.csv"
-$env:CLINICALKG_SEED_COUNT = "10"
-python -m jupyterlab
-~~~
-
 Open the guide for your cohort and execute its notebooks in order.
 
 - [ADNI](ADNI/README.md)
@@ -50,7 +44,6 @@ Open the guide for your cohort and execute its notebooks in order.
 - [PPMI](PPMI/README.md)
 
 For batch diagnostic training, open [Run_DemRKGL.ipynb](../run/Run_DemRKGL.ipynb), choose DATASET and SEED_COUNT, and run the configuration cell with TRAIN = False to check inputs. Then set TRAIN = True and run the cell again.
-
 
 ## Graph settings and local assets
 

@@ -1,8 +1,10 @@
 # Running clinicalKG experiments
 
+In VS Code or Jupyter, open [Run_DemRKGL.ipynb](Run_DemRKGL.ipynb), select the cohort, and run the notebook cells in order.
+
 For graph preparation and cell-by-cell training, start from the [four cohort guides](../KAMT_DemRKG/README.md#run-one-cohort-step-by-step).
 
-Install the dependencies with `python -m pip install -r clinicalKG/requirements.txt` from the repository root. Start Jupyter after setting `CLINICALKG_PROJECT_ROOT` to the absolute path of your data root. An existing `clinicalKG/run/<DATASET>/` takes precedence over `<DATA_ROOT>/<DATASET>/`.
+Use a kernel with the dependencies in `clinicalKG/requirements.txt`. Start Jupyter after setting `CLINICALKG_PROJECT_ROOT` to the absolute path of your data root. An existing `clinicalKG/run/<DATASET>/` takes precedence over `<DATA_ROOT>/<DATASET>/`.
 
 ## Required downloads
 

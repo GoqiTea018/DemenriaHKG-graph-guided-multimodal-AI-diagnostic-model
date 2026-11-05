@@ -1,5 +1,7 @@
 # DemRKGL
 
+In VS Code or Jupyter, open [Run_DemRKGL.ipynb](run/Run_DemRKGL.ipynb), select the cohort, and run the notebook cells in order.
+
 - **Step-by-step workflow** — [DemRKGL setup and cohort guides](KAMT_DemRKG/README.md#run-one-cohort-step-by-step): [ADNI](KAMT_DemRKG/ADNI/README.md), [AIBL](KAMT_DemRKG/AIBL/README.md), [NACC](KAMT_DemRKG/NACC/README.md), [PPMI](KAMT_DemRKG/PPMI/README.md).
 - **Batch diagnostic training** — [Run_DemRKGL.ipynb](run/Run_DemRKGL.ipynb) with [runtime setup](run/README.md).
 
@@ -53,16 +55,6 @@ Paths are centralized in [run/common/paths.py](run/common/paths.py). Place each 
 | --- | --- |
 | `CLINICALKG_PROJECT_ROOT` | Parent directory of the four cohort data directories |
 | `CLINICALKG_RAW_KG` | Path to the complete raw PrimeKG `kg.csv` |
-
-For example, in a Bash session:
-
-```bash
-export CLINICALKG_PROJECT_ROOT=/path/to/cohort-data
-export CLINICALKG_RAW_KG=/path/to/PrimeKG/kg.csv
-python -m jupyterlab
-```
-
-In PowerShell, use `$env:CLINICALKG_PROJECT_ROOT = "D:/data"` and `$env:CLINICALKG_RAW_KG = "D:/data/kg.csv"`.
 
 The `run/<DATASET>/` directory takes precedence over the corresponding directory under `CLINICALKG_PROJECT_ROOT`. Cohort-specific CSV and MRI folder names are defined in [run/common/config.py](run/common/config.py). Graph assets can reside in the method directory or in the cohort's `DementiaHKG/` directory.
 
